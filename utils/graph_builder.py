@@ -27,7 +27,7 @@ def get_host_atoms(filename, am='Li'):
 
 def get_last_am_coordinates(atoms, am='Li'):
     """
-    Возвращает координаты атома натрия с наибольшим индексом.
+    Returns alkali metal coordinates of the last added AM (with the highest index)
     """
     am_indices = [atom.index for atom in atoms if atom.symbol == am]
     
@@ -91,5 +91,6 @@ def build_graph_with_am(
     )
     
     return graph
+
 
 
