@@ -81,14 +81,25 @@ def build_graph_with_am(
     edge_features = torch.tensor(D, dtype=torch.float)
     
     # create Data object
-    graph = Data(
-        x=node_features,
-        edge_index=edge_index,
-        edge_attr=edge_features,
-        y=torch.tensor([ienergy], dtype=torch.float) if ienergy else None,
-        am_position=torch.tensor(am_position, dtype=torch.float),
-        host_size=len(host_structure)
-    )
+    if am_position != None:
+        graph = Data(
+            x=node_features,
+            edge_index=edge_index,
+            edge_attr=edge_features,
+            y=torch.tensor([ienergy], dtype=torch.float) if ienergy else None,
+            am_position=torch.tensor(am_position, dtype=torch.float),
+            host_size=len(host_structure) # add if-else depending on was AM added manually or not
+        )
+
+    else:
+        graph = Data(
+            x=node_features,
+            edge_index=edge_index,
+            edge_attr=edge_features,
+            y=torch.tensor([ienergy], dtype=torch.float) if ienergy else None,
+            am_position=torch.tensor(am_position, dtype=torch.float),
+            host_size=len(host_structure)-1 
+        )
     
     return graph
 
