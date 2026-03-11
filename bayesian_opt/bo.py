@@ -1,4 +1,4 @@
-from siman.geo import image_distance
+from ase.geometry import find_mic
 
 import numpy as np
 import pandas as pd
@@ -160,8 +160,7 @@ class BayesianOptimization:
 
     @staticmethod
     def _min_distance_to_host_atoms(point, host_atoms, rprimd):
-        """Minimal distance from the point to host atoms with respect to PBC."""
-        dists = [image_distance(atom, point, rprimd) for atom in host_atoms]
+        dists = [min_image_distance(atom, point, rprimd) for atom in host_atoms]
         return np.min(dists)
 
 
@@ -175,11 +174,9 @@ class BayesianOptimization:
 
     @staticmethod
     def _min_distance_within_set(points, new_point, rprimd):
-        """Minimal distance between new_point (inserted atom) and other points (other inserted atoms).
-            - used for cases where multiple atoms are inserted simultaniously"""
         if len(points) == 0:
             return np.inf
-        dists = [image_distance(p, new_point, rprimd) for p in points]
+        dists = [min_image_distance(p, new_point, rprimd) for p in points]
         return np.min(dists)
 
 
@@ -216,7 +213,7 @@ class BayesianOptimization:
             if k > 1:
                 for i in range(k):
                     for j in range(i+1, k):
-                        dist = image_distance(points[i], points[j], self.rprimd)
+                        dist = min_image_distance(points[i], points[j], self.rprimd)
                         if dist <= self.rmin_insrt:
                             valid = False
                             break
