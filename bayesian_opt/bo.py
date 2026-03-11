@@ -33,15 +33,25 @@ class BayesianOptimization:
 
     rprimd: np.array, default= None
         an array of cell vectors of the host structure
+
+    random_state: int, default= None
+        a fixed random state for results reproducibility
     """
 
-    def __init__(self, int_atom='Li', n_candidates=100, rmin=1.45, rmin_insrt=1.34, host=None, rprimd=None):
+    def __init__(self, int_atom='Li', n_candidates=100, rmin=1.45, rmin_insrt=1.34, host=None, rprimd=None, random_state=None):
         self.int_atom = int_atom
         self.n_candidates = n_candidates
         self.rmin = rmin
         self.rmin_insrt = rmin_insrt
         self.host = host
         self.rprimd = rprimd
+
+        if random_state is None:
+            self.rng = np.random 
+        elif isinstance(random_state, int):
+            self.rng = np.random.RandomState(random_state)
+        else:
+            self.rng = random_state
 
 
     def _fit(self, X, y):
@@ -151,7 +161,7 @@ class BayesianOptimization:
             k = self.X_.shape[1] // 3
 
 
-        all_coords = np.random.uniform(0.0, 1.0, size=(n_candidates * k, 3)) @ self.rprimd
+        all_coords = self.rng.uniform(0.0, 1.0, size=(n_candidates * k, 3)) @ self.rprimd
         all_coords = all_coords.reshape(n_candidates, k, 3)
         X_candidates = all_coords.reshape(n_candidates, -1)
 
