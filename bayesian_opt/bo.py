@@ -1,7 +1,8 @@
-from ase.geometry import find_mic
-
 import numpy as np
 import pandas as pd
+
+from ase.geometry import find_mic
+
 from sklearn.gaussian_process import GaussianProcessRegressor
 from sklearn.gaussian_process.kernels import RBF, WhiteKernel
 from sklearn.preprocessing import StandardScaler
@@ -54,7 +55,7 @@ class BayesianOptimization:
             self.rng = random_state
 
 
-    def _fit(self, X, y):
+    def fit(self, X, y):
 
         """Builds GaussianProcessRegressor
 
@@ -166,6 +167,35 @@ class BayesianOptimization:
         X_candidates = all_coords.reshape(n_candidates, -1)
 
         return X_candidates
+
+
+    def min_image_distance(a, b, cell):
+        """
+        minimal distance between the two atoms with respect to PBC.
+
+        Parameters
+        ----------
+        a, b : ndarray or an object .position argument
+            Points coordinates. If an object passed (ASE), .positions will be used
+        cell : ndarray of shape (3, 3)
+            Cell vectors (rprimd).
+
+        Returns
+        -------
+        float
+            minimal distance between given points in a periodic cell
+        """
+
+        if hasattr(a, 'position'):
+            a = a.position
+        if hasattr(b, 'position'):
+            b = b.position
+
+        a = np.asarray(a)
+        b = np.asarray(b)
+        delta = b - a
+        delta, _ = find_mic(delta, cell) 
+        return np.linalg.norm(delta)
 
 
     @staticmethod
