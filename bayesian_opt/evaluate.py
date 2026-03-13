@@ -1,10 +1,11 @@
 import numpy as np 
 import pandas as pd
-import logging 
-import argparse
+import os 
 
+from ase import Atom
 from ase import Atoms
 from ase.io import read
+from ase.io.vasp import read_incar
 from ase.calculators.vasp import Vasp
 
 from bayesian_opt.bo import BayesianOptimization
@@ -19,7 +20,10 @@ train_file_csv = './training_Li1.csv'
 
 host_file = './POSCAR_host'
 
-host_energy =  
+params_file = './INCAR'
+    (VASP calculation parameters)
+
+host_energy = 
     (host energy for y_new calculations)
 
 int_atom = 'Li' 
@@ -34,12 +38,8 @@ batch_size = 3
 strategy = 'constant_liar' 
     (how too choose points for batch formation)
 
-N = 
+N = 100
     (number of active learning iterations)
-
-vasp_parameters = {}
-    (VASP calculation parameters)
-
 """
 
 
@@ -50,6 +50,8 @@ def compute_y(total_energy, host_energy, int_atom_energy, n_int_atoms):
 
 
 """body of the script"""
+
+params = read_incar(params_file)
 
 host_atoms = load_host(host_file)
 host_positions = host_atoms.get_positions()
@@ -73,19 +75,33 @@ X_train, y_train = X_init.copy(), y_init.copy()
 
 for _ in range(N):
 
-    bo.fit(X_init, y_init)
+    bo.fit(X_train, y_train)
     X_new = bo.suggest(batch_size=batch_size, xi=0.01, strategy=strategy)
 
     for i in range(X_new.shape[0]):
-        atoms = host_atoms.append(int_atom, positions=[X_new[i]])
+
+        atoms = host_atoms.copy()
+        atoms.append(Atom(int_atom, position=position))
+
+        calc_dir = f'calc_{idx}'
+        os.makedirs(calc_dir, exist_ok=True)
+
+        calc = Vasp(directory=calc_dir, **params)
+        atoms.calc = calc
 
         # run VASP
+        try:
+            total_energy = atoms.get_potential_energy()
+        except Exception as e:
+            logging.error(f"Calculation for {idx} failed: {e}")
+            continue
 
-        # read results
-
-        # compute_y
+        # compute new point's y (intercalation energy)
+        y_new = compute_y(total_energy, host_energy, int_atom_energy, n_int_atoms=1)
 
         # update training set
+        X_train = np.vstack([X_train, position.reshape(1, -1)])
+        y_train = np.append(y_train, y_new)
 
 
 
