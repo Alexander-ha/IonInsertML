@@ -9,8 +9,11 @@ from ase import Atom
 from ase import Atoms
 from ase.io import read
 
+from ioninsertml.bayesian_opt.model_selector import ModelSelector
+from sklearn.gaussian_process.kernels import RBF, WhiteKernel
 from ioninsertml.bayesian_opt.bo import BayesianOptimization
 from ioninsertml.utils.data_loader import load_train, load_host
+from sklearn.gaussian_process.kernels import Matern
 
 logging.basicConfig(
     level=logging.INFO,
@@ -28,7 +31,7 @@ class DummyVasp:
         self.params = kwargs
         self.rng = np.random.RandomState(42)
         
-    def get_potential_energy(self):
+    def get_potential_energy(self, atoms=None):
         if self.directory:
             poscar_file = os.path.join(self.directory, 'POSCAR')
             with open(poscar_file, 'w') as f:
@@ -214,6 +217,9 @@ def main():
         logging.info(f"Energy range: [{y_init.min():.3f}, {y_init.max():.3f}]")
         
         logging.info("Initializing Bayesian Optimization")
+
+        kernel_rb = RBF(length_scale=1.0, length_scale_bounds=(0.5, 10)) + \
+                    WhiteKernel(noise_level=1e-6, noise_level_bounds=(1e-6, 1))
         bo = BayesianOptimization(
             int_atom=args.int_atom,
             n_candidates=args.n_candidates,
@@ -221,8 +227,15 @@ def main():
             rmin_insrt=args.rmin_insrt,
             host=host_positions,
             rprimd=rprimd,
-            random_state=args.random_state
+            random_state=args.random_state,
+            kernel = kernel_rb
         )
+        logging.info("Optimizing kernel hyperparameters via LOO-CV")
+        #selector = ModelSelector(bo=bo, X_train=X_init,y_train=y_init,kernel=kernel_rb,normalize_y=True,normalize_X =True)
+        
+        #optimized_kernel = selector.find_via_scipy(method='L-BFGS-B')
+        #logging.info(f"Optimized kernel: {bo.kernel}")
+
         
         X_train, y_train = X_init.copy(), y_init.copy()
         
@@ -237,6 +250,7 @@ def main():
             logging.info(f"Current training set size: {len(X_train)}")
             
             bo.fit(X_train, y_train)
+            logging.info(f"Optimized kernel: {bo.gpr_.kernel_}")
             
             X_new = bo.suggest(batch_size=args.batch_size, xi=args.xi, strategy=args.strat)
             logging.info(f"Suggested {len(X_new)} new configurations")

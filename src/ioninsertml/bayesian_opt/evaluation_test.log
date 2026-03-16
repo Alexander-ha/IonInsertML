@@ -85,3 +85,2580 @@
 2026-03-16 06:23:33,847 - INFO - Optimization completed successfully!
 2026-03-16 06:23:33,847 - INFO - Final training set size: 25
 2026-03-16 06:23:33,847 - INFO - Best energy found: 0.471533 eV
+2026-03-16 22:17:19,245 - INFO - BO Test Mode Parameters:
+2026-03-16 22:17:19,246 - INFO -   train_file_csv: /root/ion/IonInsertML/data/training_Li1.csv
+2026-03-16 22:17:19,246 - INFO -   host_file: /root/ion/IonInsertML/data/POSCAR_host
+2026-03-16 22:17:19,246 - INFO -   params_file: /root/ion/IonInsertML/data/INCAR
+2026-03-16 22:17:19,246 - INFO -   host_energy: -10.5
+2026-03-16 22:17:19,246 - INFO -   int_atom_energy: -2.3
+2026-03-16 22:17:19,246 - INFO -   int_atom: Li
+2026-03-16 22:17:19,247 - INFO -   batch_size: 3
+2026-03-16 22:17:19,247 - INFO -   strat: constant_liar
+2026-03-16 22:17:19,247 - INFO -   N: 5
+2026-03-16 22:17:19,247 - INFO -   n_candidates: 500
+2026-03-16 22:17:19,247 - INFO -   rmin: 1.45
+2026-03-16 22:17:19,247 - INFO -   rmin_insrt: 1.34
+2026-03-16 22:17:19,247 - INFO -   random_state: 42
+2026-03-16 22:17:19,247 - INFO -   xi: 0.01
+2026-03-16 22:17:19,247 - INFO -   test_mode: True
+2026-03-16 22:17:19,247 - INFO - Reading VASP parameters from /root/ion/IonInsertML/data/INCAR
+2026-03-16 22:17:19,248 - INFO - Successfully read 21 parameters from INCAR
+2026-03-16 22:17:19,248 - INFO - Loading host structure from /root/ion/IonInsertML/data/POSCAR_host
+2026-03-16 22:17:19,260 - INFO - Loading training data from /root/ion/IonInsertML/data/training_Li1.csv
+2026-03-16 22:17:19,278 - INFO - Loaded 25 training points
+2026-03-16 22:17:19,278 - INFO - Energy range: [0.472, 3.762]
+2026-03-16 22:17:19,278 - INFO - Initializing Bayesian Optimization
+2026-03-16 22:17:19,288 - INFO - Results saved to bo_test_results
+2026-03-16 22:17:19,288 - INFO - Iteration 1/5
+2026-03-16 22:17:19,289 - INFO - Current training set size: 25
+2026-03-16 22:17:20,419 - INFO - Suggested 3 new configurations
+2026-03-16 22:17:20,420 - INFO - Running dummy calculation in calc_0_0
+2026-03-16 22:17:20,420 - ERROR - Dummy calculation failed for calc_0_0: DummyVasp.get_potential_energy() takes 1 positional argument but 2 were given
+2026-03-16 22:17:20,420 - INFO - Running dummy calculation in calc_0_1
+2026-03-16 22:17:20,420 - ERROR - Dummy calculation failed for calc_0_1: DummyVasp.get_potential_energy() takes 1 positional argument but 2 were given
+2026-03-16 22:17:20,421 - INFO - Running dummy calculation in calc_0_2
+2026-03-16 22:17:20,421 - ERROR - Dummy calculation failed for calc_0_2: DummyVasp.get_potential_energy() takes 1 positional argument but 2 were given
+2026-03-16 22:17:20,424 - INFO - Results saved to bo_test_results
+2026-03-16 22:17:20,425 - INFO - Iteration 1 completed. Training set size: 25
+2026-03-16 22:17:20,425 - INFO - Energy stats - min: 0.472, max: 3.762, mean: 1.448
+2026-03-16 22:17:20,425 - INFO - Iteration 2/5
+2026-03-16 22:17:20,425 - INFO - Current training set size: 25
+2026-03-16 22:17:21,530 - INFO - Suggested 3 new configurations
+2026-03-16 22:17:21,530 - INFO - Running dummy calculation in calc_1_0
+2026-03-16 22:17:21,531 - ERROR - Dummy calculation failed for calc_1_0: DummyVasp.get_potential_energy() takes 1 positional argument but 2 were given
+2026-03-16 22:17:21,531 - INFO - Running dummy calculation in calc_1_1
+2026-03-16 22:17:21,531 - ERROR - Dummy calculation failed for calc_1_1: DummyVasp.get_potential_energy() takes 1 positional argument but 2 were given
+2026-03-16 22:17:21,532 - INFO - Running dummy calculation in calc_1_2
+2026-03-16 22:17:21,532 - ERROR - Dummy calculation failed for calc_1_2: DummyVasp.get_potential_energy() takes 1 positional argument but 2 were given
+2026-03-16 22:17:21,534 - INFO - Results saved to bo_test_results
+2026-03-16 22:17:21,535 - INFO - Iteration 2 completed. Training set size: 25
+2026-03-16 22:17:21,535 - INFO - Energy stats - min: 0.472, max: 3.762, mean: 1.448
+2026-03-16 22:17:21,535 - INFO - Iteration 3/5
+2026-03-16 22:17:21,535 - INFO - Current training set size: 25
+2026-03-16 22:17:22,489 - INFO - Suggested 3 new configurations
+2026-03-16 22:17:22,490 - INFO - Running dummy calculation in calc_2_0
+2026-03-16 22:17:22,490 - ERROR - Dummy calculation failed for calc_2_0: DummyVasp.get_potential_energy() takes 1 positional argument but 2 were given
+2026-03-16 22:17:22,490 - INFO - Running dummy calculation in calc_2_1
+2026-03-16 22:17:22,490 - ERROR - Dummy calculation failed for calc_2_1: DummyVasp.get_potential_energy() takes 1 positional argument but 2 were given
+2026-03-16 22:17:22,491 - INFO - Running dummy calculation in calc_2_2
+2026-03-16 22:17:22,491 - ERROR - Dummy calculation failed for calc_2_2: DummyVasp.get_potential_energy() takes 1 positional argument but 2 were given
+2026-03-16 22:17:22,493 - INFO - Results saved to bo_test_results
+2026-03-16 22:17:22,493 - INFO - Iteration 3 completed. Training set size: 25
+2026-03-16 22:17:22,493 - INFO - Energy stats - min: 0.472, max: 3.762, mean: 1.448
+2026-03-16 22:17:22,493 - INFO - Iteration 4/5
+2026-03-16 22:17:22,493 - INFO - Current training set size: 25
+2026-03-16 22:17:23,668 - INFO - Suggested 3 new configurations
+2026-03-16 22:17:23,669 - INFO - Running dummy calculation in calc_3_0
+2026-03-16 22:17:23,669 - ERROR - Dummy calculation failed for calc_3_0: DummyVasp.get_potential_energy() takes 1 positional argument but 2 were given
+2026-03-16 22:17:23,669 - INFO - Running dummy calculation in calc_3_1
+2026-03-16 22:17:23,670 - ERROR - Dummy calculation failed for calc_3_1: DummyVasp.get_potential_energy() takes 1 positional argument but 2 were given
+2026-03-16 22:17:23,670 - INFO - Running dummy calculation in calc_3_2
+2026-03-16 22:17:23,670 - ERROR - Dummy calculation failed for calc_3_2: DummyVasp.get_potential_energy() takes 1 positional argument but 2 were given
+2026-03-16 22:17:23,672 - INFO - Results saved to bo_test_results
+2026-03-16 22:17:23,673 - INFO - Iteration 4 completed. Training set size: 25
+2026-03-16 22:17:23,673 - INFO - Energy stats - min: 0.472, max: 3.762, mean: 1.448
+2026-03-16 22:17:23,673 - INFO - Iteration 5/5
+2026-03-16 22:17:23,673 - INFO - Current training set size: 25
+2026-03-16 22:17:24,688 - INFO - Suggested 3 new configurations
+2026-03-16 22:17:24,689 - INFO - Running dummy calculation in calc_4_0
+2026-03-16 22:17:24,689 - ERROR - Dummy calculation failed for calc_4_0: DummyVasp.get_potential_energy() takes 1 positional argument but 2 were given
+2026-03-16 22:17:24,690 - INFO - Running dummy calculation in calc_4_1
+2026-03-16 22:17:24,690 - ERROR - Dummy calculation failed for calc_4_1: DummyVasp.get_potential_energy() takes 1 positional argument but 2 were given
+2026-03-16 22:17:24,691 - INFO - Running dummy calculation in calc_4_2
+2026-03-16 22:17:24,691 - ERROR - Dummy calculation failed for calc_4_2: DummyVasp.get_potential_energy() takes 1 positional argument but 2 were given
+2026-03-16 22:17:24,693 - INFO - Results saved to bo_test_results
+2026-03-16 22:17:24,693 - INFO - Iteration 5 completed. Training set size: 25
+2026-03-16 22:17:24,694 - INFO - Energy stats - min: 0.472, max: 3.762, mean: 1.448
+2026-03-16 22:17:24,694 - INFO - Optimization completed successfully!
+2026-03-16 22:17:24,694 - INFO - Final training set size: 25
+2026-03-16 22:17:24,694 - INFO - Best energy found: 0.471533 eV
+2026-03-16 22:52:04,957 - INFO - BO Test Mode Parameters:
+2026-03-16 22:52:04,958 - INFO -   train_file_csv: /root/ion/IonInsertML/data/training_Li1.csv
+2026-03-16 22:52:04,959 - INFO -   host_file: /root/ion/IonInsertML/data/POSCAR_host
+2026-03-16 22:52:04,959 - INFO -   params_file: /root/ion/IonInsertML/data/INCAR
+2026-03-16 22:52:04,959 - INFO -   host_energy: -10.5
+2026-03-16 22:52:04,959 - INFO -   int_atom_energy: -2.3
+2026-03-16 22:52:04,959 - INFO -   int_atom: Li
+2026-03-16 22:52:04,959 - INFO -   batch_size: 3
+2026-03-16 22:52:04,959 - INFO -   strat: constant_liar
+2026-03-16 22:52:04,959 - INFO -   N: 5
+2026-03-16 22:52:04,959 - INFO -   n_candidates: 500
+2026-03-16 22:52:04,959 - INFO -   rmin: 1.45
+2026-03-16 22:52:04,959 - INFO -   rmin_insrt: 1.34
+2026-03-16 22:52:04,959 - INFO -   random_state: 42
+2026-03-16 22:52:04,959 - INFO -   xi: 0.01
+2026-03-16 22:52:04,959 - INFO -   test_mode: True
+2026-03-16 22:52:04,960 - INFO - Reading VASP parameters from /root/ion/IonInsertML/data/INCAR
+2026-03-16 22:52:04,960 - INFO - Successfully read 21 parameters from INCAR
+2026-03-16 22:52:04,960 - INFO - Loading host structure from /root/ion/IonInsertML/data/POSCAR_host
+2026-03-16 22:52:04,970 - INFO - Loading training data from /root/ion/IonInsertML/data/training_Li1.csv
+2026-03-16 22:52:04,989 - INFO - Loaded 25 training points
+2026-03-16 22:52:04,989 - INFO - Energy range: [0.472, 3.762]
+2026-03-16 22:52:04,989 - INFO - Initializing Bayesian Optimization
+2026-03-16 22:52:04,997 - INFO - Results saved to bo_test_results
+2026-03-16 22:52:04,997 - INFO - Iteration 1/5
+2026-03-16 22:52:04,997 - INFO - Current training set size: 25
+2026-03-16 22:52:06,024 - INFO - Suggested 3 new configurations
+2026-03-16 22:52:06,025 - INFO - Running dummy calculation in calc_0_0
+2026-03-16 22:52:06,026 - ERROR - Dummy calculation failed for calc_0_0: DummyVasp.get_potential_energy() takes 1 positional argument but 2 were given
+2026-03-16 22:52:06,026 - INFO - Running dummy calculation in calc_0_1
+2026-03-16 22:52:06,026 - ERROR - Dummy calculation failed for calc_0_1: DummyVasp.get_potential_energy() takes 1 positional argument but 2 were given
+2026-03-16 22:52:06,027 - INFO - Running dummy calculation in calc_0_2
+2026-03-16 22:52:06,027 - ERROR - Dummy calculation failed for calc_0_2: DummyVasp.get_potential_energy() takes 1 positional argument but 2 were given
+2026-03-16 22:52:06,030 - INFO - Results saved to bo_test_results
+2026-03-16 22:52:06,030 - INFO - Iteration 1 completed. Training set size: 25
+2026-03-16 22:52:06,030 - INFO - Energy stats - min: 0.472, max: 3.762, mean: 1.448
+2026-03-16 22:52:06,030 - INFO - Iteration 2/5
+2026-03-16 22:52:06,030 - INFO - Current training set size: 25
+2026-03-16 22:52:07,142 - INFO - Suggested 3 new configurations
+2026-03-16 22:52:07,143 - INFO - Running dummy calculation in calc_1_0
+2026-03-16 22:52:07,143 - ERROR - Dummy calculation failed for calc_1_0: DummyVasp.get_potential_energy() takes 1 positional argument but 2 were given
+2026-03-16 22:52:07,144 - INFO - Running dummy calculation in calc_1_1
+2026-03-16 22:52:07,144 - ERROR - Dummy calculation failed for calc_1_1: DummyVasp.get_potential_energy() takes 1 positional argument but 2 were given
+2026-03-16 22:52:07,144 - INFO - Running dummy calculation in calc_1_2
+2026-03-16 22:52:07,144 - ERROR - Dummy calculation failed for calc_1_2: DummyVasp.get_potential_energy() takes 1 positional argument but 2 were given
+2026-03-16 22:52:07,146 - INFO - Results saved to bo_test_results
+2026-03-16 22:52:07,146 - INFO - Iteration 2 completed. Training set size: 25
+2026-03-16 22:52:07,146 - INFO - Energy stats - min: 0.472, max: 3.762, mean: 1.448
+2026-03-16 22:52:07,146 - INFO - Iteration 3/5
+2026-03-16 22:52:07,146 - INFO - Current training set size: 25
+2026-03-16 22:52:08,085 - INFO - Suggested 3 new configurations
+2026-03-16 22:52:08,086 - INFO - Running dummy calculation in calc_2_0
+2026-03-16 22:52:08,086 - ERROR - Dummy calculation failed for calc_2_0: DummyVasp.get_potential_energy() takes 1 positional argument but 2 were given
+2026-03-16 22:52:08,087 - INFO - Running dummy calculation in calc_2_1
+2026-03-16 22:52:08,087 - ERROR - Dummy calculation failed for calc_2_1: DummyVasp.get_potential_energy() takes 1 positional argument but 2 were given
+2026-03-16 22:52:08,087 - INFO - Running dummy calculation in calc_2_2
+2026-03-16 22:52:08,087 - ERROR - Dummy calculation failed for calc_2_2: DummyVasp.get_potential_energy() takes 1 positional argument but 2 were given
+2026-03-16 22:52:08,089 - INFO - Results saved to bo_test_results
+2026-03-16 22:52:08,089 - INFO - Iteration 3 completed. Training set size: 25
+2026-03-16 22:52:08,089 - INFO - Energy stats - min: 0.472, max: 3.762, mean: 1.448
+2026-03-16 22:52:08,089 - INFO - Iteration 4/5
+2026-03-16 22:52:08,089 - INFO - Current training set size: 25
+2026-03-16 22:52:09,139 - INFO - Suggested 3 new configurations
+2026-03-16 22:52:09,139 - INFO - Running dummy calculation in calc_3_0
+2026-03-16 22:52:09,139 - ERROR - Dummy calculation failed for calc_3_0: DummyVasp.get_potential_energy() takes 1 positional argument but 2 were given
+2026-03-16 22:52:09,140 - INFO - Running dummy calculation in calc_3_1
+2026-03-16 22:52:09,140 - ERROR - Dummy calculation failed for calc_3_1: DummyVasp.get_potential_energy() takes 1 positional argument but 2 were given
+2026-03-16 22:52:09,140 - INFO - Running dummy calculation in calc_3_2
+2026-03-16 22:52:09,141 - ERROR - Dummy calculation failed for calc_3_2: DummyVasp.get_potential_energy() takes 1 positional argument but 2 were given
+2026-03-16 22:52:09,143 - INFO - Results saved to bo_test_results
+2026-03-16 22:52:09,143 - INFO - Iteration 4 completed. Training set size: 25
+2026-03-16 22:52:09,143 - INFO - Energy stats - min: 0.472, max: 3.762, mean: 1.448
+2026-03-16 22:52:09,143 - INFO - Iteration 5/5
+2026-03-16 22:52:09,143 - INFO - Current training set size: 25
+2026-03-16 22:52:10,265 - INFO - Suggested 3 new configurations
+2026-03-16 22:52:10,266 - INFO - Running dummy calculation in calc_4_0
+2026-03-16 22:52:10,266 - ERROR - Dummy calculation failed for calc_4_0: DummyVasp.get_potential_energy() takes 1 positional argument but 2 were given
+2026-03-16 22:52:10,267 - INFO - Running dummy calculation in calc_4_1
+2026-03-16 22:52:10,267 - ERROR - Dummy calculation failed for calc_4_1: DummyVasp.get_potential_energy() takes 1 positional argument but 2 were given
+2026-03-16 22:52:10,268 - INFO - Running dummy calculation in calc_4_2
+2026-03-16 22:52:10,268 - ERROR - Dummy calculation failed for calc_4_2: DummyVasp.get_potential_energy() takes 1 positional argument but 2 were given
+2026-03-16 22:52:10,271 - INFO - Results saved to bo_test_results
+2026-03-16 22:52:10,272 - INFO - Iteration 5 completed. Training set size: 25
+2026-03-16 22:52:10,272 - INFO - Energy stats - min: 0.472, max: 3.762, mean: 1.448
+2026-03-16 22:52:10,272 - INFO - Optimization completed successfully!
+2026-03-16 22:52:10,272 - INFO - Final training set size: 25
+2026-03-16 22:52:10,272 - INFO - Best energy found: 0.471533 eV
+2026-03-16 22:52:14,930 - INFO - BO Test Mode Parameters:
+2026-03-16 22:52:14,931 - INFO -   train_file_csv: /root/ion/IonInsertML/data/training_Li1.csv
+2026-03-16 22:52:14,931 - INFO -   host_file: /root/ion/IonInsertML/data/POSCAR_host
+2026-03-16 22:52:14,931 - INFO -   params_file: /root/ion/IonInsertML/data/INCAR
+2026-03-16 22:52:14,931 - INFO -   host_energy: -10.5
+2026-03-16 22:52:14,931 - INFO -   int_atom_energy: -2.3
+2026-03-16 22:52:14,931 - INFO -   int_atom: Li
+2026-03-16 22:52:14,931 - INFO -   batch_size: 3
+2026-03-16 22:52:14,931 - INFO -   strat: constant_liar
+2026-03-16 22:52:14,932 - INFO -   N: 5
+2026-03-16 22:52:14,932 - INFO -   n_candidates: 500
+2026-03-16 22:52:14,932 - INFO -   rmin: 1.45
+2026-03-16 22:52:14,932 - INFO -   rmin_insrt: 1.34
+2026-03-16 22:52:14,932 - INFO -   random_state: 42
+2026-03-16 22:52:14,932 - INFO -   xi: 0.01
+2026-03-16 22:52:14,932 - INFO -   test_mode: True
+2026-03-16 22:52:14,932 - INFO - Reading VASP parameters from /root/ion/IonInsertML/data/INCAR
+2026-03-16 22:52:14,932 - INFO - Successfully read 21 parameters from INCAR
+2026-03-16 22:52:14,932 - INFO - Loading host structure from /root/ion/IonInsertML/data/POSCAR_host
+2026-03-16 22:52:14,936 - INFO - Loading training data from /root/ion/IonInsertML/data/training_Li1.csv
+2026-03-16 22:52:14,938 - INFO - Loaded 25 training points
+2026-03-16 22:52:14,938 - INFO - Energy range: [0.472, 3.762]
+2026-03-16 22:52:14,938 - INFO - Initializing Bayesian Optimization
+2026-03-16 22:52:14,942 - INFO - Results saved to bo_test_results
+2026-03-16 22:52:14,942 - INFO - Iteration 1/5
+2026-03-16 22:52:14,942 - INFO - Current training set size: 25
+2026-03-16 22:52:15,950 - INFO - Suggested 3 new configurations
+2026-03-16 22:52:15,951 - INFO - Running dummy calculation in calc_0_0
+2026-03-16 22:52:15,951 - ERROR - Dummy calculation failed for calc_0_0: DummyVasp.get_potential_energy() takes 1 positional argument but 2 were given
+2026-03-16 22:52:15,951 - INFO - Running dummy calculation in calc_0_1
+2026-03-16 22:52:15,951 - ERROR - Dummy calculation failed for calc_0_1: DummyVasp.get_potential_energy() takes 1 positional argument but 2 were given
+2026-03-16 22:52:15,952 - INFO - Running dummy calculation in calc_0_2
+2026-03-16 22:52:15,952 - ERROR - Dummy calculation failed for calc_0_2: DummyVasp.get_potential_energy() takes 1 positional argument but 2 were given
+2026-03-16 22:52:15,954 - INFO - Results saved to bo_test_results
+2026-03-16 22:52:15,954 - INFO - Iteration 1 completed. Training set size: 25
+2026-03-16 22:52:15,954 - INFO - Energy stats - min: 0.472, max: 3.762, mean: 1.448
+2026-03-16 22:52:15,955 - INFO - Iteration 2/5
+2026-03-16 22:52:15,955 - INFO - Current training set size: 25
+2026-03-16 22:52:17,135 - INFO - Suggested 3 new configurations
+2026-03-16 22:52:17,136 - INFO - Running dummy calculation in calc_1_0
+2026-03-16 22:52:17,137 - ERROR - Dummy calculation failed for calc_1_0: DummyVasp.get_potential_energy() takes 1 positional argument but 2 were given
+2026-03-16 22:52:17,137 - INFO - Running dummy calculation in calc_1_1
+2026-03-16 22:52:17,137 - ERROR - Dummy calculation failed for calc_1_1: DummyVasp.get_potential_energy() takes 1 positional argument but 2 were given
+2026-03-16 22:52:17,138 - INFO - Running dummy calculation in calc_1_2
+2026-03-16 22:52:17,138 - ERROR - Dummy calculation failed for calc_1_2: DummyVasp.get_potential_energy() takes 1 positional argument but 2 were given
+2026-03-16 22:52:17,140 - INFO - Results saved to bo_test_results
+2026-03-16 22:52:17,140 - INFO - Iteration 2 completed. Training set size: 25
+2026-03-16 22:52:17,140 - INFO - Energy stats - min: 0.472, max: 3.762, mean: 1.448
+2026-03-16 22:52:17,140 - INFO - Iteration 3/5
+2026-03-16 22:52:17,140 - INFO - Current training set size: 25
+2026-03-16 22:52:18,149 - INFO - Suggested 3 new configurations
+2026-03-16 22:52:18,150 - INFO - Running dummy calculation in calc_2_0
+2026-03-16 22:52:18,150 - ERROR - Dummy calculation failed for calc_2_0: DummyVasp.get_potential_energy() takes 1 positional argument but 2 were given
+2026-03-16 22:52:18,151 - INFO - Running dummy calculation in calc_2_1
+2026-03-16 22:52:18,151 - ERROR - Dummy calculation failed for calc_2_1: DummyVasp.get_potential_energy() takes 1 positional argument but 2 were given
+2026-03-16 22:52:18,151 - INFO - Running dummy calculation in calc_2_2
+2026-03-16 22:52:18,151 - ERROR - Dummy calculation failed for calc_2_2: DummyVasp.get_potential_energy() takes 1 positional argument but 2 were given
+2026-03-16 22:52:18,153 - INFO - Results saved to bo_test_results
+2026-03-16 22:52:18,153 - INFO - Iteration 3 completed. Training set size: 25
+2026-03-16 22:52:18,153 - INFO - Energy stats - min: 0.472, max: 3.762, mean: 1.448
+2026-03-16 22:52:18,153 - INFO - Iteration 4/5
+2026-03-16 22:52:18,153 - INFO - Current training set size: 25
+2026-03-16 22:52:19,158 - INFO - Suggested 3 new configurations
+2026-03-16 22:52:19,159 - INFO - Running dummy calculation in calc_3_0
+2026-03-16 22:52:19,159 - ERROR - Dummy calculation failed for calc_3_0: DummyVasp.get_potential_energy() takes 1 positional argument but 2 were given
+2026-03-16 22:52:19,160 - INFO - Running dummy calculation in calc_3_1
+2026-03-16 22:52:19,160 - ERROR - Dummy calculation failed for calc_3_1: DummyVasp.get_potential_energy() takes 1 positional argument but 2 were given
+2026-03-16 22:52:19,161 - INFO - Running dummy calculation in calc_3_2
+2026-03-16 22:52:19,161 - ERROR - Dummy calculation failed for calc_3_2: DummyVasp.get_potential_energy() takes 1 positional argument but 2 were given
+2026-03-16 22:52:19,163 - INFO - Results saved to bo_test_results
+2026-03-16 22:52:19,163 - INFO - Iteration 4 completed. Training set size: 25
+2026-03-16 22:52:19,163 - INFO - Energy stats - min: 0.472, max: 3.762, mean: 1.448
+2026-03-16 22:52:19,163 - INFO - Iteration 5/5
+2026-03-16 22:52:19,164 - INFO - Current training set size: 25
+2026-03-16 22:52:20,151 - INFO - Suggested 3 new configurations
+2026-03-16 22:52:20,152 - INFO - Running dummy calculation in calc_4_0
+2026-03-16 22:52:20,152 - ERROR - Dummy calculation failed for calc_4_0: DummyVasp.get_potential_energy() takes 1 positional argument but 2 were given
+2026-03-16 22:52:20,153 - INFO - Running dummy calculation in calc_4_1
+2026-03-16 22:52:20,153 - ERROR - Dummy calculation failed for calc_4_1: DummyVasp.get_potential_energy() takes 1 positional argument but 2 were given
+2026-03-16 22:52:20,154 - INFO - Running dummy calculation in calc_4_2
+2026-03-16 22:52:20,154 - ERROR - Dummy calculation failed for calc_4_2: DummyVasp.get_potential_energy() takes 1 positional argument but 2 were given
+2026-03-16 22:52:20,156 - INFO - Results saved to bo_test_results
+2026-03-16 22:52:20,156 - INFO - Iteration 5 completed. Training set size: 25
+2026-03-16 22:52:20,156 - INFO - Energy stats - min: 0.472, max: 3.762, mean: 1.448
+2026-03-16 22:52:20,156 - INFO - Optimization completed successfully!
+2026-03-16 22:52:20,156 - INFO - Final training set size: 25
+2026-03-16 22:52:20,156 - INFO - Best energy found: 0.471533 eV
+2026-03-16 22:52:33,302 - INFO - BO Test Mode Parameters:
+2026-03-16 22:52:33,302 - INFO -   train_file_csv: /root/ion/IonInsertML/data/training_Li1.csv
+2026-03-16 22:52:33,302 - INFO -   host_file: /root/ion/IonInsertML/data/POSCAR_host
+2026-03-16 22:52:33,303 - INFO -   params_file: /root/ion/IonInsertML/data/INCAR
+2026-03-16 22:52:33,303 - INFO -   host_energy: -10.5
+2026-03-16 22:52:33,303 - INFO -   int_atom_energy: -2.3
+2026-03-16 22:52:33,303 - INFO -   int_atom: Li
+2026-03-16 22:52:33,303 - INFO -   batch_size: 3
+2026-03-16 22:52:33,303 - INFO -   strat: constant_liar
+2026-03-16 22:52:33,303 - INFO -   N: 5
+2026-03-16 22:52:33,303 - INFO -   n_candidates: 500
+2026-03-16 22:52:33,304 - INFO -   rmin: 1.45
+2026-03-16 22:52:33,304 - INFO -   rmin_insrt: 1.34
+2026-03-16 22:52:33,304 - INFO -   random_state: 42
+2026-03-16 22:52:33,304 - INFO -   xi: 0.01
+2026-03-16 22:52:33,304 - INFO -   test_mode: True
+2026-03-16 22:52:33,304 - INFO - Reading VASP parameters from /root/ion/IonInsertML/data/INCAR
+2026-03-16 22:52:33,305 - INFO - Successfully read 21 parameters from INCAR
+2026-03-16 22:52:33,305 - INFO - Loading host structure from /root/ion/IonInsertML/data/POSCAR_host
+2026-03-16 22:52:33,313 - INFO - Loading training data from /root/ion/IonInsertML/data/training_Li1.csv
+2026-03-16 22:52:33,319 - INFO - Loaded 25 training points
+2026-03-16 22:52:33,319 - INFO - Energy range: [0.472, 3.762]
+2026-03-16 22:52:33,319 - INFO - Initializing Bayesian Optimization
+2026-03-16 22:52:33,326 - INFO - Results saved to bo_test_results
+2026-03-16 22:52:33,326 - INFO - Iteration 1/5
+2026-03-16 22:52:33,326 - INFO - Current training set size: 25
+2026-03-16 22:52:35,104 - INFO - Suggested 3 new configurations
+2026-03-16 22:52:35,105 - INFO - Running dummy calculation in calc_0_0
+2026-03-16 22:52:35,105 - ERROR - Dummy calculation failed for calc_0_0: DummyVasp.get_potential_energy() takes 1 positional argument but 2 were given
+2026-03-16 22:52:35,106 - INFO - Running dummy calculation in calc_0_1
+2026-03-16 22:52:35,107 - ERROR - Dummy calculation failed for calc_0_1: DummyVasp.get_potential_energy() takes 1 positional argument but 2 were given
+2026-03-16 22:52:35,108 - INFO - Running dummy calculation in calc_0_2
+2026-03-16 22:52:35,108 - ERROR - Dummy calculation failed for calc_0_2: DummyVasp.get_potential_energy() takes 1 positional argument but 2 were given
+2026-03-16 22:52:35,112 - INFO - Results saved to bo_test_results
+2026-03-16 22:52:35,112 - INFO - Iteration 1 completed. Training set size: 25
+2026-03-16 22:52:35,113 - INFO - Energy stats - min: 0.472, max: 3.762, mean: 1.448
+2026-03-16 22:52:35,113 - INFO - Iteration 2/5
+2026-03-16 22:52:35,113 - INFO - Current training set size: 25
+2026-03-16 22:52:36,556 - INFO - Suggested 3 new configurations
+2026-03-16 22:52:36,557 - INFO - Running dummy calculation in calc_1_0
+2026-03-16 22:52:36,557 - ERROR - Dummy calculation failed for calc_1_0: DummyVasp.get_potential_energy() takes 1 positional argument but 2 were given
+2026-03-16 22:52:36,558 - INFO - Running dummy calculation in calc_1_1
+2026-03-16 22:52:36,558 - ERROR - Dummy calculation failed for calc_1_1: DummyVasp.get_potential_energy() takes 1 positional argument but 2 were given
+2026-03-16 22:52:36,559 - INFO - Running dummy calculation in calc_1_2
+2026-03-16 22:52:36,559 - ERROR - Dummy calculation failed for calc_1_2: DummyVasp.get_potential_energy() takes 1 positional argument but 2 were given
+2026-03-16 22:52:36,571 - INFO - Results saved to bo_test_results
+2026-03-16 22:52:36,571 - INFO - Iteration 2 completed. Training set size: 25
+2026-03-16 22:52:36,572 - INFO - Energy stats - min: 0.472, max: 3.762, mean: 1.448
+2026-03-16 22:52:36,572 - INFO - Iteration 3/5
+2026-03-16 22:52:36,572 - INFO - Current training set size: 25
+2026-03-16 22:52:38,537 - INFO - Suggested 3 new configurations
+2026-03-16 22:52:38,539 - INFO - Running dummy calculation in calc_2_0
+2026-03-16 22:52:38,539 - ERROR - Dummy calculation failed for calc_2_0: DummyVasp.get_potential_energy() takes 1 positional argument but 2 were given
+2026-03-16 22:52:38,540 - INFO - Running dummy calculation in calc_2_1
+2026-03-16 22:52:38,540 - ERROR - Dummy calculation failed for calc_2_1: DummyVasp.get_potential_energy() takes 1 positional argument but 2 were given
+2026-03-16 22:52:38,541 - INFO - Running dummy calculation in calc_2_2
+2026-03-16 22:52:38,541 - ERROR - Dummy calculation failed for calc_2_2: DummyVasp.get_potential_energy() takes 1 positional argument but 2 were given
+2026-03-16 22:52:38,550 - INFO - Results saved to bo_test_results
+2026-03-16 22:52:38,550 - INFO - Iteration 3 completed. Training set size: 25
+2026-03-16 22:52:38,550 - INFO - Energy stats - min: 0.472, max: 3.762, mean: 1.448
+2026-03-16 22:52:38,550 - INFO - Iteration 4/5
+2026-03-16 22:52:38,550 - INFO - Current training set size: 25
+2026-03-16 22:52:41,453 - INFO - BO Test Mode Parameters:
+2026-03-16 22:52:41,453 - INFO -   train_file_csv: /root/ion/IonInsertML/data/training_Li1.csv
+2026-03-16 22:52:41,453 - INFO -   host_file: /root/ion/IonInsertML/data/POSCAR_host
+2026-03-16 22:52:41,453 - INFO -   params_file: /root/ion/IonInsertML/data/INCAR
+2026-03-16 22:52:41,453 - INFO -   host_energy: -10.5
+2026-03-16 22:52:41,453 - INFO -   int_atom_energy: -2.3
+2026-03-16 22:52:41,453 - INFO -   int_atom: Li
+2026-03-16 22:52:41,453 - INFO -   batch_size: 3
+2026-03-16 22:52:41,453 - INFO -   strat: constant_liar
+2026-03-16 22:52:41,453 - INFO -   N: 5
+2026-03-16 22:52:41,453 - INFO -   n_candidates: 500
+2026-03-16 22:52:41,454 - INFO -   rmin: 1.45
+2026-03-16 22:52:41,454 - INFO -   rmin_insrt: 1.34
+2026-03-16 22:52:41,454 - INFO -   random_state: 42
+2026-03-16 22:52:41,454 - INFO -   xi: 0.01
+2026-03-16 22:52:41,454 - INFO -   test_mode: True
+2026-03-16 22:52:41,454 - INFO - Reading VASP parameters from /root/ion/IonInsertML/data/INCAR
+2026-03-16 22:52:41,454 - INFO - Successfully read 21 parameters from INCAR
+2026-03-16 22:52:41,454 - INFO - Loading host structure from /root/ion/IonInsertML/data/POSCAR_host
+2026-03-16 22:52:41,457 - INFO - Loading training data from /root/ion/IonInsertML/data/training_Li1.csv
+2026-03-16 22:52:41,460 - INFO - Loaded 25 training points
+2026-03-16 22:52:41,460 - INFO - Energy range: [0.472, 3.762]
+2026-03-16 22:52:41,460 - INFO - Initializing Bayesian Optimization
+2026-03-16 22:52:41,463 - INFO - Results saved to bo_test_results
+2026-03-16 22:52:41,463 - INFO - Iteration 1/5
+2026-03-16 22:52:41,464 - INFO - Current training set size: 25
+2026-03-16 22:52:42,411 - INFO - Suggested 3 new configurations
+2026-03-16 22:52:42,412 - INFO - Running dummy calculation in calc_0_0
+2026-03-16 22:52:42,412 - ERROR - Dummy calculation failed for calc_0_0: DummyVasp.get_potential_energy() takes 1 positional argument but 2 were given
+2026-03-16 22:52:42,412 - INFO - Running dummy calculation in calc_0_1
+2026-03-16 22:52:42,412 - ERROR - Dummy calculation failed for calc_0_1: DummyVasp.get_potential_energy() takes 1 positional argument but 2 were given
+2026-03-16 22:52:42,413 - INFO - Running dummy calculation in calc_0_2
+2026-03-16 22:52:42,413 - ERROR - Dummy calculation failed for calc_0_2: DummyVasp.get_potential_energy() takes 1 positional argument but 2 were given
+2026-03-16 22:52:42,415 - INFO - Results saved to bo_test_results
+2026-03-16 22:52:42,415 - INFO - Iteration 1 completed. Training set size: 25
+2026-03-16 22:52:42,416 - INFO - Energy stats - min: 0.472, max: 3.762, mean: 1.448
+2026-03-16 22:52:42,416 - INFO - Iteration 2/5
+2026-03-16 22:52:42,416 - INFO - Current training set size: 25
+2026-03-16 22:52:43,400 - INFO - Suggested 3 new configurations
+2026-03-16 22:52:43,400 - INFO - Running dummy calculation in calc_1_0
+2026-03-16 22:52:43,401 - ERROR - Dummy calculation failed for calc_1_0: DummyVasp.get_potential_energy() takes 1 positional argument but 2 were given
+2026-03-16 22:52:43,401 - INFO - Running dummy calculation in calc_1_1
+2026-03-16 22:52:43,401 - ERROR - Dummy calculation failed for calc_1_1: DummyVasp.get_potential_energy() takes 1 positional argument but 2 were given
+2026-03-16 22:52:43,402 - INFO - Running dummy calculation in calc_1_2
+2026-03-16 22:52:43,402 - ERROR - Dummy calculation failed for calc_1_2: DummyVasp.get_potential_energy() takes 1 positional argument but 2 were given
+2026-03-16 22:52:43,404 - INFO - Results saved to bo_test_results
+2026-03-16 22:52:43,404 - INFO - Iteration 2 completed. Training set size: 25
+2026-03-16 22:52:43,404 - INFO - Energy stats - min: 0.472, max: 3.762, mean: 1.448
+2026-03-16 22:52:43,404 - INFO - Iteration 3/5
+2026-03-16 22:52:43,404 - INFO - Current training set size: 25
+2026-03-16 22:52:44,404 - INFO - Suggested 3 new configurations
+2026-03-16 22:52:44,404 - INFO - Running dummy calculation in calc_2_0
+2026-03-16 22:52:44,405 - ERROR - Dummy calculation failed for calc_2_0: DummyVasp.get_potential_energy() takes 1 positional argument but 2 were given
+2026-03-16 22:52:44,405 - INFO - Running dummy calculation in calc_2_1
+2026-03-16 22:52:44,405 - ERROR - Dummy calculation failed for calc_2_1: DummyVasp.get_potential_energy() takes 1 positional argument but 2 were given
+2026-03-16 22:52:44,406 - INFO - Running dummy calculation in calc_2_2
+2026-03-16 22:52:44,406 - ERROR - Dummy calculation failed for calc_2_2: DummyVasp.get_potential_energy() takes 1 positional argument but 2 were given
+2026-03-16 22:52:44,408 - INFO - Results saved to bo_test_results
+2026-03-16 22:52:44,408 - INFO - Iteration 3 completed. Training set size: 25
+2026-03-16 22:52:44,409 - INFO - Energy stats - min: 0.472, max: 3.762, mean: 1.448
+2026-03-16 22:52:44,409 - INFO - Iteration 4/5
+2026-03-16 22:52:44,409 - INFO - Current training set size: 25
+2026-03-16 22:52:45,530 - INFO - Suggested 3 new configurations
+2026-03-16 22:52:45,531 - INFO - Running dummy calculation in calc_3_0
+2026-03-16 22:52:45,531 - ERROR - Dummy calculation failed for calc_3_0: DummyVasp.get_potential_energy() takes 1 positional argument but 2 were given
+2026-03-16 22:52:45,532 - INFO - Running dummy calculation in calc_3_1
+2026-03-16 22:52:45,532 - ERROR - Dummy calculation failed for calc_3_1: DummyVasp.get_potential_energy() takes 1 positional argument but 2 were given
+2026-03-16 22:52:45,532 - INFO - Running dummy calculation in calc_3_2
+2026-03-16 22:52:45,532 - ERROR - Dummy calculation failed for calc_3_2: DummyVasp.get_potential_energy() takes 1 positional argument but 2 were given
+2026-03-16 22:52:45,535 - INFO - Results saved to bo_test_results
+2026-03-16 22:52:45,535 - INFO - Iteration 4 completed. Training set size: 25
+2026-03-16 22:52:45,535 - INFO - Energy stats - min: 0.472, max: 3.762, mean: 1.448
+2026-03-16 22:52:45,536 - INFO - Iteration 5/5
+2026-03-16 22:52:45,536 - INFO - Current training set size: 25
+2026-03-16 22:52:46,748 - INFO - Suggested 3 new configurations
+2026-03-16 22:52:46,749 - INFO - Running dummy calculation in calc_4_0
+2026-03-16 22:52:46,749 - ERROR - Dummy calculation failed for calc_4_0: DummyVasp.get_potential_energy() takes 1 positional argument but 2 were given
+2026-03-16 22:52:46,750 - INFO - Running dummy calculation in calc_4_1
+2026-03-16 22:52:46,750 - ERROR - Dummy calculation failed for calc_4_1: DummyVasp.get_potential_energy() takes 1 positional argument but 2 were given
+2026-03-16 22:52:46,753 - INFO - Running dummy calculation in calc_4_2
+2026-03-16 22:52:46,753 - ERROR - Dummy calculation failed for calc_4_2: DummyVasp.get_potential_energy() takes 1 positional argument but 2 were given
+2026-03-16 22:52:46,756 - INFO - Results saved to bo_test_results
+2026-03-16 22:52:46,757 - INFO - Iteration 5 completed. Training set size: 25
+2026-03-16 22:52:46,758 - INFO - Energy stats - min: 0.472, max: 3.762, mean: 1.448
+2026-03-16 22:52:46,758 - INFO - Optimization completed successfully!
+2026-03-16 22:52:46,759 - INFO - Final training set size: 25
+2026-03-16 22:52:46,759 - INFO - Best energy found: 0.471533 eV
+2026-03-16 23:32:48,598 - INFO - BO Test Mode Parameters:
+2026-03-16 23:32:48,599 - INFO -   train_file_csv: /root/ion/IonInsertML/data/training_Li1.csv
+2026-03-16 23:32:48,599 - INFO -   host_file: /root/ion/IonInsertML/data/POSCAR_host
+2026-03-16 23:32:48,599 - INFO -   params_file: /root/ion/IonInsertML/data/INCAR
+2026-03-16 23:32:48,599 - INFO -   host_energy: -10.5
+2026-03-16 23:32:48,599 - INFO -   int_atom_energy: -2.3
+2026-03-16 23:32:48,600 - INFO -   int_atom: Li
+2026-03-16 23:32:48,600 - INFO -   batch_size: 3
+2026-03-16 23:32:48,600 - INFO -   strat: constant_liar
+2026-03-16 23:32:48,600 - INFO -   N: 5
+2026-03-16 23:32:48,600 - INFO -   n_candidates: 500
+2026-03-16 23:32:48,600 - INFO -   rmin: 1.45
+2026-03-16 23:32:48,600 - INFO -   rmin_insrt: 1.34
+2026-03-16 23:32:48,600 - INFO -   random_state: 42
+2026-03-16 23:32:48,601 - INFO -   xi: 0.01
+2026-03-16 23:32:48,601 - INFO -   test_mode: True
+2026-03-16 23:32:48,601 - INFO - Reading VASP parameters from /root/ion/IonInsertML/data/INCAR
+2026-03-16 23:32:48,601 - INFO - Successfully read 21 parameters from INCAR
+2026-03-16 23:32:48,601 - INFO - Loading host structure from /root/ion/IonInsertML/data/POSCAR_host
+2026-03-16 23:32:48,615 - INFO - Loading training data from /root/ion/IonInsertML/data/training_Li1.csv
+2026-03-16 23:32:48,626 - INFO - Loaded 25 training points
+2026-03-16 23:32:48,626 - INFO - Energy range: [0.472, 3.762]
+2026-03-16 23:32:48,627 - INFO - Initializing Bayesian Optimization
+2026-03-16 23:32:48,627 - ERROR - Fatal error: 'BayesianOptimization' object has no attribute 'gpr_'
+Traceback (most recent call last):
+  File "/root/ion/IonInsertML/src/ioninsertml/bayesian_opt/evaluate.py", line 220, in main
+    bo = BayesianOptimization(
+         ^^^^^^^^^^^^^^^^^^^^^
+  File "/root/ion/IonInsertML/src/ioninsertml/bayesian_opt/bo.py", line 50, in __init__
+    self.gpr_
+AttributeError: 'BayesianOptimization' object has no attribute 'gpr_'
+2026-03-16 23:35:15,227 - INFO - BO Test Mode Parameters:
+2026-03-16 23:35:15,227 - INFO -   train_file_csv: /root/ion/IonInsertML/data/training_Li1.csv
+2026-03-16 23:35:15,227 - INFO -   host_file: /root/ion/IonInsertML/data/POSCAR_host
+2026-03-16 23:35:15,227 - INFO -   params_file: /root/ion/IonInsertML/data/INCAR
+2026-03-16 23:35:15,227 - INFO -   host_energy: -10.5
+2026-03-16 23:35:15,227 - INFO -   int_atom_energy: -2.3
+2026-03-16 23:35:15,227 - INFO -   int_atom: Li
+2026-03-16 23:35:15,227 - INFO -   batch_size: 3
+2026-03-16 23:35:15,227 - INFO -   strat: constant_liar
+2026-03-16 23:35:15,227 - INFO -   N: 5
+2026-03-16 23:35:15,228 - INFO -   n_candidates: 500
+2026-03-16 23:35:15,228 - INFO -   rmin: 1.45
+2026-03-16 23:35:15,228 - INFO -   rmin_insrt: 1.34
+2026-03-16 23:35:15,228 - INFO -   random_state: 42
+2026-03-16 23:35:15,228 - INFO -   xi: 0.01
+2026-03-16 23:35:15,228 - INFO -   test_mode: True
+2026-03-16 23:35:15,228 - INFO - Reading VASP parameters from /root/ion/IonInsertML/data/INCAR
+2026-03-16 23:35:15,228 - INFO - Successfully read 21 parameters from INCAR
+2026-03-16 23:35:15,228 - INFO - Loading host structure from /root/ion/IonInsertML/data/POSCAR_host
+2026-03-16 23:35:15,237 - INFO - Loading training data from /root/ion/IonInsertML/data/training_Li1.csv
+2026-03-16 23:35:15,249 - INFO - Loaded 25 training points
+2026-03-16 23:35:15,249 - INFO - Energy range: [0.472, 3.762]
+2026-03-16 23:35:15,249 - INFO - Initializing Bayesian Optimization
+2026-03-16 23:35:15,258 - INFO - Results saved to bo_test_results
+2026-03-16 23:35:15,258 - INFO - Iteration 1/5
+2026-03-16 23:35:15,259 - INFO - Current training set size: 25
+2026-03-16 23:35:16,701 - INFO - Suggested 3 new configurations
+2026-03-16 23:35:16,704 - INFO - Running dummy calculation in calc_0_0
+2026-03-16 23:35:16,704 - ERROR - Dummy calculation failed for calc_0_0: DummyVasp.get_potential_energy() takes 1 positional argument but 2 were given
+2026-03-16 23:35:16,705 - INFO - Running dummy calculation in calc_0_1
+2026-03-16 23:35:16,705 - ERROR - Dummy calculation failed for calc_0_1: DummyVasp.get_potential_energy() takes 1 positional argument but 2 were given
+2026-03-16 23:35:16,706 - INFO - Running dummy calculation in calc_0_2
+2026-03-16 23:35:16,707 - ERROR - Dummy calculation failed for calc_0_2: DummyVasp.get_potential_energy() takes 1 positional argument but 2 were given
+2026-03-16 23:35:16,710 - INFO - Results saved to bo_test_results
+2026-03-16 23:35:16,710 - INFO - Iteration 1 completed. Training set size: 25
+2026-03-16 23:35:16,710 - INFO - Energy stats - min: 0.472, max: 3.762, mean: 1.448
+2026-03-16 23:35:16,710 - INFO - Iteration 2/5
+2026-03-16 23:35:16,710 - INFO - Current training set size: 25
+2026-03-16 23:36:19,337 - INFO - BO Test Mode Parameters:
+2026-03-16 23:36:19,337 - INFO -   train_file_csv: /root/ion/IonInsertML/data/training_Li1.csv
+2026-03-16 23:36:19,337 - INFO -   host_file: /root/ion/IonInsertML/data/POSCAR_host
+2026-03-16 23:36:19,337 - INFO -   params_file: /root/ion/IonInsertML/data/INCAR
+2026-03-16 23:36:19,337 - INFO -   host_energy: -10.5
+2026-03-16 23:36:19,337 - INFO -   int_atom_energy: -2.3
+2026-03-16 23:36:19,337 - INFO -   int_atom: Li
+2026-03-16 23:36:19,338 - INFO -   batch_size: 3
+2026-03-16 23:36:19,338 - INFO -   strat: constant_liar
+2026-03-16 23:36:19,338 - INFO -   N: 5
+2026-03-16 23:36:19,338 - INFO -   n_candidates: 500
+2026-03-16 23:36:19,338 - INFO -   rmin: 1.45
+2026-03-16 23:36:19,338 - INFO -   rmin_insrt: 1.34
+2026-03-16 23:36:19,338 - INFO -   random_state: 42
+2026-03-16 23:36:19,338 - INFO -   xi: 0.01
+2026-03-16 23:36:19,338 - INFO -   test_mode: True
+2026-03-16 23:36:19,338 - INFO - Reading VASP parameters from /root/ion/IonInsertML/data/INCAR
+2026-03-16 23:36:19,339 - INFO - Successfully read 21 parameters from INCAR
+2026-03-16 23:36:19,339 - INFO - Loading host structure from /root/ion/IonInsertML/data/POSCAR_host
+2026-03-16 23:36:19,346 - INFO - Loading training data from /root/ion/IonInsertML/data/training_Li1.csv
+2026-03-16 23:36:19,362 - INFO - Loaded 25 training points
+2026-03-16 23:36:19,362 - INFO - Energy range: [0.472, 3.762]
+2026-03-16 23:36:19,363 - INFO - Initializing Bayesian Optimization
+2026-03-16 23:36:19,364 - INFO - Optimizing kernel hyperparameters via LOO-CV
+2026-03-16 23:36:19,364 - ERROR - Fatal error: name 'ModelSelector' is not defined
+Traceback (most recent call last):
+  File "/root/ion/IonInsertML/src/ioninsertml/bayesian_opt/evaluate.py", line 231, in main
+    selector = ModelSelector(
+               ^^^^^^^^^^^^^
+NameError: name 'ModelSelector' is not defined
+2026-03-16 23:37:21,584 - INFO - BO Test Mode Parameters:
+2026-03-16 23:37:21,584 - INFO -   train_file_csv: /root/ion/IonInsertML/data/training_Li1.csv
+2026-03-16 23:37:21,584 - INFO -   host_file: /root/ion/IonInsertML/data/POSCAR_host
+2026-03-16 23:37:21,584 - INFO -   params_file: /root/ion/IonInsertML/data/INCAR
+2026-03-16 23:37:21,584 - INFO -   host_energy: -10.5
+2026-03-16 23:37:21,584 - INFO -   int_atom_energy: -2.3
+2026-03-16 23:37:21,584 - INFO -   int_atom: Li
+2026-03-16 23:37:21,585 - INFO -   batch_size: 3
+2026-03-16 23:37:21,585 - INFO -   strat: constant_liar
+2026-03-16 23:37:21,585 - INFO -   N: 5
+2026-03-16 23:37:21,585 - INFO -   n_candidates: 500
+2026-03-16 23:37:21,585 - INFO -   rmin: 1.45
+2026-03-16 23:37:21,585 - INFO -   rmin_insrt: 1.34
+2026-03-16 23:37:21,585 - INFO -   random_state: 42
+2026-03-16 23:37:21,585 - INFO -   xi: 0.01
+2026-03-16 23:37:21,585 - INFO -   test_mode: True
+2026-03-16 23:37:21,585 - INFO - Reading VASP parameters from /root/ion/IonInsertML/data/INCAR
+2026-03-16 23:37:21,586 - INFO - Successfully read 21 parameters from INCAR
+2026-03-16 23:37:21,586 - INFO - Loading host structure from /root/ion/IonInsertML/data/POSCAR_host
+2026-03-16 23:37:21,592 - INFO - Loading training data from /root/ion/IonInsertML/data/training_Li1.csv
+2026-03-16 23:37:21,606 - INFO - Loaded 25 training points
+2026-03-16 23:37:21,606 - INFO - Energy range: [0.472, 3.762]
+2026-03-16 23:37:21,607 - INFO - Initializing Bayesian Optimization
+2026-03-16 23:37:21,607 - INFO - Optimizing kernel hyperparameters via LOO-CV
+2026-03-16 23:37:21,611 - ERROR - Fatal error: 'ModelSelector' object has no attribute '_objective_and_grad'
+Traceback (most recent call last):
+  File "/root/ion/IonInsertML/src/ioninsertml/bayesian_opt/evaluate.py", line 239, in main
+    optimized_kernel = selector.find_via_scipy(method='L-BFGS-B')
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/ion/IonInsertML/src/ioninsertml/bayesian_opt/model_selector.py", line 74, in find_via_scipy
+    res = minimize( fun=lambda th: self._objective_and_grad(th)[0],jac=lambda th: self._objective_and_grad(th)[1],x0=x0, method=method, bounds=bounds,options=options or {'maxiter': 200, 'disp': False}
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/ion/IonInsertML/.venv/lib/python3.12/site-packages/scipy/optimize/_minimize.py", line 784, in minimize
+    res = _minimize_lbfgsb(fun, x0, args, jac, bounds,
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/ion/IonInsertML/.venv/lib/python3.12/site-packages/scipy/optimize/_lbfgsb_py.py", line 413, in _minimize_lbfgsb
+    sf = _prepare_scalar_function(fun, x0, jac=jac, args=args, epsilon=eps,
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/ion/IonInsertML/.venv/lib/python3.12/site-packages/scipy/optimize/_optimize.py", line 310, in _prepare_scalar_function
+    sf = ScalarFunction(fun, x0, args, grad, hess,
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/ion/IonInsertML/.venv/lib/python3.12/site-packages/scipy/optimize/_differentiable_functions.py", line 283, in __init__
+    self._update_fun()
+  File "/root/ion/IonInsertML/.venv/lib/python3.12/site-packages/scipy/optimize/_differentiable_functions.py", line 362, in _update_fun
+    fx = self._wrapped_fun(self.x)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/ion/IonInsertML/.venv/lib/python3.12/site-packages/scipy/_lib/_util.py", line 603, in __call__
+    fx = self.f(np.copy(x), *self.args)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/ion/IonInsertML/src/ioninsertml/bayesian_opt/model_selector.py", line 74, in <lambda>
+    res = minimize( fun=lambda th: self._objective_and_grad(th)[0],jac=lambda th: self._objective_and_grad(th)[1],x0=x0, method=method, bounds=bounds,options=options or {'maxiter': 200, 'disp': False}
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ModelSelector' object has no attribute '_objective_and_grad'
+2026-03-16 23:38:02,804 - INFO - BO Test Mode Parameters:
+2026-03-16 23:38:02,804 - INFO -   train_file_csv: /root/ion/IonInsertML/data/training_Li1.csv
+2026-03-16 23:38:02,804 - INFO -   host_file: /root/ion/IonInsertML/data/POSCAR_host
+2026-03-16 23:38:02,804 - INFO -   params_file: /root/ion/IonInsertML/data/INCAR
+2026-03-16 23:38:02,804 - INFO -   host_energy: -10.5
+2026-03-16 23:38:02,804 - INFO -   int_atom_energy: -2.3
+2026-03-16 23:38:02,804 - INFO -   int_atom: Li
+2026-03-16 23:38:02,804 - INFO -   batch_size: 3
+2026-03-16 23:38:02,804 - INFO -   strat: constant_liar
+2026-03-16 23:38:02,804 - INFO -   N: 5
+2026-03-16 23:38:02,805 - INFO -   n_candidates: 500
+2026-03-16 23:38:02,805 - INFO -   rmin: 1.45
+2026-03-16 23:38:02,805 - INFO -   rmin_insrt: 1.34
+2026-03-16 23:38:02,805 - INFO -   random_state: 42
+2026-03-16 23:38:02,805 - INFO -   xi: 0.01
+2026-03-16 23:38:02,805 - INFO -   test_mode: True
+2026-03-16 23:38:02,805 - INFO - Reading VASP parameters from /root/ion/IonInsertML/data/INCAR
+2026-03-16 23:38:02,805 - INFO - Successfully read 21 parameters from INCAR
+2026-03-16 23:38:02,805 - INFO - Loading host structure from /root/ion/IonInsertML/data/POSCAR_host
+2026-03-16 23:38:02,811 - INFO - Loading training data from /root/ion/IonInsertML/data/training_Li1.csv
+2026-03-16 23:38:02,829 - INFO - Loaded 25 training points
+2026-03-16 23:38:02,829 - INFO - Energy range: [0.472, 3.762]
+2026-03-16 23:38:02,829 - INFO - Initializing Bayesian Optimization
+2026-03-16 23:38:02,830 - INFO - Optimizing kernel hyperparameters via LOO-CV
+2026-03-16 23:38:02,849 - ERROR - Fatal error: 'NoneType' object has no attribute 'kernel'
+Traceback (most recent call last):
+  File "/root/ion/IonInsertML/src/ioninsertml/bayesian_opt/evaluate.py", line 241, in main
+    bo.gpr_.kernel = optimized_kernel
+    ^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'kernel'
+2026-03-16 23:38:59,839 - INFO - BO Test Mode Parameters:
+2026-03-16 23:38:59,839 - INFO -   train_file_csv: /root/ion/IonInsertML/data/training_Li1.csv
+2026-03-16 23:38:59,840 - INFO -   host_file: /root/ion/IonInsertML/data/POSCAR_host
+2026-03-16 23:38:59,840 - INFO -   params_file: /root/ion/IonInsertML/data/INCAR
+2026-03-16 23:38:59,840 - INFO -   host_energy: -10.5
+2026-03-16 23:38:59,840 - INFO -   int_atom_energy: -2.3
+2026-03-16 23:38:59,840 - INFO -   int_atom: Li
+2026-03-16 23:38:59,840 - INFO -   batch_size: 3
+2026-03-16 23:38:59,840 - INFO -   strat: constant_liar
+2026-03-16 23:38:59,840 - INFO -   N: 5
+2026-03-16 23:38:59,840 - INFO -   n_candidates: 500
+2026-03-16 23:38:59,841 - INFO -   rmin: 1.45
+2026-03-16 23:38:59,841 - INFO -   rmin_insrt: 1.34
+2026-03-16 23:38:59,841 - INFO -   random_state: 42
+2026-03-16 23:38:59,841 - INFO -   xi: 0.01
+2026-03-16 23:38:59,841 - INFO -   test_mode: True
+2026-03-16 23:38:59,841 - INFO - Reading VASP parameters from /root/ion/IonInsertML/data/INCAR
+2026-03-16 23:38:59,841 - INFO - Successfully read 21 parameters from INCAR
+2026-03-16 23:38:59,842 - INFO - Loading host structure from /root/ion/IonInsertML/data/POSCAR_host
+2026-03-16 23:38:59,863 - INFO - Loading training data from /root/ion/IonInsertML/data/training_Li1.csv
+2026-03-16 23:38:59,900 - INFO - Loaded 25 training points
+2026-03-16 23:38:59,900 - INFO - Energy range: [0.472, 3.762]
+2026-03-16 23:38:59,900 - INFO - Initializing Bayesian Optimization
+2026-03-16 23:38:59,906 - INFO - Optimizing kernel hyperparameters via LOO-CV
+2026-03-16 23:38:59,935 - INFO - Optimized kernel: RBF(length_scale=1e-05) + WhiteKernel(noise_level=1e-05)
+2026-03-16 23:38:59,948 - INFO - Results saved to bo_test_results
+2026-03-16 23:38:59,948 - INFO - Iteration 1/5
+2026-03-16 23:38:59,948 - INFO - Current training set size: 25
+2026-03-16 23:39:01,608 - INFO - Suggested 3 new configurations
+2026-03-16 23:39:01,609 - INFO - Running dummy calculation in calc_0_0
+2026-03-16 23:39:01,609 - ERROR - Dummy calculation failed for calc_0_0: DummyVasp.get_potential_energy() takes 1 positional argument but 2 were given
+2026-03-16 23:39:01,610 - INFO - Running dummy calculation in calc_0_1
+2026-03-16 23:39:01,610 - ERROR - Dummy calculation failed for calc_0_1: DummyVasp.get_potential_energy() takes 1 positional argument but 2 were given
+2026-03-16 23:39:01,611 - INFO - Running dummy calculation in calc_0_2
+2026-03-16 23:39:01,611 - ERROR - Dummy calculation failed for calc_0_2: DummyVasp.get_potential_energy() takes 1 positional argument but 2 were given
+2026-03-16 23:39:01,614 - INFO - Results saved to bo_test_results
+2026-03-16 23:39:01,614 - INFO - Iteration 1 completed. Training set size: 25
+2026-03-16 23:39:01,614 - INFO - Energy stats - min: 0.472, max: 3.762, mean: 1.448
+2026-03-16 23:39:01,614 - INFO - Iteration 2/5
+2026-03-16 23:39:01,614 - INFO - Current training set size: 25
+2026-03-16 23:39:02,905 - INFO - Suggested 3 new configurations
+2026-03-16 23:39:02,906 - INFO - Running dummy calculation in calc_1_0
+2026-03-16 23:39:02,906 - ERROR - Dummy calculation failed for calc_1_0: DummyVasp.get_potential_energy() takes 1 positional argument but 2 were given
+2026-03-16 23:39:02,907 - INFO - Running dummy calculation in calc_1_1
+2026-03-16 23:39:02,907 - ERROR - Dummy calculation failed for calc_1_1: DummyVasp.get_potential_energy() takes 1 positional argument but 2 were given
+2026-03-16 23:39:02,908 - INFO - Running dummy calculation in calc_1_2
+2026-03-16 23:39:02,908 - ERROR - Dummy calculation failed for calc_1_2: DummyVasp.get_potential_energy() takes 1 positional argument but 2 were given
+2026-03-16 23:39:02,912 - INFO - Results saved to bo_test_results
+2026-03-16 23:39:02,912 - INFO - Iteration 2 completed. Training set size: 25
+2026-03-16 23:39:02,912 - INFO - Energy stats - min: 0.472, max: 3.762, mean: 1.448
+2026-03-16 23:39:02,912 - INFO - Iteration 3/5
+2026-03-16 23:39:02,912 - INFO - Current training set size: 25
+2026-03-16 23:39:04,052 - INFO - Suggested 3 new configurations
+2026-03-16 23:39:04,053 - INFO - Running dummy calculation in calc_2_0
+2026-03-16 23:39:04,053 - ERROR - Dummy calculation failed for calc_2_0: DummyVasp.get_potential_energy() takes 1 positional argument but 2 were given
+2026-03-16 23:39:04,056 - INFO - Running dummy calculation in calc_2_1
+2026-03-16 23:39:04,056 - ERROR - Dummy calculation failed for calc_2_1: DummyVasp.get_potential_energy() takes 1 positional argument but 2 were given
+2026-03-16 23:39:04,058 - INFO - Running dummy calculation in calc_2_2
+2026-03-16 23:39:04,058 - ERROR - Dummy calculation failed for calc_2_2: DummyVasp.get_potential_energy() takes 1 positional argument but 2 were given
+2026-03-16 23:39:04,067 - INFO - Results saved to bo_test_results
+2026-03-16 23:39:04,069 - INFO - Iteration 3 completed. Training set size: 25
+2026-03-16 23:39:04,070 - INFO - Energy stats - min: 0.472, max: 3.762, mean: 1.448
+2026-03-16 23:39:04,070 - INFO - Iteration 4/5
+2026-03-16 23:39:04,071 - INFO - Current training set size: 25
+2026-03-16 23:39:05,036 - INFO - Suggested 3 new configurations
+2026-03-16 23:39:05,036 - INFO - Running dummy calculation in calc_3_0
+2026-03-16 23:39:05,036 - ERROR - Dummy calculation failed for calc_3_0: DummyVasp.get_potential_energy() takes 1 positional argument but 2 were given
+2026-03-16 23:39:05,037 - INFO - Running dummy calculation in calc_3_1
+2026-03-16 23:39:05,037 - ERROR - Dummy calculation failed for calc_3_1: DummyVasp.get_potential_energy() takes 1 positional argument but 2 were given
+2026-03-16 23:39:05,037 - INFO - Running dummy calculation in calc_3_2
+2026-03-16 23:39:05,038 - ERROR - Dummy calculation failed for calc_3_2: DummyVasp.get_potential_energy() takes 1 positional argument but 2 were given
+2026-03-16 23:39:05,040 - INFO - Results saved to bo_test_results
+2026-03-16 23:39:05,040 - INFO - Iteration 4 completed. Training set size: 25
+2026-03-16 23:39:05,040 - INFO - Energy stats - min: 0.472, max: 3.762, mean: 1.448
+2026-03-16 23:39:05,040 - INFO - Iteration 5/5
+2026-03-16 23:39:05,040 - INFO - Current training set size: 25
+2026-03-16 23:39:06,052 - INFO - Suggested 3 new configurations
+2026-03-16 23:39:06,053 - INFO - Running dummy calculation in calc_4_0
+2026-03-16 23:39:06,053 - ERROR - Dummy calculation failed for calc_4_0: DummyVasp.get_potential_energy() takes 1 positional argument but 2 were given
+2026-03-16 23:39:06,053 - INFO - Running dummy calculation in calc_4_1
+2026-03-16 23:39:06,053 - ERROR - Dummy calculation failed for calc_4_1: DummyVasp.get_potential_energy() takes 1 positional argument but 2 were given
+2026-03-16 23:39:06,054 - INFO - Running dummy calculation in calc_4_2
+2026-03-16 23:39:06,054 - ERROR - Dummy calculation failed for calc_4_2: DummyVasp.get_potential_energy() takes 1 positional argument but 2 were given
+2026-03-16 23:39:06,057 - INFO - Results saved to bo_test_results
+2026-03-16 23:39:06,057 - INFO - Iteration 5 completed. Training set size: 25
+2026-03-16 23:39:06,057 - INFO - Energy stats - min: 0.472, max: 3.762, mean: 1.448
+2026-03-16 23:39:06,058 - INFO - Optimization completed successfully!
+2026-03-16 23:39:06,059 - INFO - Final training set size: 25
+2026-03-16 23:39:06,059 - INFO - Best energy found: 0.471533 eV
+2026-03-16 23:43:45,613 - INFO - BO Test Mode Parameters:
+2026-03-16 23:43:45,614 - INFO -   train_file_csv: /root/ion/IonInsertML/data/training_Li1.csv
+2026-03-16 23:43:45,614 - INFO -   host_file: /root/ion/IonInsertML/data/POSCAR_host
+2026-03-16 23:43:45,614 - INFO -   params_file: /root/ion/IonInsertML/data/INCAR
+2026-03-16 23:43:45,614 - INFO -   host_energy: -10.5
+2026-03-16 23:43:45,614 - INFO -   int_atom_energy: -2.3
+2026-03-16 23:43:45,614 - INFO -   int_atom: Li
+2026-03-16 23:43:45,614 - INFO -   batch_size: 3
+2026-03-16 23:43:45,615 - INFO -   strat: constant_liar
+2026-03-16 23:43:45,615 - INFO -   N: 5
+2026-03-16 23:43:45,615 - INFO -   n_candidates: 500
+2026-03-16 23:43:45,615 - INFO -   rmin: 1.45
+2026-03-16 23:43:45,615 - INFO -   rmin_insrt: 1.34
+2026-03-16 23:43:45,615 - INFO -   random_state: 42
+2026-03-16 23:43:45,615 - INFO -   xi: 0.01
+2026-03-16 23:43:45,615 - INFO -   test_mode: True
+2026-03-16 23:43:45,616 - INFO - Reading VASP parameters from /root/ion/IonInsertML/data/INCAR
+2026-03-16 23:43:45,616 - INFO - Successfully read 21 parameters from INCAR
+2026-03-16 23:43:45,616 - INFO - Loading host structure from /root/ion/IonInsertML/data/POSCAR_host
+2026-03-16 23:43:45,629 - INFO - Loading training data from /root/ion/IonInsertML/data/training_Li1.csv
+2026-03-16 23:43:45,649 - INFO - Loaded 25 training points
+2026-03-16 23:43:45,649 - INFO - Energy range: [0.472, 3.762]
+2026-03-16 23:43:45,649 - INFO - Initializing Bayesian Optimization
+2026-03-16 23:43:45,651 - INFO - Optimizing kernel hyperparameters via LOO-CV
+2026-03-16 23:43:45,670 - INFO - Optimized kernel: RBF(length_scale=1e-05) + WhiteKernel(noise_level=1e-05)
+2026-03-16 23:43:45,676 - INFO - Results saved to bo_test_results
+2026-03-16 23:43:45,676 - INFO - Iteration 1/5
+2026-03-16 23:43:45,676 - INFO - Current training set size: 25
+2026-03-16 23:43:47,201 - INFO - Suggested 3 new configurations
+2026-03-16 23:43:47,205 - INFO - Running dummy calculation in calc_0_0
+2026-03-16 23:43:47,206 - ERROR - Dummy calculation failed for calc_0_0: DummyVasp.get_potential_energy() takes 1 positional argument but 2 were given
+2026-03-16 23:43:47,207 - INFO - Running dummy calculation in calc_0_1
+2026-03-16 23:43:47,208 - ERROR - Dummy calculation failed for calc_0_1: DummyVasp.get_potential_energy() takes 1 positional argument but 2 were given
+2026-03-16 23:43:47,222 - INFO - Running dummy calculation in calc_0_2
+2026-03-16 23:43:47,223 - ERROR - Dummy calculation failed for calc_0_2: DummyVasp.get_potential_energy() takes 1 positional argument but 2 were given
+2026-03-16 23:43:47,241 - INFO - Results saved to bo_test_results
+2026-03-16 23:43:47,242 - INFO - Iteration 1 completed. Training set size: 25
+2026-03-16 23:43:47,242 - INFO - Energy stats - min: 0.472, max: 3.762, mean: 1.448
+2026-03-16 23:43:47,243 - INFO - Iteration 2/5
+2026-03-16 23:43:47,243 - INFO - Current training set size: 25
+2026-03-16 23:43:48,852 - INFO - Suggested 3 new configurations
+2026-03-16 23:43:48,854 - INFO - Running dummy calculation in calc_1_0
+2026-03-16 23:43:48,854 - ERROR - Dummy calculation failed for calc_1_0: DummyVasp.get_potential_energy() takes 1 positional argument but 2 were given
+2026-03-16 23:43:48,854 - INFO - Running dummy calculation in calc_1_1
+2026-03-16 23:43:48,854 - ERROR - Dummy calculation failed for calc_1_1: DummyVasp.get_potential_energy() takes 1 positional argument but 2 were given
+2026-03-16 23:43:48,855 - INFO - Running dummy calculation in calc_1_2
+2026-03-16 23:43:48,855 - ERROR - Dummy calculation failed for calc_1_2: DummyVasp.get_potential_energy() takes 1 positional argument but 2 were given
+2026-03-16 23:43:48,858 - INFO - Results saved to bo_test_results
+2026-03-16 23:43:48,858 - INFO - Iteration 2 completed. Training set size: 25
+2026-03-16 23:43:48,858 - INFO - Energy stats - min: 0.472, max: 3.762, mean: 1.448
+2026-03-16 23:43:48,858 - INFO - Iteration 3/5
+2026-03-16 23:43:48,858 - INFO - Current training set size: 25
+2026-03-16 23:43:49,979 - INFO - Suggested 3 new configurations
+2026-03-16 23:43:49,982 - INFO - Running dummy calculation in calc_2_0
+2026-03-16 23:43:49,982 - ERROR - Dummy calculation failed for calc_2_0: DummyVasp.get_potential_energy() takes 1 positional argument but 2 were given
+2026-03-16 23:43:49,983 - INFO - Running dummy calculation in calc_2_1
+2026-03-16 23:43:49,983 - ERROR - Dummy calculation failed for calc_2_1: DummyVasp.get_potential_energy() takes 1 positional argument but 2 were given
+2026-03-16 23:43:49,984 - INFO - Running dummy calculation in calc_2_2
+2026-03-16 23:43:49,984 - ERROR - Dummy calculation failed for calc_2_2: DummyVasp.get_potential_energy() takes 1 positional argument but 2 were given
+2026-03-16 23:43:49,987 - INFO - Results saved to bo_test_results
+2026-03-16 23:43:49,987 - INFO - Iteration 3 completed. Training set size: 25
+2026-03-16 23:43:49,987 - INFO - Energy stats - min: 0.472, max: 3.762, mean: 1.448
+2026-03-16 23:43:49,987 - INFO - Iteration 4/5
+2026-03-16 23:43:49,987 - INFO - Current training set size: 25
+2026-03-16 23:43:51,240 - INFO - Suggested 3 new configurations
+2026-03-16 23:43:51,241 - INFO - Running dummy calculation in calc_3_0
+2026-03-16 23:43:51,241 - ERROR - Dummy calculation failed for calc_3_0: DummyVasp.get_potential_energy() takes 1 positional argument but 2 were given
+2026-03-16 23:43:51,242 - INFO - Running dummy calculation in calc_3_1
+2026-03-16 23:43:51,242 - ERROR - Dummy calculation failed for calc_3_1: DummyVasp.get_potential_energy() takes 1 positional argument but 2 were given
+2026-03-16 23:43:51,242 - INFO - Running dummy calculation in calc_3_2
+2026-03-16 23:43:51,242 - ERROR - Dummy calculation failed for calc_3_2: DummyVasp.get_potential_energy() takes 1 positional argument but 2 were given
+2026-03-16 23:43:51,245 - INFO - Results saved to bo_test_results
+2026-03-16 23:43:51,245 - INFO - Iteration 4 completed. Training set size: 25
+2026-03-16 23:43:51,245 - INFO - Energy stats - min: 0.472, max: 3.762, mean: 1.448
+2026-03-16 23:43:51,245 - INFO - Iteration 5/5
+2026-03-16 23:43:51,245 - INFO - Current training set size: 25
+2026-03-16 23:43:52,415 - INFO - Suggested 3 new configurations
+2026-03-16 23:43:52,422 - INFO - Running dummy calculation in calc_4_0
+2026-03-16 23:43:52,422 - ERROR - Dummy calculation failed for calc_4_0: DummyVasp.get_potential_energy() takes 1 positional argument but 2 were given
+2026-03-16 23:43:52,423 - INFO - Running dummy calculation in calc_4_1
+2026-03-16 23:43:52,423 - ERROR - Dummy calculation failed for calc_4_1: DummyVasp.get_potential_energy() takes 1 positional argument but 2 were given
+2026-03-16 23:43:52,423 - INFO - Running dummy calculation in calc_4_2
+2026-03-16 23:43:52,424 - ERROR - Dummy calculation failed for calc_4_2: DummyVasp.get_potential_energy() takes 1 positional argument but 2 were given
+2026-03-16 23:43:52,427 - INFO - Results saved to bo_test_results
+2026-03-16 23:43:52,427 - INFO - Iteration 5 completed. Training set size: 25
+2026-03-16 23:43:52,427 - INFO - Energy stats - min: 0.472, max: 3.762, mean: 1.448
+2026-03-16 23:43:52,427 - INFO - Optimization completed successfully!
+2026-03-16 23:43:52,427 - INFO - Final training set size: 25
+2026-03-16 23:43:52,428 - INFO - Best energy found: 0.471533 eV
+2026-03-16 23:44:12,802 - INFO - BO Test Mode Parameters:
+2026-03-16 23:44:12,803 - INFO -   train_file_csv: /root/ion/IonInsertML/data/training_Li1.csv
+2026-03-16 23:44:12,803 - INFO -   host_file: /root/ion/IonInsertML/data/POSCAR_host
+2026-03-16 23:44:12,803 - INFO -   params_file: /root/ion/IonInsertML/data/INCAR
+2026-03-16 23:44:12,803 - INFO -   host_energy: -10.5
+2026-03-16 23:44:12,803 - INFO -   int_atom_energy: -2.3
+2026-03-16 23:44:12,803 - INFO -   int_atom: Li
+2026-03-16 23:44:12,803 - INFO -   batch_size: 3
+2026-03-16 23:44:12,803 - INFO -   strat: constant_liar
+2026-03-16 23:44:12,803 - INFO -   N: 5
+2026-03-16 23:44:12,803 - INFO -   n_candidates: 500
+2026-03-16 23:44:12,804 - INFO -   rmin: 1.45
+2026-03-16 23:44:12,804 - INFO -   rmin_insrt: 1.34
+2026-03-16 23:44:12,804 - INFO -   random_state: 42
+2026-03-16 23:44:12,804 - INFO -   xi: 0.01
+2026-03-16 23:44:12,804 - INFO -   test_mode: True
+2026-03-16 23:44:12,804 - INFO - Reading VASP parameters from /root/ion/IonInsertML/data/INCAR
+2026-03-16 23:44:12,804 - INFO - Successfully read 21 parameters from INCAR
+2026-03-16 23:44:12,805 - INFO - Loading host structure from /root/ion/IonInsertML/data/POSCAR_host
+2026-03-16 23:44:12,817 - INFO - Loading training data from /root/ion/IonInsertML/data/training_Li1.csv
+2026-03-16 23:44:12,827 - INFO - Loaded 25 training points
+2026-03-16 23:44:12,828 - INFO - Energy range: [0.472, 3.762]
+2026-03-16 23:44:12,828 - INFO - Initializing Bayesian Optimization
+2026-03-16 23:44:12,829 - INFO - Optimizing kernel hyperparameters via LOO-CV
+2026-03-16 23:44:12,842 - INFO - Optimized kernel: RBF(length_scale=1e-05) + WhiteKernel(noise_level=1e-05)
+2026-03-16 23:44:12,848 - INFO - Results saved to bo_test_results
+2026-03-16 23:44:12,848 - INFO - Iteration 1/5
+2026-03-16 23:44:12,848 - INFO - Current training set size: 25
+2026-03-16 23:44:14,022 - INFO - Suggested 3 new configurations
+2026-03-16 23:44:14,023 - INFO - Running dummy calculation in calc_0_0
+2026-03-16 23:44:14,027 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-16 23:44:14,027 - INFO - New intercalation energy: 2.674540 eV
+2026-03-16 23:44:14,028 - INFO - Structure saved to calc_0_0/POSCAR_with_Li
+2026-03-16 23:44:14,029 - INFO - Running dummy calculation in calc_0_1
+2026-03-16 23:44:14,030 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-16 23:44:14,030 - INFO - New intercalation energy: 2.674540 eV
+2026-03-16 23:44:14,030 - INFO - Structure saved to calc_0_1/POSCAR_with_Li
+2026-03-16 23:44:14,031 - INFO - Running dummy calculation in calc_0_2
+2026-03-16 23:44:14,032 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-16 23:44:14,032 - INFO - New intercalation energy: 2.674540 eV
+2026-03-16 23:44:14,033 - INFO - Structure saved to calc_0_2/POSCAR_with_Li
+2026-03-16 23:44:14,037 - INFO - Results saved to bo_test_results
+2026-03-16 23:44:14,039 - INFO - Iteration 1 completed. Training set size: 28
+2026-03-16 23:44:14,039 - INFO - Energy stats - min: 0.472, max: 3.762, mean: 1.579
+2026-03-16 23:44:14,039 - INFO - Iteration 2/5
+2026-03-16 23:44:14,039 - INFO - Current training set size: 28
+2026-03-16 23:44:15,405 - INFO - Suggested 3 new configurations
+2026-03-16 23:44:15,411 - INFO - Running dummy calculation in calc_1_0
+2026-03-16 23:44:15,411 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-16 23:44:15,412 - INFO - New intercalation energy: 2.674540 eV
+2026-03-16 23:44:15,415 - INFO - Structure saved to calc_1_0/POSCAR_with_Li
+2026-03-16 23:44:15,416 - INFO - Running dummy calculation in calc_1_1
+2026-03-16 23:44:15,417 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-16 23:44:15,417 - INFO - New intercalation energy: 2.674540 eV
+2026-03-16 23:44:15,418 - INFO - Structure saved to calc_1_1/POSCAR_with_Li
+2026-03-16 23:44:15,419 - INFO - Running dummy calculation in calc_1_2
+2026-03-16 23:44:15,420 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-16 23:44:15,420 - INFO - New intercalation energy: 2.674540 eV
+2026-03-16 23:44:15,420 - INFO - Structure saved to calc_1_2/POSCAR_with_Li
+2026-03-16 23:44:15,423 - INFO - Results saved to bo_test_results
+2026-03-16 23:44:15,424 - INFO - Iteration 2 completed. Training set size: 31
+2026-03-16 23:44:15,424 - INFO - Energy stats - min: 0.472, max: 3.762, mean: 1.685
+2026-03-16 23:44:15,424 - INFO - Iteration 3/5
+2026-03-16 23:44:15,424 - INFO - Current training set size: 31
+2026-03-16 23:44:16,479 - INFO - Suggested 3 new configurations
+2026-03-16 23:44:16,480 - INFO - Running dummy calculation in calc_2_0
+2026-03-16 23:44:16,481 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-16 23:44:16,481 - INFO - New intercalation energy: 2.674540 eV
+2026-03-16 23:44:16,482 - INFO - Structure saved to calc_2_0/POSCAR_with_Li
+2026-03-16 23:44:16,482 - INFO - Running dummy calculation in calc_2_1
+2026-03-16 23:44:16,483 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-16 23:44:16,483 - INFO - New intercalation energy: 2.674540 eV
+2026-03-16 23:44:16,484 - INFO - Structure saved to calc_2_1/POSCAR_with_Li
+2026-03-16 23:44:16,485 - INFO - Running dummy calculation in calc_2_2
+2026-03-16 23:44:16,486 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-16 23:44:16,486 - INFO - New intercalation energy: 2.674540 eV
+2026-03-16 23:44:16,487 - INFO - Structure saved to calc_2_2/POSCAR_with_Li
+2026-03-16 23:44:16,489 - INFO - Results saved to bo_test_results
+2026-03-16 23:44:16,489 - INFO - Iteration 3 completed. Training set size: 34
+2026-03-16 23:44:16,489 - INFO - Energy stats - min: 0.472, max: 3.762, mean: 1.772
+2026-03-16 23:44:16,489 - INFO - Iteration 4/5
+2026-03-16 23:44:16,490 - INFO - Current training set size: 34
+2026-03-16 23:44:17,487 - INFO - Suggested 3 new configurations
+2026-03-16 23:44:17,488 - INFO - Running dummy calculation in calc_3_0
+2026-03-16 23:44:17,490 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-16 23:44:17,490 - INFO - New intercalation energy: 2.674540 eV
+2026-03-16 23:44:17,490 - INFO - Structure saved to calc_3_0/POSCAR_with_Li
+2026-03-16 23:44:17,491 - INFO - Running dummy calculation in calc_3_1
+2026-03-16 23:44:17,491 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-16 23:44:17,491 - INFO - New intercalation energy: 2.674540 eV
+2026-03-16 23:44:17,492 - INFO - Structure saved to calc_3_1/POSCAR_with_Li
+2026-03-16 23:44:17,492 - INFO - Running dummy calculation in calc_3_2
+2026-03-16 23:44:17,493 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-16 23:44:17,493 - INFO - New intercalation energy: 2.674540 eV
+2026-03-16 23:44:17,494 - INFO - Structure saved to calc_3_2/POSCAR_with_Li
+2026-03-16 23:44:17,496 - INFO - Results saved to bo_test_results
+2026-03-16 23:44:17,496 - INFO - Iteration 4 completed. Training set size: 37
+2026-03-16 23:44:17,496 - INFO - Energy stats - min: 0.472, max: 3.762, mean: 1.845
+2026-03-16 23:44:17,497 - INFO - Iteration 5/5
+2026-03-16 23:44:17,497 - INFO - Current training set size: 37
+2026-03-16 23:44:18,569 - INFO - Suggested 3 new configurations
+2026-03-16 23:44:18,570 - INFO - Running dummy calculation in calc_4_0
+2026-03-16 23:44:18,570 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-16 23:44:18,570 - INFO - New intercalation energy: 2.674540 eV
+2026-03-16 23:44:18,571 - INFO - Structure saved to calc_4_0/POSCAR_with_Li
+2026-03-16 23:44:18,571 - INFO - Running dummy calculation in calc_4_1
+2026-03-16 23:44:18,572 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-16 23:44:18,572 - INFO - New intercalation energy: 2.674540 eV
+2026-03-16 23:44:18,573 - INFO - Structure saved to calc_4_1/POSCAR_with_Li
+2026-03-16 23:44:18,574 - INFO - Running dummy calculation in calc_4_2
+2026-03-16 23:44:18,575 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-16 23:44:18,575 - INFO - New intercalation energy: 2.674540 eV
+2026-03-16 23:44:18,576 - INFO - Structure saved to calc_4_2/POSCAR_with_Li
+2026-03-16 23:44:18,578 - INFO - Results saved to bo_test_results
+2026-03-16 23:44:18,578 - INFO - Iteration 5 completed. Training set size: 40
+2026-03-16 23:44:18,578 - INFO - Energy stats - min: 0.472, max: 3.762, mean: 1.908
+2026-03-16 23:44:18,578 - INFO - Optimization completed successfully!
+2026-03-16 23:44:18,578 - INFO - Final training set size: 40
+2026-03-16 23:44:18,578 - INFO - Best energy found: 0.471533 eV
+2026-03-16 23:45:04,648 - INFO - BO Test Mode Parameters:
+2026-03-16 23:45:04,648 - INFO -   train_file_csv: /root/ion/IonInsertML/data/training_Li1.csv
+2026-03-16 23:45:04,648 - INFO -   host_file: /root/ion/IonInsertML/data/POSCAR_host
+2026-03-16 23:45:04,648 - INFO -   params_file: /root/ion/IonInsertML/data/INCAR
+2026-03-16 23:45:04,649 - INFO -   host_energy: -10.5
+2026-03-16 23:45:04,649 - INFO -   int_atom_energy: -2.3
+2026-03-16 23:45:04,649 - INFO -   int_atom: Li
+2026-03-16 23:45:04,649 - INFO -   batch_size: 3
+2026-03-16 23:45:04,649 - INFO -   strat: constant_liar
+2026-03-16 23:45:04,649 - INFO -   N: 5
+2026-03-16 23:45:04,649 - INFO -   n_candidates: 500
+2026-03-16 23:45:04,650 - INFO -   rmin: 1.45
+2026-03-16 23:45:04,650 - INFO -   rmin_insrt: 1.34
+2026-03-16 23:45:04,650 - INFO -   random_state: 42
+2026-03-16 23:45:04,650 - INFO -   xi: 0.01
+2026-03-16 23:45:04,650 - INFO -   test_mode: True
+2026-03-16 23:45:04,650 - INFO - Reading VASP parameters from /root/ion/IonInsertML/data/INCAR
+2026-03-16 23:45:04,651 - INFO - Successfully read 21 parameters from INCAR
+2026-03-16 23:45:04,651 - INFO - Loading host structure from /root/ion/IonInsertML/data/POSCAR_host
+2026-03-16 23:45:04,658 - INFO - Loading training data from /root/ion/IonInsertML/data/training_Li1.csv
+2026-03-16 23:45:04,678 - INFO - Loaded 25 training points
+2026-03-16 23:45:04,678 - INFO - Energy range: [0.472, 3.762]
+2026-03-16 23:45:04,678 - INFO - Initializing Bayesian Optimization
+2026-03-16 23:45:04,679 - INFO - Optimizing kernel hyperparameters via LOO-CV
+2026-03-16 23:45:04,692 - INFO - Optimized kernel: RBF(length_scale=1e-05) + WhiteKernel(noise_level=1e-05)
+2026-03-16 23:45:04,702 - INFO - Results saved to bo_test_results
+2026-03-16 23:45:04,704 - INFO - Iteration 1/5
+2026-03-16 23:45:04,705 - INFO - Current training set size: 25
+2026-03-16 23:45:06,020 - INFO - Suggested 3 new configurations
+2026-03-16 23:45:06,021 - INFO - Running dummy calculation in calc_0_0
+2026-03-16 23:45:06,022 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-16 23:45:06,022 - INFO - New intercalation energy: 2.674540 eV
+2026-03-16 23:45:06,022 - INFO - Structure saved to calc_0_0/POSCAR_with_Li
+2026-03-16 23:45:06,023 - INFO - Running dummy calculation in calc_0_1
+2026-03-16 23:45:06,023 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-16 23:45:06,023 - INFO - New intercalation energy: 2.674540 eV
+2026-03-16 23:45:06,024 - INFO - Structure saved to calc_0_1/POSCAR_with_Li
+2026-03-16 23:45:06,025 - INFO - Running dummy calculation in calc_0_2
+2026-03-16 23:45:06,025 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-16 23:45:06,025 - INFO - New intercalation energy: 2.674540 eV
+2026-03-16 23:45:06,026 - INFO - Structure saved to calc_0_2/POSCAR_with_Li
+2026-03-16 23:45:06,030 - INFO - Results saved to bo_test_results
+2026-03-16 23:45:06,030 - INFO - Iteration 1 completed. Training set size: 28
+2026-03-16 23:45:06,030 - INFO - Energy stats - min: 0.472, max: 3.762, mean: 1.579
+2026-03-16 23:45:06,031 - INFO - Iteration 2/5
+2026-03-16 23:45:06,031 - INFO - Current training set size: 28
+2026-03-16 23:45:07,105 - INFO - Suggested 3 new configurations
+2026-03-16 23:45:07,105 - INFO - Running dummy calculation in calc_1_0
+2026-03-16 23:45:07,106 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-16 23:45:07,106 - INFO - New intercalation energy: 2.674540 eV
+2026-03-16 23:45:07,107 - INFO - Structure saved to calc_1_0/POSCAR_with_Li
+2026-03-16 23:45:07,107 - INFO - Running dummy calculation in calc_1_1
+2026-03-16 23:45:07,108 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-16 23:45:07,108 - INFO - New intercalation energy: 2.674540 eV
+2026-03-16 23:45:07,108 - INFO - Structure saved to calc_1_1/POSCAR_with_Li
+2026-03-16 23:45:07,109 - INFO - Running dummy calculation in calc_1_2
+2026-03-16 23:45:07,109 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-16 23:45:07,109 - INFO - New intercalation energy: 2.674540 eV
+2026-03-16 23:45:07,111 - INFO - Structure saved to calc_1_2/POSCAR_with_Li
+2026-03-16 23:45:07,113 - INFO - Results saved to bo_test_results
+2026-03-16 23:45:07,113 - INFO - Iteration 2 completed. Training set size: 31
+2026-03-16 23:45:07,113 - INFO - Energy stats - min: 0.472, max: 3.762, mean: 1.685
+2026-03-16 23:45:07,113 - INFO - Iteration 3/5
+2026-03-16 23:45:07,113 - INFO - Current training set size: 31
+2026-03-16 23:45:08,208 - INFO - Suggested 3 new configurations
+2026-03-16 23:45:08,208 - INFO - Running dummy calculation in calc_2_0
+2026-03-16 23:45:08,209 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-16 23:45:08,209 - INFO - New intercalation energy: 2.674540 eV
+2026-03-16 23:45:08,210 - INFO - Structure saved to calc_2_0/POSCAR_with_Li
+2026-03-16 23:45:08,210 - INFO - Running dummy calculation in calc_2_1
+2026-03-16 23:45:08,211 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-16 23:45:08,211 - INFO - New intercalation energy: 2.674540 eV
+2026-03-16 23:45:08,212 - INFO - Structure saved to calc_2_1/POSCAR_with_Li
+2026-03-16 23:45:08,213 - INFO - Running dummy calculation in calc_2_2
+2026-03-16 23:45:08,214 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-16 23:45:08,214 - INFO - New intercalation energy: 2.674540 eV
+2026-03-16 23:45:08,215 - INFO - Structure saved to calc_2_2/POSCAR_with_Li
+2026-03-16 23:45:08,218 - INFO - Results saved to bo_test_results
+2026-03-16 23:45:08,218 - INFO - Iteration 3 completed. Training set size: 34
+2026-03-16 23:45:08,218 - INFO - Energy stats - min: 0.472, max: 3.762, mean: 1.772
+2026-03-16 23:45:08,218 - INFO - Iteration 4/5
+2026-03-16 23:45:08,218 - INFO - Current training set size: 34
+2026-03-16 23:45:10,947 - INFO - Suggested 3 new configurations
+2026-03-16 23:45:10,949 - INFO - Running dummy calculation in calc_3_0
+2026-03-16 23:45:10,949 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-16 23:45:10,950 - INFO - New intercalation energy: 2.674540 eV
+2026-03-16 23:45:10,950 - INFO - Structure saved to calc_3_0/POSCAR_with_Li
+2026-03-16 23:45:10,964 - INFO - Running dummy calculation in calc_3_1
+2026-03-16 23:45:10,967 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-16 23:45:10,968 - INFO - New intercalation energy: 2.674540 eV
+2026-03-16 23:45:10,971 - INFO - Structure saved to calc_3_1/POSCAR_with_Li
+2026-03-16 23:45:10,972 - INFO - Running dummy calculation in calc_3_2
+2026-03-16 23:45:10,973 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-16 23:45:10,973 - INFO - New intercalation energy: 2.674540 eV
+2026-03-16 23:45:10,973 - INFO - Structure saved to calc_3_2/POSCAR_with_Li
+2026-03-16 23:45:11,008 - INFO - Results saved to bo_test_results
+2026-03-16 23:45:11,008 - INFO - Iteration 4 completed. Training set size: 37
+2026-03-16 23:45:11,008 - INFO - Energy stats - min: 0.472, max: 3.762, mean: 1.845
+2026-03-16 23:45:11,008 - INFO - Iteration 5/5
+2026-03-16 23:45:11,008 - INFO - Current training set size: 37
+2026-03-16 23:45:13,394 - INFO - Suggested 3 new configurations
+2026-03-16 23:45:13,395 - INFO - Running dummy calculation in calc_4_0
+2026-03-16 23:45:13,398 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-16 23:45:13,398 - INFO - New intercalation energy: 2.674540 eV
+2026-03-16 23:45:13,398 - INFO - Structure saved to calc_4_0/POSCAR_with_Li
+2026-03-16 23:45:13,399 - INFO - Running dummy calculation in calc_4_1
+2026-03-16 23:45:13,399 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-16 23:45:13,400 - INFO - New intercalation energy: 2.674540 eV
+2026-03-16 23:45:13,400 - INFO - Structure saved to calc_4_1/POSCAR_with_Li
+2026-03-16 23:45:13,401 - INFO - Running dummy calculation in calc_4_2
+2026-03-16 23:45:13,402 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-16 23:45:13,402 - INFO - New intercalation energy: 2.674540 eV
+2026-03-16 23:45:13,402 - INFO - Structure saved to calc_4_2/POSCAR_with_Li
+2026-03-16 23:45:13,406 - INFO - Results saved to bo_test_results
+2026-03-16 23:45:13,406 - INFO - Iteration 5 completed. Training set size: 40
+2026-03-16 23:45:13,407 - INFO - Energy stats - min: 0.472, max: 3.762, mean: 1.908
+2026-03-16 23:45:13,407 - INFO - Optimization completed successfully!
+2026-03-16 23:45:13,407 - INFO - Final training set size: 40
+2026-03-16 23:45:13,407 - INFO - Best energy found: 0.471533 eV
+2026-03-16 23:53:00,787 - INFO - BO Test Mode Parameters:
+2026-03-16 23:53:00,787 - INFO -   train_file_csv: /root/ion/IonInsertML/data/training_Li1.csv
+2026-03-16 23:53:00,787 - INFO -   host_file: /root/ion/IonInsertML/data/POSCAR_host
+2026-03-16 23:53:00,787 - INFO -   params_file: /root/ion/IonInsertML/data/INCAR
+2026-03-16 23:53:00,787 - INFO -   host_energy: -10.5
+2026-03-16 23:53:00,787 - INFO -   int_atom_energy: -2.3
+2026-03-16 23:53:00,787 - INFO -   int_atom: Li
+2026-03-16 23:53:00,788 - INFO -   batch_size: 3
+2026-03-16 23:53:00,788 - INFO -   strat: constant_liar
+2026-03-16 23:53:00,788 - INFO -   N: 5
+2026-03-16 23:53:00,788 - INFO -   n_candidates: 500
+2026-03-16 23:53:00,788 - INFO -   rmin: 1.45
+2026-03-16 23:53:00,788 - INFO -   rmin_insrt: 1.34
+2026-03-16 23:53:00,788 - INFO -   random_state: 42
+2026-03-16 23:53:00,788 - INFO -   xi: 0.01
+2026-03-16 23:53:00,788 - INFO -   test_mode: True
+2026-03-16 23:53:00,788 - INFO - Reading VASP parameters from /root/ion/IonInsertML/data/INCAR
+2026-03-16 23:53:00,789 - INFO - Successfully read 21 parameters from INCAR
+2026-03-16 23:53:00,789 - INFO - Loading host structure from /root/ion/IonInsertML/data/POSCAR_host
+2026-03-16 23:53:00,795 - INFO - Loading training data from /root/ion/IonInsertML/data/training_Li1.csv
+2026-03-16 23:53:00,812 - INFO - Loaded 25 training points
+2026-03-16 23:53:00,812 - INFO - Energy range: [0.472, 3.762]
+2026-03-16 23:53:00,812 - INFO - Initializing Bayesian Optimization
+2026-03-16 23:53:00,813 - INFO - Optimizing kernel hyperparameters via LOO-CV
+2026-03-16 23:53:00,813 - ERROR - Fatal error: ModelSelector.__init__() got an unexpected keyword argument 'normalize_X'
+Traceback (most recent call last):
+  File "/root/ion/IonInsertML/src/ioninsertml/bayesian_opt/evaluate.py", line 231, in main
+    selector = ModelSelector(
+               ^^^^^^^^^^^^^^
+TypeError: ModelSelector.__init__() got an unexpected keyword argument 'normalize_X'
+2026-03-16 23:53:22,844 - INFO - BO Test Mode Parameters:
+2026-03-16 23:53:22,845 - INFO -   train_file_csv: /root/ion/IonInsertML/data/training_Li1.csv
+2026-03-16 23:53:22,845 - INFO -   host_file: /root/ion/IonInsertML/data/POSCAR_host
+2026-03-16 23:53:22,845 - INFO -   params_file: /root/ion/IonInsertML/data/INCAR
+2026-03-16 23:53:22,845 - INFO -   host_energy: -10.5
+2026-03-16 23:53:22,845 - INFO -   int_atom_energy: -2.3
+2026-03-16 23:53:22,845 - INFO -   int_atom: Li
+2026-03-16 23:53:22,846 - INFO -   batch_size: 3
+2026-03-16 23:53:22,846 - INFO -   strat: constant_liar
+2026-03-16 23:53:22,846 - INFO -   N: 5
+2026-03-16 23:53:22,846 - INFO -   n_candidates: 500
+2026-03-16 23:53:22,846 - INFO -   rmin: 1.45
+2026-03-16 23:53:22,846 - INFO -   rmin_insrt: 1.34
+2026-03-16 23:53:22,846 - INFO -   random_state: 42
+2026-03-16 23:53:22,846 - INFO -   xi: 0.01
+2026-03-16 23:53:22,847 - INFO -   test_mode: True
+2026-03-16 23:53:22,847 - INFO - Reading VASP parameters from /root/ion/IonInsertML/data/INCAR
+2026-03-16 23:53:22,847 - INFO - Successfully read 21 parameters from INCAR
+2026-03-16 23:53:22,847 - INFO - Loading host structure from /root/ion/IonInsertML/data/POSCAR_host
+2026-03-16 23:53:22,854 - INFO - Loading training data from /root/ion/IonInsertML/data/training_Li1.csv
+2026-03-16 23:53:22,857 - INFO - Loaded 25 training points
+2026-03-16 23:53:22,857 - INFO - Energy range: [0.472, 3.762]
+2026-03-16 23:53:22,858 - INFO - Initializing Bayesian Optimization
+2026-03-16 23:53:22,858 - INFO - Optimizing kernel hyperparameters via LOO-CV
+2026-03-16 23:53:22,860 - ERROR - Fatal error: 'ModelSelector' object has no attribute 'normalize_X'
+Traceback (most recent call last):
+  File "/root/ion/IonInsertML/src/ioninsertml/bayesian_opt/evaluate.py", line 231, in main
+    selector = ModelSelector(
+               ^^^^^^^^^^^^^^
+  File "/root/ion/IonInsertML/src/ioninsertml/bayesian_opt/model_selector.py", line 36, in __init__
+    if self.normalize_X:
+       ^^^^^^^^^^^^^^^^
+AttributeError: 'ModelSelector' object has no attribute 'normalize_X'. Did you mean: 'normalize_y'?
+2026-03-16 23:54:09,986 - INFO - BO Test Mode Parameters:
+2026-03-16 23:54:09,986 - INFO -   train_file_csv: /root/ion/IonInsertML/data/training_Li1.csv
+2026-03-16 23:54:09,986 - INFO -   host_file: /root/ion/IonInsertML/data/POSCAR_host
+2026-03-16 23:54:09,986 - INFO -   params_file: /root/ion/IonInsertML/data/INCAR
+2026-03-16 23:54:09,986 - INFO -   host_energy: -10.5
+2026-03-16 23:54:09,986 - INFO -   int_atom_energy: -2.3
+2026-03-16 23:54:09,987 - INFO -   int_atom: Li
+2026-03-16 23:54:09,987 - INFO -   batch_size: 3
+2026-03-16 23:54:09,987 - INFO -   strat: constant_liar
+2026-03-16 23:54:09,987 - INFO -   N: 5
+2026-03-16 23:54:09,987 - INFO -   n_candidates: 500
+2026-03-16 23:54:09,987 - INFO -   rmin: 1.45
+2026-03-16 23:54:09,987 - INFO -   rmin_insrt: 1.34
+2026-03-16 23:54:09,987 - INFO -   random_state: 42
+2026-03-16 23:54:09,987 - INFO -   xi: 0.01
+2026-03-16 23:54:09,987 - INFO -   test_mode: True
+2026-03-16 23:54:09,987 - INFO - Reading VASP parameters from /root/ion/IonInsertML/data/INCAR
+2026-03-16 23:54:09,987 - INFO - Successfully read 21 parameters from INCAR
+2026-03-16 23:54:09,988 - INFO - Loading host structure from /root/ion/IonInsertML/data/POSCAR_host
+2026-03-16 23:54:09,993 - INFO - Loading training data from /root/ion/IonInsertML/data/training_Li1.csv
+2026-03-16 23:54:10,000 - INFO - Loaded 25 training points
+2026-03-16 23:54:10,000 - INFO - Energy range: [0.472, 3.762]
+2026-03-16 23:54:10,000 - INFO - Initializing Bayesian Optimization
+2026-03-16 23:54:10,001 - INFO - Optimizing kernel hyperparameters via LOO-CV
+2026-03-16 23:54:10,018 - INFO - Optimized kernel: RBF(length_scale=1e-05) + WhiteKernel(noise_level=1.5e-05)
+2026-03-16 23:54:10,025 - INFO - Results saved to bo_test_results
+2026-03-16 23:54:10,026 - INFO - Iteration 1/5
+2026-03-16 23:54:10,026 - INFO - Current training set size: 25
+2026-03-16 23:54:11,502 - INFO - Suggested 3 new configurations
+2026-03-16 23:54:11,506 - INFO - Running dummy calculation in calc_0_0
+2026-03-16 23:54:11,508 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-16 23:54:11,509 - INFO - New intercalation energy: 2.674540 eV
+2026-03-16 23:54:11,510 - INFO - Structure saved to calc_0_0/POSCAR_with_Li
+2026-03-16 23:54:11,511 - INFO - Running dummy calculation in calc_0_1
+2026-03-16 23:54:11,512 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-16 23:54:11,513 - INFO - New intercalation energy: 2.674540 eV
+2026-03-16 23:54:11,514 - INFO - Structure saved to calc_0_1/POSCAR_with_Li
+2026-03-16 23:54:11,515 - INFO - Running dummy calculation in calc_0_2
+2026-03-16 23:54:11,516 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-16 23:54:11,516 - INFO - New intercalation energy: 2.674540 eV
+2026-03-16 23:54:11,518 - INFO - Structure saved to calc_0_2/POSCAR_with_Li
+2026-03-16 23:54:11,528 - INFO - Results saved to bo_test_results
+2026-03-16 23:54:11,528 - INFO - Iteration 1 completed. Training set size: 28
+2026-03-16 23:54:11,528 - INFO - Energy stats - min: 0.472, max: 3.762, mean: 1.579
+2026-03-16 23:54:11,528 - INFO - Iteration 2/5
+2026-03-16 23:54:11,529 - INFO - Current training set size: 28
+2026-03-16 23:54:13,771 - INFO - Suggested 3 new configurations
+2026-03-16 23:54:13,773 - INFO - Running dummy calculation in calc_1_0
+2026-03-16 23:54:13,780 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-16 23:54:13,780 - INFO - New intercalation energy: 2.674540 eV
+2026-03-16 23:54:13,781 - INFO - Structure saved to calc_1_0/POSCAR_with_Li
+2026-03-16 23:54:13,782 - INFO - Running dummy calculation in calc_1_1
+2026-03-16 23:54:13,783 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-16 23:54:13,783 - INFO - New intercalation energy: 2.674540 eV
+2026-03-16 23:54:13,784 - INFO - Structure saved to calc_1_1/POSCAR_with_Li
+2026-03-16 23:54:13,785 - INFO - Running dummy calculation in calc_1_2
+2026-03-16 23:54:13,785 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-16 23:54:13,786 - INFO - New intercalation energy: 2.674540 eV
+2026-03-16 23:54:13,787 - INFO - Structure saved to calc_1_2/POSCAR_with_Li
+2026-03-16 23:54:13,798 - INFO - Results saved to bo_test_results
+2026-03-16 23:54:13,798 - INFO - Iteration 2 completed. Training set size: 31
+2026-03-16 23:54:13,798 - INFO - Energy stats - min: 0.472, max: 3.762, mean: 1.685
+2026-03-16 23:54:13,798 - INFO - Iteration 3/5
+2026-03-16 23:54:13,798 - INFO - Current training set size: 31
+2026-03-16 23:54:15,542 - INFO - Suggested 3 new configurations
+2026-03-16 23:54:15,544 - INFO - Running dummy calculation in calc_2_0
+2026-03-16 23:54:15,545 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-16 23:54:15,545 - INFO - New intercalation energy: 2.674540 eV
+2026-03-16 23:54:15,546 - INFO - Structure saved to calc_2_0/POSCAR_with_Li
+2026-03-16 23:54:15,548 - INFO - Running dummy calculation in calc_2_1
+2026-03-16 23:54:15,553 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-16 23:54:15,554 - INFO - New intercalation energy: 2.674540 eV
+2026-03-16 23:54:15,555 - INFO - Structure saved to calc_2_1/POSCAR_with_Li
+2026-03-16 23:54:15,557 - INFO - Running dummy calculation in calc_2_2
+2026-03-16 23:54:15,558 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-16 23:54:15,558 - INFO - New intercalation energy: 2.674540 eV
+2026-03-16 23:54:15,559 - INFO - Structure saved to calc_2_2/POSCAR_with_Li
+2026-03-16 23:54:15,563 - INFO - Results saved to bo_test_results
+2026-03-16 23:54:15,564 - INFO - Iteration 3 completed. Training set size: 34
+2026-03-16 23:54:15,564 - INFO - Energy stats - min: 0.472, max: 3.762, mean: 1.772
+2026-03-16 23:54:15,564 - INFO - Iteration 4/5
+2026-03-16 23:54:15,564 - INFO - Current training set size: 34
+2026-03-16 23:54:17,186 - INFO - Suggested 3 new configurations
+2026-03-16 23:54:17,187 - INFO - Running dummy calculation in calc_3_0
+2026-03-16 23:54:17,187 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-16 23:54:17,188 - INFO - New intercalation energy: 2.674540 eV
+2026-03-16 23:54:17,188 - INFO - Structure saved to calc_3_0/POSCAR_with_Li
+2026-03-16 23:54:17,189 - INFO - Running dummy calculation in calc_3_1
+2026-03-16 23:54:17,190 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-16 23:54:17,190 - INFO - New intercalation energy: 2.674540 eV
+2026-03-16 23:54:17,194 - INFO - Structure saved to calc_3_1/POSCAR_with_Li
+2026-03-16 23:54:17,196 - INFO - Running dummy calculation in calc_3_2
+2026-03-16 23:54:17,197 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-16 23:54:17,197 - INFO - New intercalation energy: 2.674540 eV
+2026-03-16 23:54:17,198 - INFO - Structure saved to calc_3_2/POSCAR_with_Li
+2026-03-16 23:54:17,208 - INFO - Results saved to bo_test_results
+2026-03-16 23:54:17,208 - INFO - Iteration 4 completed. Training set size: 37
+2026-03-16 23:54:17,208 - INFO - Energy stats - min: 0.472, max: 3.762, mean: 1.845
+2026-03-16 23:54:17,208 - INFO - Iteration 5/5
+2026-03-16 23:54:17,208 - INFO - Current training set size: 37
+2026-03-16 23:54:18,611 - INFO - Suggested 3 new configurations
+2026-03-16 23:54:18,611 - INFO - Running dummy calculation in calc_4_0
+2026-03-16 23:54:18,612 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-16 23:54:18,612 - INFO - New intercalation energy: 2.674540 eV
+2026-03-16 23:54:18,612 - INFO - Structure saved to calc_4_0/POSCAR_with_Li
+2026-03-16 23:54:18,613 - INFO - Running dummy calculation in calc_4_1
+2026-03-16 23:54:18,613 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-16 23:54:18,613 - INFO - New intercalation energy: 2.674540 eV
+2026-03-16 23:54:18,614 - INFO - Structure saved to calc_4_1/POSCAR_with_Li
+2026-03-16 23:54:18,614 - INFO - Running dummy calculation in calc_4_2
+2026-03-16 23:54:18,615 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-16 23:54:18,615 - INFO - New intercalation energy: 2.674540 eV
+2026-03-16 23:54:18,615 - INFO - Structure saved to calc_4_2/POSCAR_with_Li
+2026-03-16 23:54:18,617 - INFO - Results saved to bo_test_results
+2026-03-16 23:54:18,617 - INFO - Iteration 5 completed. Training set size: 40
+2026-03-16 23:54:18,618 - INFO - Energy stats - min: 0.472, max: 3.762, mean: 1.908
+2026-03-16 23:54:18,618 - INFO - Optimization completed successfully!
+2026-03-16 23:54:18,618 - INFO - Final training set size: 40
+2026-03-16 23:54:18,618 - INFO - Best energy found: 0.471533 eV
+2026-03-17 00:35:58,414 - INFO - BO Test Mode Parameters:
+2026-03-17 00:35:58,416 - INFO -   train_file_csv: /root/ion/IonInsertML/data/training_Li1.csv
+2026-03-17 00:35:58,416 - INFO -   host_file: /root/ion/IonInsertML/data/POSCAR_host
+2026-03-17 00:35:58,416 - INFO -   params_file: /root/ion/IonInsertML/data/INCAR
+2026-03-17 00:35:58,416 - INFO -   host_energy: -10.5
+2026-03-17 00:35:58,416 - INFO -   int_atom_energy: -2.3
+2026-03-17 00:35:58,416 - INFO -   int_atom: Li
+2026-03-17 00:35:58,416 - INFO -   batch_size: 3
+2026-03-17 00:35:58,416 - INFO -   strat: constant_liar
+2026-03-17 00:35:58,416 - INFO -   N: 5
+2026-03-17 00:35:58,416 - INFO -   n_candidates: 500
+2026-03-17 00:35:58,416 - INFO -   rmin: 1.45
+2026-03-17 00:35:58,417 - INFO -   rmin_insrt: 1.34
+2026-03-17 00:35:58,417 - INFO -   random_state: 42
+2026-03-17 00:35:58,417 - INFO -   xi: 0.01
+2026-03-17 00:35:58,417 - INFO -   test_mode: True
+2026-03-17 00:35:58,417 - INFO - Reading VASP parameters from /root/ion/IonInsertML/data/INCAR
+2026-03-17 00:35:58,417 - INFO - Successfully read 21 parameters from INCAR
+2026-03-17 00:35:58,417 - INFO - Loading host structure from /root/ion/IonInsertML/data/POSCAR_host
+2026-03-17 00:35:58,428 - INFO - Loading training data from /root/ion/IonInsertML/data/training_Li1.csv
+2026-03-17 00:35:58,449 - INFO - Loaded 25 training points
+2026-03-17 00:35:58,449 - INFO - Energy range: [0.472, 3.762]
+2026-03-17 00:35:58,449 - INFO - Initializing Bayesian Optimization
+2026-03-17 00:35:58,451 - INFO - Optimizing kernel hyperparameters via LOO-CV
+2026-03-17 00:35:58,461 - INFO - Optimized kernel: RBF(length_scale=0.01) + WhiteKernel(noise_level=1.04e-06)
+2026-03-17 00:35:58,470 - INFO - Results saved to bo_test_results
+2026-03-17 00:35:58,470 - INFO - Iteration 1/5
+2026-03-17 00:35:58,470 - INFO - Current training set size: 25
+2026-03-17 00:35:59,402 - INFO - Suggested 3 new configurations
+2026-03-17 00:35:59,403 - INFO - Running dummy calculation in calc_0_0
+2026-03-17 00:35:59,405 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:35:59,405 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:35:59,405 - INFO - Structure saved to calc_0_0/POSCAR_with_Li
+2026-03-17 00:35:59,406 - INFO - Running dummy calculation in calc_0_1
+2026-03-17 00:35:59,406 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:35:59,407 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:35:59,407 - INFO - Structure saved to calc_0_1/POSCAR_with_Li
+2026-03-17 00:35:59,408 - INFO - Running dummy calculation in calc_0_2
+2026-03-17 00:35:59,408 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:35:59,409 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:35:59,409 - INFO - Structure saved to calc_0_2/POSCAR_with_Li
+2026-03-17 00:35:59,411 - INFO - Results saved to bo_test_results
+2026-03-17 00:35:59,411 - INFO - Iteration 1 completed. Training set size: 28
+2026-03-17 00:35:59,411 - INFO - Energy stats - min: 0.472, max: 3.762, mean: 1.579
+2026-03-17 00:35:59,411 - INFO - Iteration 2/5
+2026-03-17 00:35:59,411 - INFO - Current training set size: 28
+2026-03-17 00:36:00,411 - INFO - Suggested 3 new configurations
+2026-03-17 00:36:00,412 - INFO - Running dummy calculation in calc_1_0
+2026-03-17 00:36:00,412 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:36:00,412 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:36:00,412 - INFO - Structure saved to calc_1_0/POSCAR_with_Li
+2026-03-17 00:36:00,413 - INFO - Running dummy calculation in calc_1_1
+2026-03-17 00:36:00,413 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:36:00,414 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:36:00,414 - INFO - Structure saved to calc_1_1/POSCAR_with_Li
+2026-03-17 00:36:00,414 - INFO - Running dummy calculation in calc_1_2
+2026-03-17 00:36:00,415 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:36:00,415 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:36:00,415 - INFO - Structure saved to calc_1_2/POSCAR_with_Li
+2026-03-17 00:36:00,417 - INFO - Results saved to bo_test_results
+2026-03-17 00:36:00,417 - INFO - Iteration 2 completed. Training set size: 31
+2026-03-17 00:36:00,417 - INFO - Energy stats - min: 0.472, max: 3.762, mean: 1.685
+2026-03-17 00:36:00,418 - INFO - Iteration 3/5
+2026-03-17 00:36:00,418 - INFO - Current training set size: 31
+2026-03-17 00:36:01,513 - INFO - Suggested 3 new configurations
+2026-03-17 00:36:01,514 - INFO - Running dummy calculation in calc_2_0
+2026-03-17 00:36:01,515 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:36:01,515 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:36:01,516 - INFO - Structure saved to calc_2_0/POSCAR_with_Li
+2026-03-17 00:36:01,516 - INFO - Running dummy calculation in calc_2_1
+2026-03-17 00:36:01,517 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:36:01,517 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:36:01,517 - INFO - Structure saved to calc_2_1/POSCAR_with_Li
+2026-03-17 00:36:01,518 - INFO - Running dummy calculation in calc_2_2
+2026-03-17 00:36:01,519 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:36:01,519 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:36:01,519 - INFO - Structure saved to calc_2_2/POSCAR_with_Li
+2026-03-17 00:36:01,527 - INFO - Results saved to bo_test_results
+2026-03-17 00:36:01,527 - INFO - Iteration 3 completed. Training set size: 34
+2026-03-17 00:36:01,528 - INFO - Energy stats - min: 0.472, max: 3.762, mean: 1.772
+2026-03-17 00:36:01,528 - INFO - Iteration 4/5
+2026-03-17 00:36:01,528 - INFO - Current training set size: 34
+2026-03-17 00:36:02,506 - INFO - Suggested 3 new configurations
+2026-03-17 00:36:02,506 - INFO - Running dummy calculation in calc_3_0
+2026-03-17 00:36:02,507 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:36:02,507 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:36:02,507 - INFO - Structure saved to calc_3_0/POSCAR_with_Li
+2026-03-17 00:36:02,508 - INFO - Running dummy calculation in calc_3_1
+2026-03-17 00:36:02,508 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:36:02,508 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:36:02,509 - INFO - Structure saved to calc_3_1/POSCAR_with_Li
+2026-03-17 00:36:02,509 - INFO - Running dummy calculation in calc_3_2
+2026-03-17 00:36:02,510 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:36:02,510 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:36:02,510 - INFO - Structure saved to calc_3_2/POSCAR_with_Li
+2026-03-17 00:36:02,516 - INFO - Results saved to bo_test_results
+2026-03-17 00:36:02,516 - INFO - Iteration 4 completed. Training set size: 37
+2026-03-17 00:36:02,516 - INFO - Energy stats - min: 0.472, max: 3.762, mean: 1.845
+2026-03-17 00:36:02,516 - INFO - Iteration 5/5
+2026-03-17 00:36:02,516 - INFO - Current training set size: 37
+2026-03-17 00:36:03,506 - INFO - Suggested 3 new configurations
+2026-03-17 00:36:03,507 - INFO - Running dummy calculation in calc_4_0
+2026-03-17 00:36:03,508 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:36:03,509 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:36:03,509 - INFO - Structure saved to calc_4_0/POSCAR_with_Li
+2026-03-17 00:36:03,509 - INFO - Running dummy calculation in calc_4_1
+2026-03-17 00:36:03,510 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:36:03,510 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:36:03,510 - INFO - Structure saved to calc_4_1/POSCAR_with_Li
+2026-03-17 00:36:03,511 - INFO - Running dummy calculation in calc_4_2
+2026-03-17 00:36:03,513 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:36:03,514 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:36:03,515 - INFO - Structure saved to calc_4_2/POSCAR_with_Li
+2026-03-17 00:36:03,517 - INFO - Results saved to bo_test_results
+2026-03-17 00:36:03,518 - INFO - Iteration 5 completed. Training set size: 40
+2026-03-17 00:36:03,518 - INFO - Energy stats - min: 0.472, max: 3.762, mean: 1.908
+2026-03-17 00:36:03,518 - INFO - Optimization completed successfully!
+2026-03-17 00:36:03,518 - INFO - Final training set size: 40
+2026-03-17 00:36:03,518 - INFO - Best energy found: 0.471533 eV
+2026-03-17 00:41:36,803 - INFO - BO Test Mode Parameters:
+2026-03-17 00:41:36,803 - INFO -   train_file_csv: /root/ion/IonInsertML/data/training_Li1.csv
+2026-03-17 00:41:36,804 - INFO -   host_file: /root/ion/IonInsertML/data/POSCAR_host
+2026-03-17 00:41:36,804 - INFO -   params_file: /root/ion/IonInsertML/data/INCAR
+2026-03-17 00:41:36,804 - INFO -   host_energy: -10.5
+2026-03-17 00:41:36,804 - INFO -   int_atom_energy: -2.3
+2026-03-17 00:41:36,804 - INFO -   int_atom: Li
+2026-03-17 00:41:36,804 - INFO -   batch_size: 3
+2026-03-17 00:41:36,804 - INFO -   strat: constant_liar
+2026-03-17 00:41:36,804 - INFO -   N: 5
+2026-03-17 00:41:36,804 - INFO -   n_candidates: 500
+2026-03-17 00:41:36,805 - INFO -   rmin: 1.45
+2026-03-17 00:41:36,805 - INFO -   rmin_insrt: 1.34
+2026-03-17 00:41:36,805 - INFO -   random_state: 42
+2026-03-17 00:41:36,805 - INFO -   xi: 0.01
+2026-03-17 00:41:36,805 - INFO -   test_mode: True
+2026-03-17 00:41:36,805 - INFO - Reading VASP parameters from /root/ion/IonInsertML/data/INCAR
+2026-03-17 00:41:36,806 - INFO - Successfully read 21 parameters from INCAR
+2026-03-17 00:41:36,806 - INFO - Loading host structure from /root/ion/IonInsertML/data/POSCAR_host
+2026-03-17 00:41:36,818 - INFO - Loading training data from /root/ion/IonInsertML/data/training_Li1.csv
+2026-03-17 00:41:36,837 - INFO - Loaded 25 training points
+2026-03-17 00:41:36,837 - INFO - Energy range: [0.472, 3.762]
+2026-03-17 00:41:36,838 - INFO - Initializing Bayesian Optimization
+2026-03-17 00:41:36,838 - INFO - Optimizing kernel hyperparameters via LOO-CV
+2026-03-17 00:41:36,857 - INFO - Optimized kernel: Matern(length_scale=1e-05, nu=1.5)
+2026-03-17 00:41:36,876 - INFO - Results saved to bo_test_results
+2026-03-17 00:41:36,876 - INFO - Iteration 1/5
+2026-03-17 00:41:36,877 - INFO - Current training set size: 25
+2026-03-17 00:41:38,441 - INFO - Suggested 3 new configurations
+2026-03-17 00:41:38,442 - INFO - Running dummy calculation in calc_0_0
+2026-03-17 00:41:38,443 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:41:38,444 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:41:38,445 - INFO - Structure saved to calc_0_0/POSCAR_with_Li
+2026-03-17 00:41:38,445 - INFO - Running dummy calculation in calc_0_1
+2026-03-17 00:41:38,446 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:41:38,446 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:41:38,447 - INFO - Structure saved to calc_0_1/POSCAR_with_Li
+2026-03-17 00:41:38,448 - INFO - Running dummy calculation in calc_0_2
+2026-03-17 00:41:38,450 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:41:38,452 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:41:38,453 - INFO - Structure saved to calc_0_2/POSCAR_with_Li
+2026-03-17 00:41:38,457 - INFO - Results saved to bo_test_results
+2026-03-17 00:41:38,457 - INFO - Iteration 1 completed. Training set size: 28
+2026-03-17 00:41:38,458 - INFO - Energy stats - min: 0.472, max: 3.762, mean: 1.579
+2026-03-17 00:41:38,458 - INFO - Iteration 2/5
+2026-03-17 00:41:38,458 - INFO - Current training set size: 28
+2026-03-17 00:41:39,571 - INFO - Suggested 3 new configurations
+2026-03-17 00:41:39,571 - INFO - Running dummy calculation in calc_1_0
+2026-03-17 00:41:39,576 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:41:39,576 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:41:39,577 - INFO - Structure saved to calc_1_0/POSCAR_with_Li
+2026-03-17 00:41:39,578 - INFO - Running dummy calculation in calc_1_1
+2026-03-17 00:41:39,580 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:41:39,580 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:41:39,581 - INFO - Structure saved to calc_1_1/POSCAR_with_Li
+2026-03-17 00:41:39,582 - INFO - Running dummy calculation in calc_1_2
+2026-03-17 00:41:39,583 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:41:39,583 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:41:39,584 - INFO - Structure saved to calc_1_2/POSCAR_with_Li
+2026-03-17 00:41:39,588 - INFO - Results saved to bo_test_results
+2026-03-17 00:41:39,588 - INFO - Iteration 2 completed. Training set size: 31
+2026-03-17 00:41:39,589 - INFO - Energy stats - min: 0.472, max: 3.762, mean: 1.685
+2026-03-17 00:41:39,589 - INFO - Iteration 3/5
+2026-03-17 00:41:39,589 - INFO - Current training set size: 31
+2026-03-17 00:41:40,616 - INFO - Suggested 3 new configurations
+2026-03-17 00:41:40,617 - INFO - Running dummy calculation in calc_2_0
+2026-03-17 00:41:40,618 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:41:40,618 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:41:40,619 - INFO - Structure saved to calc_2_0/POSCAR_with_Li
+2026-03-17 00:41:40,619 - INFO - Running dummy calculation in calc_2_1
+2026-03-17 00:41:40,620 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:41:40,621 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:41:40,621 - INFO - Structure saved to calc_2_1/POSCAR_with_Li
+2026-03-17 00:41:40,622 - INFO - Running dummy calculation in calc_2_2
+2026-03-17 00:41:40,623 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:41:40,623 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:41:40,623 - INFO - Structure saved to calc_2_2/POSCAR_with_Li
+2026-03-17 00:41:40,627 - INFO - Results saved to bo_test_results
+2026-03-17 00:41:40,627 - INFO - Iteration 3 completed. Training set size: 34
+2026-03-17 00:41:40,627 - INFO - Energy stats - min: 0.472, max: 3.762, mean: 1.772
+2026-03-17 00:41:40,627 - INFO - Iteration 4/5
+2026-03-17 00:41:40,627 - INFO - Current training set size: 34
+2026-03-17 00:41:41,617 - INFO - Suggested 3 new configurations
+2026-03-17 00:41:41,618 - INFO - Running dummy calculation in calc_3_0
+2026-03-17 00:41:41,619 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:41:41,619 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:41:41,619 - INFO - Structure saved to calc_3_0/POSCAR_with_Li
+2026-03-17 00:41:41,620 - INFO - Running dummy calculation in calc_3_1
+2026-03-17 00:41:41,620 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:41:41,620 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:41:41,621 - INFO - Structure saved to calc_3_1/POSCAR_with_Li
+2026-03-17 00:41:41,621 - INFO - Running dummy calculation in calc_3_2
+2026-03-17 00:41:41,621 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:41:41,622 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:41:41,622 - INFO - Structure saved to calc_3_2/POSCAR_with_Li
+2026-03-17 00:41:41,625 - INFO - Results saved to bo_test_results
+2026-03-17 00:41:41,625 - INFO - Iteration 4 completed. Training set size: 37
+2026-03-17 00:41:41,625 - INFO - Energy stats - min: 0.472, max: 3.762, mean: 1.845
+2026-03-17 00:41:41,625 - INFO - Iteration 5/5
+2026-03-17 00:41:41,625 - INFO - Current training set size: 37
+2026-03-17 00:41:42,628 - INFO - Suggested 3 new configurations
+2026-03-17 00:41:42,629 - INFO - Running dummy calculation in calc_4_0
+2026-03-17 00:41:42,629 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:41:42,630 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:41:42,630 - INFO - Structure saved to calc_4_0/POSCAR_with_Li
+2026-03-17 00:41:42,631 - INFO - Running dummy calculation in calc_4_1
+2026-03-17 00:41:42,633 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:41:42,633 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:41:42,634 - INFO - Structure saved to calc_4_1/POSCAR_with_Li
+2026-03-17 00:41:42,635 - INFO - Running dummy calculation in calc_4_2
+2026-03-17 00:41:42,636 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:41:42,636 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:41:42,637 - INFO - Structure saved to calc_4_2/POSCAR_with_Li
+2026-03-17 00:41:42,641 - INFO - Results saved to bo_test_results
+2026-03-17 00:41:42,641 - INFO - Iteration 5 completed. Training set size: 40
+2026-03-17 00:41:42,642 - INFO - Energy stats - min: 0.472, max: 3.762, mean: 1.908
+2026-03-17 00:41:42,642 - INFO - Optimization completed successfully!
+2026-03-17 00:41:42,642 - INFO - Final training set size: 40
+2026-03-17 00:41:42,642 - INFO - Best energy found: 0.471533 eV
+2026-03-17 00:42:40,779 - INFO - BO Test Mode Parameters:
+2026-03-17 00:42:40,780 - INFO -   train_file_csv: /root/ion/IonInsertML/data/training_Li1.csv
+2026-03-17 00:42:40,780 - INFO -   host_file: /root/ion/IonInsertML/data/POSCAR_host
+2026-03-17 00:42:40,780 - INFO -   params_file: /root/ion/IonInsertML/data/INCAR
+2026-03-17 00:42:40,780 - INFO -   host_energy: -10.5
+2026-03-17 00:42:40,780 - INFO -   int_atom_energy: -2.3
+2026-03-17 00:42:40,780 - INFO -   int_atom: Li
+2026-03-17 00:42:40,781 - INFO -   batch_size: 3
+2026-03-17 00:42:40,781 - INFO -   strat: constant_liar
+2026-03-17 00:42:40,781 - INFO -   N: 5
+2026-03-17 00:42:40,781 - INFO -   n_candidates: 500
+2026-03-17 00:42:40,781 - INFO -   rmin: 1.45
+2026-03-17 00:42:40,781 - INFO -   rmin_insrt: 1.34
+2026-03-17 00:42:40,782 - INFO -   random_state: 42
+2026-03-17 00:42:40,782 - INFO -   xi: 0.01
+2026-03-17 00:42:40,782 - INFO -   test_mode: True
+2026-03-17 00:42:40,782 - INFO - Reading VASP parameters from /root/ion/IonInsertML/data/INCAR
+2026-03-17 00:42:40,783 - INFO - Successfully read 21 parameters from INCAR
+2026-03-17 00:42:40,783 - INFO - Loading host structure from /root/ion/IonInsertML/data/POSCAR_host
+2026-03-17 00:42:40,801 - INFO - Loading training data from /root/ion/IonInsertML/data/training_Li1.csv
+2026-03-17 00:42:40,816 - INFO - Loaded 25 training points
+2026-03-17 00:42:40,816 - INFO - Energy range: [0.472, 3.762]
+2026-03-17 00:42:40,816 - INFO - Initializing Bayesian Optimization
+2026-03-17 00:42:40,817 - INFO - Optimizing kernel hyperparameters via LOO-CV
+2026-03-17 00:42:40,844 - INFO - Optimized kernel: Matern(length_scale=1e-05, nu=1.5) + WhiteKernel(noise_level=1e-06)
+2026-03-17 00:42:40,855 - INFO - Results saved to bo_test_results
+2026-03-17 00:42:40,856 - INFO - Iteration 1/5
+2026-03-17 00:42:40,856 - INFO - Current training set size: 25
+2026-03-17 00:42:42,158 - INFO - Suggested 3 new configurations
+2026-03-17 00:42:42,159 - INFO - Running dummy calculation in calc_0_0
+2026-03-17 00:42:42,160 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:42:42,160 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:42:42,161 - INFO - Structure saved to calc_0_0/POSCAR_with_Li
+2026-03-17 00:42:42,162 - INFO - Running dummy calculation in calc_0_1
+2026-03-17 00:42:42,163 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:42:42,163 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:42:42,163 - INFO - Structure saved to calc_0_1/POSCAR_with_Li
+2026-03-17 00:42:42,164 - INFO - Running dummy calculation in calc_0_2
+2026-03-17 00:42:42,165 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:42:42,165 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:42:42,165 - INFO - Structure saved to calc_0_2/POSCAR_with_Li
+2026-03-17 00:42:42,169 - INFO - Results saved to bo_test_results
+2026-03-17 00:42:42,169 - INFO - Iteration 1 completed. Training set size: 28
+2026-03-17 00:42:42,169 - INFO - Energy stats - min: 0.472, max: 3.762, mean: 1.579
+2026-03-17 00:42:42,169 - INFO - Iteration 2/5
+2026-03-17 00:42:42,169 - INFO - Current training set size: 28
+2026-03-17 00:42:43,301 - INFO - Suggested 3 new configurations
+2026-03-17 00:42:43,302 - INFO - Running dummy calculation in calc_1_0
+2026-03-17 00:42:43,302 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:42:43,302 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:42:43,303 - INFO - Structure saved to calc_1_0/POSCAR_with_Li
+2026-03-17 00:42:43,303 - INFO - Running dummy calculation in calc_1_1
+2026-03-17 00:42:43,304 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:42:43,304 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:42:43,304 - INFO - Structure saved to calc_1_1/POSCAR_with_Li
+2026-03-17 00:42:43,305 - INFO - Running dummy calculation in calc_1_2
+2026-03-17 00:42:43,306 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:42:43,306 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:42:43,306 - INFO - Structure saved to calc_1_2/POSCAR_with_Li
+2026-03-17 00:42:43,314 - INFO - Results saved to bo_test_results
+2026-03-17 00:42:43,314 - INFO - Iteration 2 completed. Training set size: 31
+2026-03-17 00:42:43,315 - INFO - Energy stats - min: 0.472, max: 3.762, mean: 1.685
+2026-03-17 00:42:43,315 - INFO - Iteration 3/5
+2026-03-17 00:42:43,315 - INFO - Current training set size: 31
+2026-03-17 00:42:44,599 - INFO - Suggested 3 new configurations
+2026-03-17 00:42:44,600 - INFO - Running dummy calculation in calc_2_0
+2026-03-17 00:42:44,601 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:42:44,601 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:42:44,601 - INFO - Structure saved to calc_2_0/POSCAR_with_Li
+2026-03-17 00:42:44,602 - INFO - Running dummy calculation in calc_2_1
+2026-03-17 00:42:44,603 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:42:44,603 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:42:44,604 - INFO - Structure saved to calc_2_1/POSCAR_with_Li
+2026-03-17 00:42:44,604 - INFO - Running dummy calculation in calc_2_2
+2026-03-17 00:42:44,605 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:42:44,605 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:42:44,606 - INFO - Structure saved to calc_2_2/POSCAR_with_Li
+2026-03-17 00:42:44,609 - INFO - Results saved to bo_test_results
+2026-03-17 00:42:44,609 - INFO - Iteration 3 completed. Training set size: 34
+2026-03-17 00:42:44,610 - INFO - Energy stats - min: 0.472, max: 3.762, mean: 1.772
+2026-03-17 00:42:44,610 - INFO - Iteration 4/5
+2026-03-17 00:42:44,610 - INFO - Current training set size: 34
+2026-03-17 00:42:45,807 - INFO - Suggested 3 new configurations
+2026-03-17 00:42:45,807 - INFO - Running dummy calculation in calc_3_0
+2026-03-17 00:42:45,808 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:42:45,808 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:42:45,809 - INFO - Structure saved to calc_3_0/POSCAR_with_Li
+2026-03-17 00:42:45,809 - INFO - Running dummy calculation in calc_3_1
+2026-03-17 00:42:45,810 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:42:45,810 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:42:45,810 - INFO - Structure saved to calc_3_1/POSCAR_with_Li
+2026-03-17 00:42:45,811 - INFO - Running dummy calculation in calc_3_2
+2026-03-17 00:42:45,811 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:42:45,811 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:42:45,812 - INFO - Structure saved to calc_3_2/POSCAR_with_Li
+2026-03-17 00:42:45,814 - INFO - Results saved to bo_test_results
+2026-03-17 00:42:45,814 - INFO - Iteration 4 completed. Training set size: 37
+2026-03-17 00:42:45,814 - INFO - Energy stats - min: 0.472, max: 3.762, mean: 1.845
+2026-03-17 00:42:45,814 - INFO - Iteration 5/5
+2026-03-17 00:42:45,814 - INFO - Current training set size: 37
+2026-03-17 00:42:46,878 - INFO - Suggested 3 new configurations
+2026-03-17 00:42:46,885 - INFO - Running dummy calculation in calc_4_0
+2026-03-17 00:42:46,902 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:42:46,903 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:42:46,904 - INFO - Structure saved to calc_4_0/POSCAR_with_Li
+2026-03-17 00:42:46,905 - INFO - Running dummy calculation in calc_4_1
+2026-03-17 00:42:46,906 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:42:46,906 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:42:46,907 - INFO - Structure saved to calc_4_1/POSCAR_with_Li
+2026-03-17 00:42:46,908 - INFO - Running dummy calculation in calc_4_2
+2026-03-17 00:42:46,908 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:42:46,908 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:42:46,909 - INFO - Structure saved to calc_4_2/POSCAR_with_Li
+2026-03-17 00:42:46,922 - INFO - Results saved to bo_test_results
+2026-03-17 00:42:46,923 - INFO - Iteration 5 completed. Training set size: 40
+2026-03-17 00:42:46,923 - INFO - Energy stats - min: 0.472, max: 3.762, mean: 1.908
+2026-03-17 00:42:46,923 - INFO - Optimization completed successfully!
+2026-03-17 00:42:46,923 - INFO - Final training set size: 40
+2026-03-17 00:42:46,923 - INFO - Best energy found: 0.471533 eV
+2026-03-17 00:49:14,420 - INFO - BO Test Mode Parameters:
+2026-03-17 00:49:14,421 - INFO -   train_file_csv: /root/ion/IonInsertML/data/training_Li1.csv
+2026-03-17 00:49:14,421 - INFO -   host_file: /root/ion/IonInsertML/data/POSCAR_host
+2026-03-17 00:49:14,421 - INFO -   params_file: /root/ion/IonInsertML/data/INCAR
+2026-03-17 00:49:14,421 - INFO -   host_energy: -10.5
+2026-03-17 00:49:14,422 - INFO -   int_atom_energy: -2.3
+2026-03-17 00:49:14,422 - INFO -   int_atom: Li
+2026-03-17 00:49:14,422 - INFO -   batch_size: 3
+2026-03-17 00:49:14,422 - INFO -   strat: constant_liar
+2026-03-17 00:49:14,422 - INFO -   N: 5
+2026-03-17 00:49:14,422 - INFO -   n_candidates: 500
+2026-03-17 00:49:14,422 - INFO -   rmin: 1.45
+2026-03-17 00:49:14,422 - INFO -   rmin_insrt: 1.34
+2026-03-17 00:49:14,422 - INFO -   random_state: 42
+2026-03-17 00:49:14,422 - INFO -   xi: 0.01
+2026-03-17 00:49:14,422 - INFO -   test_mode: True
+2026-03-17 00:49:14,422 - INFO - Reading VASP parameters from /root/ion/IonInsertML/data/INCAR
+2026-03-17 00:49:14,422 - INFO - Successfully read 21 parameters from INCAR
+2026-03-17 00:49:14,423 - INFO - Loading host structure from /root/ion/IonInsertML/data/POSCAR_host
+2026-03-17 00:49:14,431 - INFO - Loading training data from /root/ion/IonInsertML/data/training_Li1.csv
+2026-03-17 00:49:14,455 - INFO - Loaded 25 training points
+2026-03-17 00:49:14,455 - INFO - Energy range: [0.472, 3.762]
+2026-03-17 00:49:14,456 - INFO - Initializing Bayesian Optimization
+2026-03-17 00:49:14,456 - INFO - Optimizing kernel hyperparameters via LOO-CV
+2026-03-17 00:49:14,456 - INFO - Optimized kernel: Matern(length_scale=1, nu=1.5) + WhiteKernel(noise_level=1e-06)
+2026-03-17 00:49:14,464 - INFO - Results saved to bo_test_results
+2026-03-17 00:49:14,464 - INFO - Iteration 1/5
+2026-03-17 00:49:14,464 - INFO - Current training set size: 25
+2026-03-17 00:49:15,896 - INFO - Suggested 3 new configurations
+2026-03-17 00:49:15,900 - INFO - Running dummy calculation in calc_0_0
+2026-03-17 00:49:15,901 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:49:15,906 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:49:15,913 - INFO - Structure saved to calc_0_0/POSCAR_with_Li
+2026-03-17 00:49:15,915 - INFO - Running dummy calculation in calc_0_1
+2026-03-17 00:49:15,950 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:49:15,951 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:49:15,952 - INFO - Structure saved to calc_0_1/POSCAR_with_Li
+2026-03-17 00:49:15,953 - INFO - Running dummy calculation in calc_0_2
+2026-03-17 00:49:15,954 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:49:15,954 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:49:15,955 - INFO - Structure saved to calc_0_2/POSCAR_with_Li
+2026-03-17 00:49:15,959 - INFO - Results saved to bo_test_results
+2026-03-17 00:49:15,959 - INFO - Iteration 1 completed. Training set size: 28
+2026-03-17 00:49:15,959 - INFO - Energy stats - min: 0.472, max: 3.762, mean: 1.579
+2026-03-17 00:49:15,959 - INFO - Iteration 2/5
+2026-03-17 00:49:15,959 - INFO - Current training set size: 28
+2026-03-17 00:49:17,379 - INFO - Suggested 3 new configurations
+2026-03-17 00:49:17,380 - INFO - Running dummy calculation in calc_1_0
+2026-03-17 00:49:17,381 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:49:17,381 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:49:17,382 - INFO - Structure saved to calc_1_0/POSCAR_with_Li
+2026-03-17 00:49:17,383 - INFO - Running dummy calculation in calc_1_1
+2026-03-17 00:49:17,384 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:49:17,384 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:49:17,384 - INFO - Structure saved to calc_1_1/POSCAR_with_Li
+2026-03-17 00:49:17,385 - INFO - Running dummy calculation in calc_1_2
+2026-03-17 00:49:17,386 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:49:17,386 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:49:17,387 - INFO - Structure saved to calc_1_2/POSCAR_with_Li
+2026-03-17 00:49:17,392 - INFO - Results saved to bo_test_results
+2026-03-17 00:49:17,395 - INFO - Iteration 2 completed. Training set size: 31
+2026-03-17 00:49:17,396 - INFO - Energy stats - min: 0.472, max: 3.762, mean: 1.685
+2026-03-17 00:49:17,396 - INFO - Iteration 3/5
+2026-03-17 00:49:17,396 - INFO - Current training set size: 31
+2026-03-17 00:49:19,025 - INFO - Suggested 3 new configurations
+2026-03-17 00:49:19,026 - INFO - Running dummy calculation in calc_2_0
+2026-03-17 00:49:19,033 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:49:19,034 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:49:19,043 - INFO - Structure saved to calc_2_0/POSCAR_with_Li
+2026-03-17 00:49:19,044 - INFO - Running dummy calculation in calc_2_1
+2026-03-17 00:49:19,053 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:49:19,053 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:49:19,070 - INFO - Structure saved to calc_2_1/POSCAR_with_Li
+2026-03-17 00:49:19,072 - INFO - Running dummy calculation in calc_2_2
+2026-03-17 00:49:19,073 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:49:19,073 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:49:19,074 - INFO - Structure saved to calc_2_2/POSCAR_with_Li
+2026-03-17 00:49:19,085 - INFO - Results saved to bo_test_results
+2026-03-17 00:49:19,085 - INFO - Iteration 3 completed. Training set size: 34
+2026-03-17 00:49:19,085 - INFO - Energy stats - min: 0.472, max: 3.762, mean: 1.772
+2026-03-17 00:49:19,085 - INFO - Iteration 4/5
+2026-03-17 00:49:19,085 - INFO - Current training set size: 34
+2026-03-17 00:49:22,974 - INFO - BO Test Mode Parameters:
+2026-03-17 00:49:22,974 - INFO -   train_file_csv: /root/ion/IonInsertML/data/training_Li1.csv
+2026-03-17 00:49:22,974 - INFO -   host_file: /root/ion/IonInsertML/data/POSCAR_host
+2026-03-17 00:49:22,974 - INFO -   params_file: /root/ion/IonInsertML/data/INCAR
+2026-03-17 00:49:22,974 - INFO -   host_energy: -10.5
+2026-03-17 00:49:22,974 - INFO -   int_atom_energy: -2.3
+2026-03-17 00:49:22,974 - INFO -   int_atom: Li
+2026-03-17 00:49:22,975 - INFO -   batch_size: 3
+2026-03-17 00:49:22,975 - INFO -   strat: constant_liar
+2026-03-17 00:49:22,975 - INFO -   N: 5
+2026-03-17 00:49:22,975 - INFO -   n_candidates: 500
+2026-03-17 00:49:22,975 - INFO -   rmin: 1.45
+2026-03-17 00:49:22,975 - INFO -   rmin_insrt: 1.34
+2026-03-17 00:49:22,975 - INFO -   random_state: 42
+2026-03-17 00:49:22,975 - INFO -   xi: 0.01
+2026-03-17 00:49:22,975 - INFO -   test_mode: True
+2026-03-17 00:49:22,975 - INFO - Reading VASP parameters from /root/ion/IonInsertML/data/INCAR
+2026-03-17 00:49:22,975 - INFO - Successfully read 21 parameters from INCAR
+2026-03-17 00:49:22,975 - INFO - Loading host structure from /root/ion/IonInsertML/data/POSCAR_host
+2026-03-17 00:49:22,982 - INFO - Loading training data from /root/ion/IonInsertML/data/training_Li1.csv
+2026-03-17 00:49:22,986 - INFO - Loaded 25 training points
+2026-03-17 00:49:22,986 - INFO - Energy range: [0.472, 3.762]
+2026-03-17 00:49:22,986 - INFO - Initializing Bayesian Optimization
+2026-03-17 00:49:22,987 - INFO - Optimizing kernel hyperparameters via LOO-CV
+2026-03-17 00:49:22,987 - INFO - Optimized kernel: Matern(length_scale=1, nu=1.5) + WhiteKernel(noise_level=1e-06)
+2026-03-17 00:49:22,991 - INFO - Results saved to bo_test_results
+2026-03-17 00:49:22,991 - INFO - Iteration 1/5
+2026-03-17 00:49:22,992 - INFO - Current training set size: 25
+2026-03-17 00:49:23,981 - INFO - Suggested 3 new configurations
+2026-03-17 00:49:23,982 - INFO - Running dummy calculation in calc_0_0
+2026-03-17 00:49:23,982 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:49:23,982 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:49:23,988 - INFO - Structure saved to calc_0_0/POSCAR_with_Li
+2026-03-17 00:49:23,990 - INFO - Running dummy calculation in calc_0_1
+2026-03-17 00:49:23,990 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:49:23,991 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:49:23,992 - INFO - Structure saved to calc_0_1/POSCAR_with_Li
+2026-03-17 00:49:23,993 - INFO - Running dummy calculation in calc_0_2
+2026-03-17 00:49:24,000 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:49:24,001 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:49:24,002 - INFO - Structure saved to calc_0_2/POSCAR_with_Li
+2026-03-17 00:49:24,007 - INFO - Results saved to bo_test_results
+2026-03-17 00:49:24,007 - INFO - Iteration 1 completed. Training set size: 28
+2026-03-17 00:49:24,008 - INFO - Energy stats - min: 0.472, max: 3.762, mean: 1.579
+2026-03-17 00:49:24,008 - INFO - Iteration 2/5
+2026-03-17 00:49:24,008 - INFO - Current training set size: 28
+2026-03-17 00:49:25,044 - INFO - Suggested 3 new configurations
+2026-03-17 00:49:25,045 - INFO - Running dummy calculation in calc_1_0
+2026-03-17 00:49:25,046 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:49:25,046 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:49:25,046 - INFO - Structure saved to calc_1_0/POSCAR_with_Li
+2026-03-17 00:49:25,048 - INFO - Running dummy calculation in calc_1_1
+2026-03-17 00:49:25,048 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:49:25,048 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:49:25,049 - INFO - Structure saved to calc_1_1/POSCAR_with_Li
+2026-03-17 00:49:25,052 - INFO - Running dummy calculation in calc_1_2
+2026-03-17 00:49:25,052 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:49:25,052 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:49:25,053 - INFO - Structure saved to calc_1_2/POSCAR_with_Li
+2026-03-17 00:49:25,055 - INFO - Results saved to bo_test_results
+2026-03-17 00:49:25,055 - INFO - Iteration 2 completed. Training set size: 31
+2026-03-17 00:49:25,056 - INFO - Energy stats - min: 0.472, max: 3.762, mean: 1.685
+2026-03-17 00:49:25,057 - INFO - Iteration 3/5
+2026-03-17 00:49:25,057 - INFO - Current training set size: 31
+2026-03-17 00:49:26,118 - INFO - Suggested 3 new configurations
+2026-03-17 00:49:26,119 - INFO - Running dummy calculation in calc_2_0
+2026-03-17 00:49:26,119 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:49:26,119 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:49:26,120 - INFO - Structure saved to calc_2_0/POSCAR_with_Li
+2026-03-17 00:49:26,120 - INFO - Running dummy calculation in calc_2_1
+2026-03-17 00:49:26,120 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:49:26,121 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:49:26,121 - INFO - Structure saved to calc_2_1/POSCAR_with_Li
+2026-03-17 00:49:26,121 - INFO - Running dummy calculation in calc_2_2
+2026-03-17 00:49:26,122 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:49:26,122 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:49:26,122 - INFO - Structure saved to calc_2_2/POSCAR_with_Li
+2026-03-17 00:49:26,125 - INFO - Results saved to bo_test_results
+2026-03-17 00:49:26,125 - INFO - Iteration 3 completed. Training set size: 34
+2026-03-17 00:49:26,125 - INFO - Energy stats - min: 0.472, max: 3.762, mean: 1.772
+2026-03-17 00:49:26,125 - INFO - Iteration 4/5
+2026-03-17 00:49:26,125 - INFO - Current training set size: 34
+2026-03-17 00:49:27,262 - INFO - Suggested 3 new configurations
+2026-03-17 00:49:27,263 - INFO - Running dummy calculation in calc_3_0
+2026-03-17 00:49:27,264 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:49:27,264 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:49:27,265 - INFO - Structure saved to calc_3_0/POSCAR_with_Li
+2026-03-17 00:49:27,266 - INFO - Running dummy calculation in calc_3_1
+2026-03-17 00:49:27,267 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:49:27,267 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:49:27,269 - INFO - Structure saved to calc_3_1/POSCAR_with_Li
+2026-03-17 00:49:27,270 - INFO - Running dummy calculation in calc_3_2
+2026-03-17 00:49:27,271 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:49:27,271 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:49:27,272 - INFO - Structure saved to calc_3_2/POSCAR_with_Li
+2026-03-17 00:49:27,279 - INFO - Results saved to bo_test_results
+2026-03-17 00:49:27,280 - INFO - Iteration 4 completed. Training set size: 37
+2026-03-17 00:49:27,280 - INFO - Energy stats - min: 0.472, max: 3.762, mean: 1.845
+2026-03-17 00:49:27,280 - INFO - Iteration 5/5
+2026-03-17 00:49:27,280 - INFO - Current training set size: 37
+2026-03-17 00:49:28,510 - INFO - Suggested 3 new configurations
+2026-03-17 00:49:28,511 - INFO - Running dummy calculation in calc_4_0
+2026-03-17 00:49:28,512 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:49:28,512 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:49:28,513 - INFO - Structure saved to calc_4_0/POSCAR_with_Li
+2026-03-17 00:49:28,513 - INFO - Running dummy calculation in calc_4_1
+2026-03-17 00:49:28,514 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:49:28,514 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:49:28,515 - INFO - Structure saved to calc_4_1/POSCAR_with_Li
+2026-03-17 00:49:28,516 - INFO - Running dummy calculation in calc_4_2
+2026-03-17 00:49:28,517 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:49:28,517 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:49:28,517 - INFO - Structure saved to calc_4_2/POSCAR_with_Li
+2026-03-17 00:49:28,531 - INFO - Results saved to bo_test_results
+2026-03-17 00:49:28,531 - INFO - Iteration 5 completed. Training set size: 40
+2026-03-17 00:49:28,531 - INFO - Energy stats - min: 0.472, max: 3.762, mean: 1.908
+2026-03-17 00:49:28,531 - INFO - Optimization completed successfully!
+2026-03-17 00:49:28,531 - INFO - Final training set size: 40
+2026-03-17 00:49:28,532 - INFO - Best energy found: 0.471533 eV
+2026-03-17 00:50:05,695 - INFO - BO Test Mode Parameters:
+2026-03-17 00:50:05,695 - INFO -   train_file_csv: /root/ion/IonInsertML/data/training_Li1.csv
+2026-03-17 00:50:05,695 - INFO -   host_file: /root/ion/IonInsertML/data/POSCAR_host
+2026-03-17 00:50:05,696 - INFO -   params_file: /root/ion/IonInsertML/data/INCAR
+2026-03-17 00:50:05,696 - INFO -   host_energy: -10.5
+2026-03-17 00:50:05,696 - INFO -   int_atom_energy: -2.3
+2026-03-17 00:50:05,696 - INFO -   int_atom: Li
+2026-03-17 00:50:05,696 - INFO -   batch_size: 3
+2026-03-17 00:50:05,696 - INFO -   strat: constant_liar
+2026-03-17 00:50:05,696 - INFO -   N: 5
+2026-03-17 00:50:05,697 - INFO -   n_candidates: 500
+2026-03-17 00:50:05,697 - INFO -   rmin: 1.45
+2026-03-17 00:50:05,697 - INFO -   rmin_insrt: 1.34
+2026-03-17 00:50:05,697 - INFO -   random_state: 42
+2026-03-17 00:50:05,697 - INFO -   xi: 0.01
+2026-03-17 00:50:05,697 - INFO -   test_mode: True
+2026-03-17 00:50:05,697 - INFO - Reading VASP parameters from /root/ion/IonInsertML/data/INCAR
+2026-03-17 00:50:05,698 - INFO - Successfully read 21 parameters from INCAR
+2026-03-17 00:50:05,698 - INFO - Loading host structure from /root/ion/IonInsertML/data/POSCAR_host
+2026-03-17 00:50:05,704 - INFO - Loading training data from /root/ion/IonInsertML/data/training_Li1.csv
+2026-03-17 00:50:05,712 - INFO - Loaded 25 training points
+2026-03-17 00:50:05,712 - INFO - Energy range: [0.472, 3.762]
+2026-03-17 00:50:05,712 - INFO - Initializing Bayesian Optimization
+2026-03-17 00:50:05,713 - INFO - Optimizing kernel hyperparameters via LOO-CV
+2026-03-17 00:50:05,713 - INFO - Optimized kernel: RBF(length_scale=0.01) + WhiteKernel(noise_level=1e-06)
+2026-03-17 00:50:05,718 - INFO - Results saved to bo_test_results
+2026-03-17 00:50:05,718 - INFO - Iteration 1/5
+2026-03-17 00:50:05,718 - INFO - Current training set size: 25
+2026-03-17 00:50:06,940 - INFO - Suggested 3 new configurations
+2026-03-17 00:50:06,942 - INFO - Running dummy calculation in calc_0_0
+2026-03-17 00:50:06,943 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:50:06,943 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:50:06,944 - INFO - Structure saved to calc_0_0/POSCAR_with_Li
+2026-03-17 00:50:06,944 - INFO - Running dummy calculation in calc_0_1
+2026-03-17 00:50:06,945 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:50:06,945 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:50:06,946 - INFO - Structure saved to calc_0_1/POSCAR_with_Li
+2026-03-17 00:50:06,946 - INFO - Running dummy calculation in calc_0_2
+2026-03-17 00:50:06,947 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:50:06,947 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:50:06,947 - INFO - Structure saved to calc_0_2/POSCAR_with_Li
+2026-03-17 00:50:06,949 - INFO - Results saved to bo_test_results
+2026-03-17 00:50:06,950 - INFO - Iteration 1 completed. Training set size: 28
+2026-03-17 00:50:06,950 - INFO - Energy stats - min: 0.472, max: 3.762, mean: 1.579
+2026-03-17 00:50:06,950 - INFO - Iteration 2/5
+2026-03-17 00:50:06,950 - INFO - Current training set size: 28
+2026-03-17 00:50:08,304 - INFO - Suggested 3 new configurations
+2026-03-17 00:50:08,305 - INFO - Running dummy calculation in calc_1_0
+2026-03-17 00:50:08,306 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:50:08,306 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:50:08,309 - INFO - Structure saved to calc_1_0/POSCAR_with_Li
+2026-03-17 00:50:08,310 - INFO - Running dummy calculation in calc_1_1
+2026-03-17 00:50:08,311 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:50:08,311 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:50:08,312 - INFO - Structure saved to calc_1_1/POSCAR_with_Li
+2026-03-17 00:50:08,312 - INFO - Running dummy calculation in calc_1_2
+2026-03-17 00:50:08,313 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:50:08,313 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:50:08,313 - INFO - Structure saved to calc_1_2/POSCAR_with_Li
+2026-03-17 00:50:08,316 - INFO - Results saved to bo_test_results
+2026-03-17 00:50:08,316 - INFO - Iteration 2 completed. Training set size: 31
+2026-03-17 00:50:08,316 - INFO - Energy stats - min: 0.472, max: 3.762, mean: 1.685
+2026-03-17 00:50:08,317 - INFO - Iteration 3/5
+2026-03-17 00:50:08,317 - INFO - Current training set size: 31
+2026-03-17 00:50:09,523 - INFO - Suggested 3 new configurations
+2026-03-17 00:50:09,524 - INFO - Running dummy calculation in calc_2_0
+2026-03-17 00:50:09,525 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:50:09,525 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:50:09,526 - INFO - Structure saved to calc_2_0/POSCAR_with_Li
+2026-03-17 00:50:09,526 - INFO - Running dummy calculation in calc_2_1
+2026-03-17 00:50:09,527 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:50:09,527 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:50:09,527 - INFO - Structure saved to calc_2_1/POSCAR_with_Li
+2026-03-17 00:50:09,528 - INFO - Running dummy calculation in calc_2_2
+2026-03-17 00:50:09,530 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:50:09,531 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:50:09,531 - INFO - Structure saved to calc_2_2/POSCAR_with_Li
+2026-03-17 00:50:09,534 - INFO - Results saved to bo_test_results
+2026-03-17 00:50:09,534 - INFO - Iteration 3 completed. Training set size: 34
+2026-03-17 00:50:09,534 - INFO - Energy stats - min: 0.472, max: 3.762, mean: 1.772
+2026-03-17 00:50:09,535 - INFO - Iteration 4/5
+2026-03-17 00:50:09,535 - INFO - Current training set size: 34
+2026-03-17 00:50:10,543 - INFO - Suggested 3 new configurations
+2026-03-17 00:50:10,544 - INFO - Running dummy calculation in calc_3_0
+2026-03-17 00:50:10,544 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:50:10,545 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:50:10,545 - INFO - Structure saved to calc_3_0/POSCAR_with_Li
+2026-03-17 00:50:10,546 - INFO - Running dummy calculation in calc_3_1
+2026-03-17 00:50:10,546 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:50:10,546 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:50:10,547 - INFO - Structure saved to calc_3_1/POSCAR_with_Li
+2026-03-17 00:50:10,547 - INFO - Running dummy calculation in calc_3_2
+2026-03-17 00:50:10,548 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:50:10,548 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:50:10,549 - INFO - Structure saved to calc_3_2/POSCAR_with_Li
+2026-03-17 00:50:10,551 - INFO - Results saved to bo_test_results
+2026-03-17 00:50:10,551 - INFO - Iteration 4 completed. Training set size: 37
+2026-03-17 00:50:10,551 - INFO - Energy stats - min: 0.472, max: 3.762, mean: 1.845
+2026-03-17 00:50:10,551 - INFO - Iteration 5/5
+2026-03-17 00:50:10,552 - INFO - Current training set size: 37
+2026-03-17 00:50:11,538 - INFO - Suggested 3 new configurations
+2026-03-17 00:50:11,539 - INFO - Running dummy calculation in calc_4_0
+2026-03-17 00:50:11,539 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:50:11,539 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:50:11,540 - INFO - Structure saved to calc_4_0/POSCAR_with_Li
+2026-03-17 00:50:11,540 - INFO - Running dummy calculation in calc_4_1
+2026-03-17 00:50:11,541 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:50:11,541 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:50:11,541 - INFO - Structure saved to calc_4_1/POSCAR_with_Li
+2026-03-17 00:50:11,542 - INFO - Running dummy calculation in calc_4_2
+2026-03-17 00:50:11,542 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:50:11,542 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:50:11,543 - INFO - Structure saved to calc_4_2/POSCAR_with_Li
+2026-03-17 00:50:11,545 - INFO - Results saved to bo_test_results
+2026-03-17 00:50:11,545 - INFO - Iteration 5 completed. Training set size: 40
+2026-03-17 00:50:11,545 - INFO - Energy stats - min: 0.472, max: 3.762, mean: 1.908
+2026-03-17 00:50:11,545 - INFO - Optimization completed successfully!
+2026-03-17 00:50:11,545 - INFO - Final training set size: 40
+2026-03-17 00:50:11,545 - INFO - Best energy found: 0.471533 eV
+2026-03-17 00:51:20,606 - INFO - BO Test Mode Parameters:
+2026-03-17 00:51:20,606 - INFO -   train_file_csv: /root/ion/IonInsertML/data/training_Li1.csv
+2026-03-17 00:51:20,606 - INFO -   host_file: /root/ion/IonInsertML/data/POSCAR_host
+2026-03-17 00:51:20,606 - INFO -   params_file: /root/ion/IonInsertML/data/INCAR
+2026-03-17 00:51:20,606 - INFO -   host_energy: -10.5
+2026-03-17 00:51:20,607 - INFO -   int_atom_energy: -2.3
+2026-03-17 00:51:20,607 - INFO -   int_atom: Li
+2026-03-17 00:51:20,607 - INFO -   batch_size: 3
+2026-03-17 00:51:20,607 - INFO -   strat: constant_liar
+2026-03-17 00:51:20,607 - INFO -   N: 5
+2026-03-17 00:51:20,607 - INFO -   n_candidates: 500
+2026-03-17 00:51:20,607 - INFO -   rmin: 1.45
+2026-03-17 00:51:20,607 - INFO -   rmin_insrt: 1.34
+2026-03-17 00:51:20,607 - INFO -   random_state: 42
+2026-03-17 00:51:20,607 - INFO -   xi: 0.01
+2026-03-17 00:51:20,607 - INFO -   test_mode: True
+2026-03-17 00:51:20,608 - INFO - Reading VASP parameters from /root/ion/IonInsertML/data/INCAR
+2026-03-17 00:51:20,608 - INFO - Successfully read 21 parameters from INCAR
+2026-03-17 00:51:20,608 - INFO - Loading host structure from /root/ion/IonInsertML/data/POSCAR_host
+2026-03-17 00:51:20,617 - INFO - Loading training data from /root/ion/IonInsertML/data/training_Li1.csv
+2026-03-17 00:51:20,627 - INFO - Loaded 25 training points
+2026-03-17 00:51:20,627 - INFO - Energy range: [0.472, 3.762]
+2026-03-17 00:51:20,627 - INFO - Initializing Bayesian Optimization
+2026-03-17 00:51:20,628 - INFO - Optimizing kernel hyperparameters via LOO-CV
+2026-03-17 00:51:20,634 - INFO - Results saved to bo_test_results
+2026-03-17 00:51:20,634 - INFO - Iteration 1/5
+2026-03-17 00:51:20,635 - INFO - Current training set size: 25
+2026-03-17 00:51:20,652 - INFO - Optimized kernel: RBF(length_scale=0.01) + WhiteKernel(noise_level=1e-06)
+2026-03-17 00:51:22,495 - INFO - Suggested 3 new configurations
+2026-03-17 00:51:22,496 - INFO - Running dummy calculation in calc_0_0
+2026-03-17 00:51:22,513 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:51:22,515 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:51:22,516 - INFO - Structure saved to calc_0_0/POSCAR_with_Li
+2026-03-17 00:51:22,518 - INFO - Running dummy calculation in calc_0_1
+2026-03-17 00:51:22,533 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:51:22,533 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:51:22,535 - INFO - Structure saved to calc_0_1/POSCAR_with_Li
+2026-03-17 00:51:22,539 - INFO - Running dummy calculation in calc_0_2
+2026-03-17 00:51:22,552 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:51:22,554 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:51:22,557 - INFO - Structure saved to calc_0_2/POSCAR_with_Li
+2026-03-17 00:51:22,573 - INFO - Results saved to bo_test_results
+2026-03-17 00:51:22,573 - INFO - Iteration 1 completed. Training set size: 28
+2026-03-17 00:51:22,573 - INFO - Energy stats - min: 0.472, max: 3.762, mean: 1.579
+2026-03-17 00:51:22,573 - INFO - Iteration 2/5
+2026-03-17 00:51:22,573 - INFO - Current training set size: 28
+2026-03-17 00:51:22,605 - INFO - Optimized kernel: RBF(length_scale=0.01) + WhiteKernel(noise_level=1e-06)
+2026-03-17 00:51:23,959 - INFO - Suggested 3 new configurations
+2026-03-17 00:51:23,960 - INFO - Running dummy calculation in calc_1_0
+2026-03-17 00:51:23,960 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:51:23,961 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:51:23,961 - INFO - Structure saved to calc_1_0/POSCAR_with_Li
+2026-03-17 00:51:23,962 - INFO - Running dummy calculation in calc_1_1
+2026-03-17 00:51:23,962 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:51:23,962 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:51:23,963 - INFO - Structure saved to calc_1_1/POSCAR_with_Li
+2026-03-17 00:51:23,964 - INFO - Running dummy calculation in calc_1_2
+2026-03-17 00:51:23,964 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:51:23,964 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:51:23,965 - INFO - Structure saved to calc_1_2/POSCAR_with_Li
+2026-03-17 00:51:23,968 - INFO - Results saved to bo_test_results
+2026-03-17 00:51:23,968 - INFO - Iteration 2 completed. Training set size: 31
+2026-03-17 00:51:23,968 - INFO - Energy stats - min: 0.472, max: 3.762, mean: 1.685
+2026-03-17 00:51:23,968 - INFO - Iteration 3/5
+2026-03-17 00:51:23,969 - INFO - Current training set size: 31
+2026-03-17 00:51:23,975 - INFO - Optimized kernel: RBF(length_scale=0.01) + WhiteKernel(noise_level=1e-06)
+2026-03-17 00:51:25,225 - INFO - Suggested 3 new configurations
+2026-03-17 00:51:25,226 - INFO - Running dummy calculation in calc_2_0
+2026-03-17 00:51:25,226 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:51:25,226 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:51:25,227 - INFO - Structure saved to calc_2_0/POSCAR_with_Li
+2026-03-17 00:51:25,228 - INFO - Running dummy calculation in calc_2_1
+2026-03-17 00:51:25,228 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:51:25,228 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:51:25,228 - INFO - Structure saved to calc_2_1/POSCAR_with_Li
+2026-03-17 00:51:25,229 - INFO - Running dummy calculation in calc_2_2
+2026-03-17 00:51:25,229 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:51:25,229 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:51:25,230 - INFO - Structure saved to calc_2_2/POSCAR_with_Li
+2026-03-17 00:51:25,232 - INFO - Results saved to bo_test_results
+2026-03-17 00:51:25,232 - INFO - Iteration 3 completed. Training set size: 34
+2026-03-17 00:51:25,232 - INFO - Energy stats - min: 0.472, max: 3.762, mean: 1.772
+2026-03-17 00:51:25,232 - INFO - Iteration 4/5
+2026-03-17 00:51:25,232 - INFO - Current training set size: 34
+2026-03-17 00:51:25,237 - INFO - Optimized kernel: RBF(length_scale=0.01) + WhiteKernel(noise_level=1e-06)
+2026-03-17 00:51:26,232 - INFO - Suggested 3 new configurations
+2026-03-17 00:51:26,233 - INFO - Running dummy calculation in calc_3_0
+2026-03-17 00:51:26,233 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:51:26,233 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:51:26,234 - INFO - Structure saved to calc_3_0/POSCAR_with_Li
+2026-03-17 00:51:26,234 - INFO - Running dummy calculation in calc_3_1
+2026-03-17 00:51:26,235 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:51:26,235 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:51:26,235 - INFO - Structure saved to calc_3_1/POSCAR_with_Li
+2026-03-17 00:51:26,236 - INFO - Running dummy calculation in calc_3_2
+2026-03-17 00:51:26,236 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:51:26,236 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:51:26,236 - INFO - Structure saved to calc_3_2/POSCAR_with_Li
+2026-03-17 00:51:26,239 - INFO - Results saved to bo_test_results
+2026-03-17 00:51:26,240 - INFO - Iteration 4 completed. Training set size: 37
+2026-03-17 00:51:26,240 - INFO - Energy stats - min: 0.472, max: 3.762, mean: 1.845
+2026-03-17 00:51:26,240 - INFO - Iteration 5/5
+2026-03-17 00:51:26,240 - INFO - Current training set size: 37
+2026-03-17 00:51:26,245 - INFO - Optimized kernel: RBF(length_scale=0.01) + WhiteKernel(noise_level=1e-06)
+2026-03-17 00:51:27,967 - INFO - Suggested 3 new configurations
+2026-03-17 00:51:27,968 - INFO - Running dummy calculation in calc_4_0
+2026-03-17 00:51:27,969 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:51:27,969 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:51:27,971 - INFO - Structure saved to calc_4_0/POSCAR_with_Li
+2026-03-17 00:51:27,972 - INFO - Running dummy calculation in calc_4_1
+2026-03-17 00:51:27,973 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:51:27,973 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:51:27,974 - INFO - Structure saved to calc_4_1/POSCAR_with_Li
+2026-03-17 00:51:27,975 - INFO - Running dummy calculation in calc_4_2
+2026-03-17 00:51:27,975 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:51:27,975 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:51:27,976 - INFO - Structure saved to calc_4_2/POSCAR_with_Li
+2026-03-17 00:51:27,989 - INFO - Results saved to bo_test_results
+2026-03-17 00:51:27,990 - INFO - Iteration 5 completed. Training set size: 40
+2026-03-17 00:51:27,990 - INFO - Energy stats - min: 0.472, max: 3.762, mean: 1.908
+2026-03-17 00:51:27,990 - INFO - Optimization completed successfully!
+2026-03-17 00:51:27,991 - INFO - Final training set size: 40
+2026-03-17 00:51:27,991 - INFO - Best energy found: 0.471533 eV
+2026-03-17 00:51:50,611 - INFO - BO Test Mode Parameters:
+2026-03-17 00:51:50,611 - INFO -   train_file_csv: /root/ion/IonInsertML/data/training_Li1.csv
+2026-03-17 00:51:50,611 - INFO -   host_file: /root/ion/IonInsertML/data/POSCAR_host
+2026-03-17 00:51:50,611 - INFO -   params_file: /root/ion/IonInsertML/data/INCAR
+2026-03-17 00:51:50,611 - INFO -   host_energy: -10.5
+2026-03-17 00:51:50,611 - INFO -   int_atom_energy: -2.3
+2026-03-17 00:51:50,612 - INFO -   int_atom: Li
+2026-03-17 00:51:50,612 - INFO -   batch_size: 3
+2026-03-17 00:51:50,612 - INFO -   strat: constant_liar
+2026-03-17 00:51:50,612 - INFO -   N: 5
+2026-03-17 00:51:50,612 - INFO -   n_candidates: 500
+2026-03-17 00:51:50,612 - INFO -   rmin: 1.45
+2026-03-17 00:51:50,612 - INFO -   rmin_insrt: 1.34
+2026-03-17 00:51:50,612 - INFO -   random_state: 42
+2026-03-17 00:51:50,612 - INFO -   xi: 0.01
+2026-03-17 00:51:50,612 - INFO -   test_mode: True
+2026-03-17 00:51:50,612 - INFO - Reading VASP parameters from /root/ion/IonInsertML/data/INCAR
+2026-03-17 00:51:50,612 - INFO - Successfully read 21 parameters from INCAR
+2026-03-17 00:51:50,612 - INFO - Loading host structure from /root/ion/IonInsertML/data/POSCAR_host
+2026-03-17 00:51:50,619 - INFO - Loading training data from /root/ion/IonInsertML/data/training_Li1.csv
+2026-03-17 00:51:50,622 - INFO - Loaded 25 training points
+2026-03-17 00:51:50,623 - INFO - Energy range: [0.472, 3.762]
+2026-03-17 00:51:50,623 - INFO - Initializing Bayesian Optimization
+2026-03-17 00:51:50,623 - INFO - Optimizing kernel hyperparameters via LOO-CV
+2026-03-17 00:51:50,627 - INFO - Results saved to bo_test_results
+2026-03-17 00:51:50,627 - INFO - Iteration 1/5
+2026-03-17 00:51:50,627 - INFO - Current training set size: 25
+2026-03-17 00:51:50,637 - INFO - Optimized kernel: RBF(length_scale=0.01) + WhiteKernel(noise_level=1e-06)
+2026-03-17 00:51:51,676 - INFO - Suggested 3 new configurations
+2026-03-17 00:51:51,677 - INFO - Running dummy calculation in calc_0_0
+2026-03-17 00:51:51,678 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:51:51,678 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:51:51,678 - INFO - Structure saved to calc_0_0/POSCAR_with_Li
+2026-03-17 00:51:51,679 - INFO - Running dummy calculation in calc_0_1
+2026-03-17 00:51:51,679 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:51:51,679 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:51:51,680 - INFO - Structure saved to calc_0_1/POSCAR_with_Li
+2026-03-17 00:51:51,680 - INFO - Running dummy calculation in calc_0_2
+2026-03-17 00:51:51,680 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:51:51,680 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:51:51,681 - INFO - Structure saved to calc_0_2/POSCAR_with_Li
+2026-03-17 00:51:51,683 - INFO - Results saved to bo_test_results
+2026-03-17 00:51:51,683 - INFO - Iteration 1 completed. Training set size: 28
+2026-03-17 00:51:51,683 - INFO - Energy stats - min: 0.472, max: 3.762, mean: 1.579
+2026-03-17 00:51:51,683 - INFO - Iteration 2/5
+2026-03-17 00:51:51,683 - INFO - Current training set size: 28
+2026-03-17 00:51:51,689 - INFO - Optimized kernel: RBF(length_scale=0.01) + WhiteKernel(noise_level=1e-06)
+2026-03-17 00:51:52,773 - INFO - Suggested 3 new configurations
+2026-03-17 00:51:52,774 - INFO - Running dummy calculation in calc_1_0
+2026-03-17 00:51:52,774 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:51:52,774 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:51:52,775 - INFO - Structure saved to calc_1_0/POSCAR_with_Li
+2026-03-17 00:51:52,775 - INFO - Running dummy calculation in calc_1_1
+2026-03-17 00:51:52,775 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:51:52,776 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:51:52,776 - INFO - Structure saved to calc_1_1/POSCAR_with_Li
+2026-03-17 00:51:52,776 - INFO - Running dummy calculation in calc_1_2
+2026-03-17 00:51:52,777 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:51:52,777 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:51:52,777 - INFO - Structure saved to calc_1_2/POSCAR_with_Li
+2026-03-17 00:51:52,779 - INFO - Results saved to bo_test_results
+2026-03-17 00:51:52,779 - INFO - Iteration 2 completed. Training set size: 31
+2026-03-17 00:51:52,780 - INFO - Energy stats - min: 0.472, max: 3.762, mean: 1.685
+2026-03-17 00:51:52,780 - INFO - Iteration 3/5
+2026-03-17 00:51:52,780 - INFO - Current training set size: 31
+2026-03-17 00:51:52,786 - INFO - Optimized kernel: RBF(length_scale=0.01) + WhiteKernel(noise_level=1e-06)
+2026-03-17 00:51:53,837 - INFO - Suggested 3 new configurations
+2026-03-17 00:51:53,838 - INFO - Running dummy calculation in calc_2_0
+2026-03-17 00:51:53,838 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:51:53,838 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:51:53,838 - INFO - Structure saved to calc_2_0/POSCAR_with_Li
+2026-03-17 00:51:53,839 - INFO - Running dummy calculation in calc_2_1
+2026-03-17 00:51:53,839 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:51:53,839 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:51:53,840 - INFO - Structure saved to calc_2_1/POSCAR_with_Li
+2026-03-17 00:51:53,841 - INFO - Running dummy calculation in calc_2_2
+2026-03-17 00:51:53,841 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:51:53,841 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:51:53,841 - INFO - Structure saved to calc_2_2/POSCAR_with_Li
+2026-03-17 00:51:53,843 - INFO - Results saved to bo_test_results
+2026-03-17 00:51:53,843 - INFO - Iteration 3 completed. Training set size: 34
+2026-03-17 00:51:53,843 - INFO - Energy stats - min: 0.472, max: 3.762, mean: 1.772
+2026-03-17 00:51:53,843 - INFO - Iteration 4/5
+2026-03-17 00:51:53,843 - INFO - Current training set size: 34
+2026-03-17 00:51:53,849 - INFO - Optimized kernel: RBF(length_scale=0.01) + WhiteKernel(noise_level=1e-06)
+2026-03-17 00:51:54,872 - INFO - Suggested 3 new configurations
+2026-03-17 00:51:54,873 - INFO - Running dummy calculation in calc_3_0
+2026-03-17 00:51:54,873 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:51:54,873 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:51:54,873 - INFO - Structure saved to calc_3_0/POSCAR_with_Li
+2026-03-17 00:51:54,874 - INFO - Running dummy calculation in calc_3_1
+2026-03-17 00:51:54,874 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:51:54,874 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:51:54,874 - INFO - Structure saved to calc_3_1/POSCAR_with_Li
+2026-03-17 00:51:54,875 - INFO - Running dummy calculation in calc_3_2
+2026-03-17 00:51:54,875 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:51:54,875 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:51:54,875 - INFO - Structure saved to calc_3_2/POSCAR_with_Li
+2026-03-17 00:51:54,877 - INFO - Results saved to bo_test_results
+2026-03-17 00:51:54,877 - INFO - Iteration 4 completed. Training set size: 37
+2026-03-17 00:51:54,877 - INFO - Energy stats - min: 0.472, max: 3.762, mean: 1.845
+2026-03-17 00:51:54,877 - INFO - Iteration 5/5
+2026-03-17 00:51:54,878 - INFO - Current training set size: 37
+2026-03-17 00:51:54,882 - INFO - Optimized kernel: RBF(length_scale=0.01) + WhiteKernel(noise_level=1e-06)
+2026-03-17 00:51:55,868 - INFO - Suggested 3 new configurations
+2026-03-17 00:51:55,869 - INFO - Running dummy calculation in calc_4_0
+2026-03-17 00:51:55,869 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:51:55,870 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:51:55,870 - INFO - Structure saved to calc_4_0/POSCAR_with_Li
+2026-03-17 00:51:55,871 - INFO - Running dummy calculation in calc_4_1
+2026-03-17 00:51:55,871 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:51:55,871 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:51:55,872 - INFO - Structure saved to calc_4_1/POSCAR_with_Li
+2026-03-17 00:51:55,872 - INFO - Running dummy calculation in calc_4_2
+2026-03-17 00:51:55,873 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 00:51:55,873 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 00:51:55,874 - INFO - Structure saved to calc_4_2/POSCAR_with_Li
+2026-03-17 00:51:55,876 - INFO - Results saved to bo_test_results
+2026-03-17 00:51:55,876 - INFO - Iteration 5 completed. Training set size: 40
+2026-03-17 00:51:55,876 - INFO - Energy stats - min: 0.472, max: 3.762, mean: 1.908
+2026-03-17 00:51:55,877 - INFO - Optimization completed successfully!
+2026-03-17 00:51:55,877 - INFO - Final training set size: 40
+2026-03-17 00:51:55,877 - INFO - Best energy found: 0.471533 eV
+2026-03-17 01:11:23,348 - INFO - BO Test Mode Parameters:
+2026-03-17 01:11:23,350 - INFO -   train_file_csv: /root/ion/IonInsertML/data/training_Li1.csv
+2026-03-17 01:11:23,350 - INFO -   host_file: /root/ion/IonInsertML/data/POSCAR_host
+2026-03-17 01:11:23,350 - INFO -   params_file: /root/ion/IonInsertML/data/INCAR
+2026-03-17 01:11:23,350 - INFO -   host_energy: -10.5
+2026-03-17 01:11:23,350 - INFO -   int_atom_energy: -2.3
+2026-03-17 01:11:23,350 - INFO -   int_atom: Li
+2026-03-17 01:11:23,350 - INFO -   batch_size: 3
+2026-03-17 01:11:23,351 - INFO -   strat: constant_liar
+2026-03-17 01:11:23,351 - INFO -   N: 5
+2026-03-17 01:11:23,351 - INFO -   n_candidates: 500
+2026-03-17 01:11:23,351 - INFO -   rmin: 1.45
+2026-03-17 01:11:23,351 - INFO -   rmin_insrt: 1.34
+2026-03-17 01:11:23,351 - INFO -   random_state: 42
+2026-03-17 01:11:23,352 - INFO -   xi: 0.01
+2026-03-17 01:11:23,352 - INFO -   test_mode: True
+2026-03-17 01:11:23,352 - INFO - Reading VASP parameters from /root/ion/IonInsertML/data/INCAR
+2026-03-17 01:11:23,353 - INFO - Successfully read 21 parameters from INCAR
+2026-03-17 01:11:23,353 - INFO - Loading host structure from /root/ion/IonInsertML/data/POSCAR_host
+2026-03-17 01:11:23,365 - INFO - Loading training data from /root/ion/IonInsertML/data/training_Li1.csv
+2026-03-17 01:11:23,377 - INFO - Loaded 25 training points
+2026-03-17 01:11:23,377 - INFO - Energy range: [0.472, 3.762]
+2026-03-17 01:11:23,377 - INFO - Initializing Bayesian Optimization
+2026-03-17 01:11:23,378 - INFO - Optimizing kernel hyperparameters via LOO-CV
+2026-03-17 01:11:23,385 - INFO - Results saved to bo_test_results
+2026-03-17 01:11:23,387 - INFO - Iteration 1/5
+2026-03-17 01:11:23,387 - INFO - Current training set size: 25
+2026-03-17 01:11:23,450 - INFO - Optimized kernel: RBF(length_scale=1) + WhiteKernel(noise_level=1e-06)
+2026-03-17 01:11:24,667 - INFO - Suggested 3 new configurations
+2026-03-17 01:11:24,668 - INFO - Running dummy calculation in calc_0_0
+2026-03-17 01:11:24,671 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 01:11:24,671 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 01:11:24,672 - INFO - Structure saved to calc_0_0/POSCAR_with_Li
+2026-03-17 01:11:24,672 - INFO - Running dummy calculation in calc_0_1
+2026-03-17 01:11:24,673 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 01:11:24,673 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 01:11:24,673 - INFO - Structure saved to calc_0_1/POSCAR_with_Li
+2026-03-17 01:11:24,674 - INFO - Running dummy calculation in calc_0_2
+2026-03-17 01:11:24,675 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 01:11:24,675 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 01:11:24,675 - INFO - Structure saved to calc_0_2/POSCAR_with_Li
+2026-03-17 01:11:24,678 - INFO - Results saved to bo_test_results
+2026-03-17 01:11:24,678 - INFO - Iteration 1 completed. Training set size: 28
+2026-03-17 01:11:24,679 - INFO - Energy stats - min: 0.472, max: 3.762, mean: 1.579
+2026-03-17 01:11:24,679 - INFO - Iteration 2/5
+2026-03-17 01:11:24,679 - INFO - Current training set size: 28
+2026-03-17 01:11:24,723 - INFO - Optimized kernel: RBF(length_scale=1) + WhiteKernel(noise_level=1e-06)
+2026-03-17 01:11:25,896 - INFO - Suggested 3 new configurations
+2026-03-17 01:11:25,897 - INFO - Running dummy calculation in calc_1_0
+2026-03-17 01:11:25,899 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 01:11:25,900 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 01:11:25,901 - INFO - Structure saved to calc_1_0/POSCAR_with_Li
+2026-03-17 01:11:25,904 - INFO - Running dummy calculation in calc_1_1
+2026-03-17 01:11:25,906 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 01:11:25,908 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 01:11:25,910 - INFO - Structure saved to calc_1_1/POSCAR_with_Li
+2026-03-17 01:11:25,911 - INFO - Running dummy calculation in calc_1_2
+2026-03-17 01:11:25,912 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 01:11:25,913 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 01:11:25,914 - INFO - Structure saved to calc_1_2/POSCAR_with_Li
+2026-03-17 01:11:25,924 - INFO - Results saved to bo_test_results
+2026-03-17 01:11:25,925 - INFO - Iteration 2 completed. Training set size: 31
+2026-03-17 01:11:25,927 - INFO - Energy stats - min: 0.472, max: 3.762, mean: 1.685
+2026-03-17 01:11:25,930 - INFO - Iteration 3/5
+2026-03-17 01:11:25,930 - INFO - Current training set size: 31
+2026-03-17 01:11:26,021 - INFO - Optimized kernel: RBF(length_scale=1) + WhiteKernel(noise_level=1e-06)
+2026-03-17 01:11:29,328 - INFO - Suggested 3 new configurations
+2026-03-17 01:11:29,330 - INFO - Running dummy calculation in calc_2_0
+2026-03-17 01:11:29,331 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 01:11:29,332 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 01:11:29,359 - INFO - Structure saved to calc_2_0/POSCAR_with_Li
+2026-03-17 01:11:29,367 - INFO - Running dummy calculation in calc_2_1
+2026-03-17 01:11:29,385 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 01:11:29,386 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 01:11:29,388 - INFO - Structure saved to calc_2_1/POSCAR_with_Li
+2026-03-17 01:11:29,390 - INFO - Running dummy calculation in calc_2_2
+2026-03-17 01:11:29,402 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 01:11:29,403 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 01:11:29,405 - INFO - Structure saved to calc_2_2/POSCAR_with_Li
+2026-03-17 01:11:29,413 - INFO - Results saved to bo_test_results
+2026-03-17 01:11:29,414 - INFO - Iteration 3 completed. Training set size: 34
+2026-03-17 01:11:29,415 - INFO - Energy stats - min: 0.472, max: 3.762, mean: 1.772
+2026-03-17 01:11:29,415 - INFO - Iteration 4/5
+2026-03-17 01:11:29,416 - INFO - Current training set size: 34
+2026-03-17 01:11:30,064 - INFO - Optimized kernel: RBF(length_scale=1) + WhiteKernel(noise_level=1e-06)
+2026-03-17 01:11:31,257 - INFO - Suggested 3 new configurations
+2026-03-17 01:11:31,258 - INFO - Running dummy calculation in calc_3_0
+2026-03-17 01:11:31,259 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 01:11:31,259 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 01:11:31,259 - INFO - Structure saved to calc_3_0/POSCAR_with_Li
+2026-03-17 01:11:31,260 - INFO - Running dummy calculation in calc_3_1
+2026-03-17 01:11:31,260 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 01:11:31,261 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 01:11:31,261 - INFO - Structure saved to calc_3_1/POSCAR_with_Li
+2026-03-17 01:11:31,262 - INFO - Running dummy calculation in calc_3_2
+2026-03-17 01:11:31,262 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 01:11:31,262 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 01:11:31,262 - INFO - Structure saved to calc_3_2/POSCAR_with_Li
+2026-03-17 01:11:31,264 - INFO - Results saved to bo_test_results
+2026-03-17 01:11:31,265 - INFO - Iteration 4 completed. Training set size: 37
+2026-03-17 01:11:31,265 - INFO - Energy stats - min: 0.472, max: 3.762, mean: 1.845
+2026-03-17 01:11:31,265 - INFO - Iteration 5/5
+2026-03-17 01:11:31,265 - INFO - Current training set size: 37
+2026-03-17 01:11:31,313 - INFO - Optimized kernel: RBF(length_scale=1) + WhiteKernel(noise_level=1e-06)
+2026-03-17 01:11:32,476 - INFO - Suggested 3 new configurations
+2026-03-17 01:11:32,477 - INFO - Running dummy calculation in calc_4_0
+2026-03-17 01:11:32,478 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 01:11:32,478 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 01:11:32,479 - INFO - Structure saved to calc_4_0/POSCAR_with_Li
+2026-03-17 01:11:32,480 - INFO - Running dummy calculation in calc_4_1
+2026-03-17 01:11:32,480 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 01:11:32,480 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 01:11:32,481 - INFO - Structure saved to calc_4_1/POSCAR_with_Li
+2026-03-17 01:11:32,481 - INFO - Running dummy calculation in calc_4_2
+2026-03-17 01:11:32,482 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 01:11:32,482 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 01:11:32,482 - INFO - Structure saved to calc_4_2/POSCAR_with_Li
+2026-03-17 01:11:32,484 - INFO - Results saved to bo_test_results
+2026-03-17 01:11:32,484 - INFO - Iteration 5 completed. Training set size: 40
+2026-03-17 01:11:32,484 - INFO - Energy stats - min: 0.472, max: 3.762, mean: 1.908
+2026-03-17 01:11:32,485 - INFO - Optimization completed successfully!
+2026-03-17 01:11:32,485 - INFO - Final training set size: 40
+2026-03-17 01:11:32,485 - INFO - Best energy found: 0.471533 eV
+2026-03-17 01:13:24,363 - INFO - BO Test Mode Parameters:
+2026-03-17 01:13:24,363 - INFO -   train_file_csv: /root/ion/IonInsertML/data/training_Li1.csv
+2026-03-17 01:13:24,363 - INFO -   host_file: /root/ion/IonInsertML/data/POSCAR_host
+2026-03-17 01:13:24,363 - INFO -   params_file: /root/ion/IonInsertML/data/INCAR
+2026-03-17 01:13:24,364 - INFO -   host_energy: -10.5
+2026-03-17 01:13:24,364 - INFO -   int_atom_energy: -2.3
+2026-03-17 01:13:24,364 - INFO -   int_atom: Li
+2026-03-17 01:13:24,364 - INFO -   batch_size: 3
+2026-03-17 01:13:24,364 - INFO -   strat: constant_liar
+2026-03-17 01:13:24,364 - INFO -   N: 5
+2026-03-17 01:13:24,364 - INFO -   n_candidates: 500
+2026-03-17 01:13:24,364 - INFO -   rmin: 1.45
+2026-03-17 01:13:24,364 - INFO -   rmin_insrt: 1.34
+2026-03-17 01:13:24,364 - INFO -   random_state: 42
+2026-03-17 01:13:24,364 - INFO -   xi: 0.01
+2026-03-17 01:13:24,364 - INFO -   test_mode: True
+2026-03-17 01:13:24,364 - INFO - Reading VASP parameters from /root/ion/IonInsertML/data/INCAR
+2026-03-17 01:13:24,365 - INFO - Successfully read 21 parameters from INCAR
+2026-03-17 01:13:24,365 - INFO - Loading host structure from /root/ion/IonInsertML/data/POSCAR_host
+2026-03-17 01:13:24,371 - INFO - Loading training data from /root/ion/IonInsertML/data/training_Li1.csv
+2026-03-17 01:13:24,382 - INFO - Loaded 25 training points
+2026-03-17 01:13:24,382 - INFO - Energy range: [0.472, 3.762]
+2026-03-17 01:13:24,382 - INFO - Initializing Bayesian Optimization
+2026-03-17 01:13:24,383 - INFO - Optimizing kernel hyperparameters via LOO-CV
+2026-03-17 01:13:24,387 - INFO - Results saved to bo_test_results
+2026-03-17 01:13:24,388 - INFO - Iteration 1/5
+2026-03-17 01:13:24,388 - INFO - Current training set size: 25
+2026-03-17 01:13:24,420 - INFO - Optimized kernel: RBF(length_scale=0.5) + WhiteKernel(noise_level=0.583)
+2026-03-17 01:13:25,663 - INFO - Suggested 3 new configurations
+2026-03-17 01:13:25,665 - INFO - Running dummy calculation in calc_0_0
+2026-03-17 01:13:25,665 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 01:13:25,666 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 01:13:25,666 - INFO - Structure saved to calc_0_0/POSCAR_with_Li
+2026-03-17 01:13:25,667 - INFO - Running dummy calculation in calc_0_1
+2026-03-17 01:13:25,667 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 01:13:25,667 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 01:13:25,668 - INFO - Structure saved to calc_0_1/POSCAR_with_Li
+2026-03-17 01:13:25,668 - INFO - Running dummy calculation in calc_0_2
+2026-03-17 01:13:25,669 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 01:13:25,669 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 01:13:25,669 - INFO - Structure saved to calc_0_2/POSCAR_with_Li
+2026-03-17 01:13:25,676 - INFO - Results saved to bo_test_results
+2026-03-17 01:13:25,676 - INFO - Iteration 1 completed. Training set size: 28
+2026-03-17 01:13:25,677 - INFO - Energy stats - min: 0.472, max: 3.762, mean: 1.579
+2026-03-17 01:13:25,677 - INFO - Iteration 2/5
+2026-03-17 01:13:25,677 - INFO - Current training set size: 28
+2026-03-17 01:13:25,733 - INFO - Optimized kernel: RBF(length_scale=0.5) + WhiteKernel(noise_level=0.434)
+2026-03-17 01:13:26,721 - INFO - Suggested 3 new configurations
+2026-03-17 01:13:26,722 - INFO - Running dummy calculation in calc_1_0
+2026-03-17 01:13:26,722 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 01:13:26,722 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 01:13:26,722 - INFO - Structure saved to calc_1_0/POSCAR_with_Li
+2026-03-17 01:13:26,723 - INFO - Running dummy calculation in calc_1_1
+2026-03-17 01:13:26,723 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 01:13:26,723 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 01:13:26,724 - INFO - Structure saved to calc_1_1/POSCAR_with_Li
+2026-03-17 01:13:26,724 - INFO - Running dummy calculation in calc_1_2
+2026-03-17 01:13:26,725 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 01:13:26,725 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 01:13:26,725 - INFO - Structure saved to calc_1_2/POSCAR_with_Li
+2026-03-17 01:13:26,728 - INFO - Results saved to bo_test_results
+2026-03-17 01:13:26,728 - INFO - Iteration 2 completed. Training set size: 31
+2026-03-17 01:13:26,728 - INFO - Energy stats - min: 0.472, max: 3.762, mean: 1.685
+2026-03-17 01:13:26,728 - INFO - Iteration 3/5
+2026-03-17 01:13:26,728 - INFO - Current training set size: 31
+2026-03-17 01:13:26,759 - INFO - Optimized kernel: RBF(length_scale=0.5) + WhiteKernel(noise_level=0.491)
+2026-03-17 01:13:27,734 - INFO - Suggested 3 new configurations
+2026-03-17 01:13:27,735 - INFO - Running dummy calculation in calc_2_0
+2026-03-17 01:13:27,735 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 01:13:27,736 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 01:13:27,736 - INFO - Structure saved to calc_2_0/POSCAR_with_Li
+2026-03-17 01:13:27,737 - INFO - Running dummy calculation in calc_2_1
+2026-03-17 01:13:27,737 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 01:13:27,737 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 01:13:27,738 - INFO - Structure saved to calc_2_1/POSCAR_with_Li
+2026-03-17 01:13:27,738 - INFO - Running dummy calculation in calc_2_2
+2026-03-17 01:13:27,739 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 01:13:27,739 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 01:13:27,740 - INFO - Structure saved to calc_2_2/POSCAR_with_Li
+2026-03-17 01:13:27,742 - INFO - Results saved to bo_test_results
+2026-03-17 01:13:27,742 - INFO - Iteration 3 completed. Training set size: 34
+2026-03-17 01:13:27,742 - INFO - Energy stats - min: 0.472, max: 3.762, mean: 1.772
+2026-03-17 01:13:27,742 - INFO - Iteration 4/5
+2026-03-17 01:13:27,742 - INFO - Current training set size: 34
+2026-03-17 01:13:27,804 - INFO - Optimized kernel: RBF(length_scale=0.5) + WhiteKernel(noise_level=0.435)
+2026-03-17 01:13:28,933 - INFO - Suggested 3 new configurations
+2026-03-17 01:13:28,934 - INFO - Running dummy calculation in calc_3_0
+2026-03-17 01:13:28,934 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 01:13:28,934 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 01:13:28,935 - INFO - Structure saved to calc_3_0/POSCAR_with_Li
+2026-03-17 01:13:28,936 - INFO - Running dummy calculation in calc_3_1
+2026-03-17 01:13:28,936 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 01:13:28,936 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 01:13:28,937 - INFO - Structure saved to calc_3_1/POSCAR_with_Li
+2026-03-17 01:13:28,937 - INFO - Running dummy calculation in calc_3_2
+2026-03-17 01:13:28,938 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 01:13:28,938 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 01:13:28,938 - INFO - Structure saved to calc_3_2/POSCAR_with_Li
+2026-03-17 01:13:28,940 - INFO - Results saved to bo_test_results
+2026-03-17 01:13:28,941 - INFO - Iteration 4 completed. Training set size: 37
+2026-03-17 01:13:28,941 - INFO - Energy stats - min: 0.472, max: 3.762, mean: 1.845
+2026-03-17 01:13:28,941 - INFO - Iteration 5/5
+2026-03-17 01:13:28,941 - INFO - Current training set size: 37
+2026-03-17 01:13:28,997 - INFO - Optimized kernel: RBF(length_scale=0.5) + WhiteKernel(noise_level=0.391)
+2026-03-17 01:13:30,241 - INFO - Suggested 3 new configurations
+2026-03-17 01:13:30,242 - INFO - Running dummy calculation in calc_4_0
+2026-03-17 01:13:30,243 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 01:13:30,243 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 01:13:30,244 - INFO - Structure saved to calc_4_0/POSCAR_with_Li
+2026-03-17 01:13:30,244 - INFO - Running dummy calculation in calc_4_1
+2026-03-17 01:13:30,244 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 01:13:30,245 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 01:13:30,245 - INFO - Structure saved to calc_4_1/POSCAR_with_Li
+2026-03-17 01:13:30,245 - INFO - Running dummy calculation in calc_4_2
+2026-03-17 01:13:30,246 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 01:13:30,246 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 01:13:30,247 - INFO - Structure saved to calc_4_2/POSCAR_with_Li
+2026-03-17 01:13:30,249 - INFO - Results saved to bo_test_results
+2026-03-17 01:13:30,249 - INFO - Iteration 5 completed. Training set size: 40
+2026-03-17 01:13:30,249 - INFO - Energy stats - min: 0.472, max: 3.762, mean: 1.908
+2026-03-17 01:13:30,250 - INFO - Optimization completed successfully!
+2026-03-17 01:13:30,250 - INFO - Final training set size: 40
+2026-03-17 01:13:30,250 - INFO - Best energy found: 0.471533 eV
+2026-03-17 01:17:56,791 - INFO - BO Test Mode Parameters:
+2026-03-17 01:17:56,791 - INFO -   train_file_csv: /root/ion/IonInsertML/data/training_Li1.csv
+2026-03-17 01:17:56,791 - INFO -   host_file: /root/ion/IonInsertML/data/POSCAR_host
+2026-03-17 01:17:56,791 - INFO -   params_file: /root/ion/IonInsertML/data/INCAR
+2026-03-17 01:17:56,791 - INFO -   host_energy: -10.5
+2026-03-17 01:17:56,791 - INFO -   int_atom_energy: -2.3
+2026-03-17 01:17:56,791 - INFO -   int_atom: Li
+2026-03-17 01:17:56,791 - INFO -   batch_size: 3
+2026-03-17 01:17:56,791 - INFO -   strat: constant_liar
+2026-03-17 01:17:56,792 - INFO -   N: 10
+2026-03-17 01:17:56,792 - INFO -   n_candidates: 500
+2026-03-17 01:17:56,792 - INFO -   rmin: 1.45
+2026-03-17 01:17:56,792 - INFO -   rmin_insrt: 1.34
+2026-03-17 01:17:56,792 - INFO -   random_state: 42
+2026-03-17 01:17:56,792 - INFO -   xi: 0.01
+2026-03-17 01:17:56,792 - INFO -   test_mode: True
+2026-03-17 01:17:56,792 - INFO - Reading VASP parameters from /root/ion/IonInsertML/data/INCAR
+2026-03-17 01:17:56,792 - INFO - Successfully read 21 parameters from INCAR
+2026-03-17 01:17:56,792 - INFO - Loading host structure from /root/ion/IonInsertML/data/POSCAR_host
+2026-03-17 01:17:56,796 - INFO - Loading training data from /root/ion/IonInsertML/data/training_Li1.csv
+2026-03-17 01:17:56,802 - INFO - Loaded 25 training points
+2026-03-17 01:17:56,802 - INFO - Energy range: [0.472, 3.762]
+2026-03-17 01:17:56,802 - INFO - Initializing Bayesian Optimization
+2026-03-17 01:17:56,802 - INFO - Optimizing kernel hyperparameters via LOO-CV
+2026-03-17 01:17:56,806 - INFO - Results saved to bo_test_results
+2026-03-17 01:17:56,806 - INFO - Iteration 1/10
+2026-03-17 01:17:56,806 - INFO - Current training set size: 25
+2026-03-17 01:17:56,835 - INFO - Optimized kernel: RBF(length_scale=0.5) + WhiteKernel(noise_level=0.583)
+2026-03-17 01:17:57,824 - INFO - Suggested 3 new configurations
+2026-03-17 01:17:57,825 - INFO - Running dummy calculation in calc_0_0
+2026-03-17 01:17:57,828 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 01:17:57,828 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 01:17:57,829 - INFO - Structure saved to calc_0_0/POSCAR_with_Li
+2026-03-17 01:17:57,830 - INFO - Running dummy calculation in calc_0_1
+2026-03-17 01:17:57,834 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 01:17:57,834 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 01:17:57,835 - INFO - Structure saved to calc_0_1/POSCAR_with_Li
+2026-03-17 01:17:57,836 - INFO - Running dummy calculation in calc_0_2
+2026-03-17 01:17:57,836 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 01:17:57,836 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 01:17:57,837 - INFO - Structure saved to calc_0_2/POSCAR_with_Li
+2026-03-17 01:17:57,839 - INFO - Results saved to bo_test_results
+2026-03-17 01:17:57,840 - INFO - Iteration 1 completed. Training set size: 28
+2026-03-17 01:17:57,840 - INFO - Energy stats - min: 0.472, max: 3.762, mean: 1.579
+2026-03-17 01:17:57,840 - INFO - Iteration 2/10
+2026-03-17 01:17:57,840 - INFO - Current training set size: 28
+2026-03-17 01:17:57,880 - INFO - Optimized kernel: RBF(length_scale=0.5) + WhiteKernel(noise_level=0.434)
+2026-03-17 01:17:59,316 - INFO - Suggested 3 new configurations
+2026-03-17 01:17:59,318 - INFO - Running dummy calculation in calc_1_0
+2026-03-17 01:17:59,318 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 01:17:59,318 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 01:17:59,319 - INFO - Structure saved to calc_1_0/POSCAR_with_Li
+2026-03-17 01:17:59,320 - INFO - Running dummy calculation in calc_1_1
+2026-03-17 01:17:59,320 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 01:17:59,321 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 01:17:59,321 - INFO - Structure saved to calc_1_1/POSCAR_with_Li
+2026-03-17 01:17:59,322 - INFO - Running dummy calculation in calc_1_2
+2026-03-17 01:17:59,322 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 01:17:59,323 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 01:17:59,323 - INFO - Structure saved to calc_1_2/POSCAR_with_Li
+2026-03-17 01:17:59,332 - INFO - Results saved to bo_test_results
+2026-03-17 01:17:59,332 - INFO - Iteration 2 completed. Training set size: 31
+2026-03-17 01:17:59,332 - INFO - Energy stats - min: 0.472, max: 3.762, mean: 1.685
+2026-03-17 01:17:59,333 - INFO - Iteration 3/10
+2026-03-17 01:17:59,333 - INFO - Current training set size: 31
+2026-03-17 01:17:59,383 - INFO - Optimized kernel: RBF(length_scale=0.5) + WhiteKernel(noise_level=0.491)
+2026-03-17 01:18:00,529 - INFO - Suggested 3 new configurations
+2026-03-17 01:18:00,530 - INFO - Running dummy calculation in calc_2_0
+2026-03-17 01:18:00,530 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 01:18:00,531 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 01:18:00,531 - INFO - Structure saved to calc_2_0/POSCAR_with_Li
+2026-03-17 01:18:00,532 - INFO - Running dummy calculation in calc_2_1
+2026-03-17 01:18:00,532 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 01:18:00,532 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 01:18:00,533 - INFO - Structure saved to calc_2_1/POSCAR_with_Li
+2026-03-17 01:18:00,533 - INFO - Running dummy calculation in calc_2_2
+2026-03-17 01:18:00,534 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 01:18:00,534 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 01:18:00,534 - INFO - Structure saved to calc_2_2/POSCAR_with_Li
+2026-03-17 01:18:00,536 - INFO - Results saved to bo_test_results
+2026-03-17 01:18:00,536 - INFO - Iteration 3 completed. Training set size: 34
+2026-03-17 01:18:00,536 - INFO - Energy stats - min: 0.472, max: 3.762, mean: 1.772
+2026-03-17 01:18:00,536 - INFO - Iteration 4/10
+2026-03-17 01:18:00,536 - INFO - Current training set size: 34
+2026-03-17 01:18:00,587 - INFO - Optimized kernel: RBF(length_scale=0.5) + WhiteKernel(noise_level=0.435)
+2026-03-17 01:18:01,722 - INFO - Suggested 3 new configurations
+2026-03-17 01:18:01,723 - INFO - Running dummy calculation in calc_3_0
+2026-03-17 01:18:01,724 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 01:18:01,724 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 01:18:01,724 - INFO - Structure saved to calc_3_0/POSCAR_with_Li
+2026-03-17 01:18:01,725 - INFO - Running dummy calculation in calc_3_1
+2026-03-17 01:18:01,725 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 01:18:01,725 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 01:18:01,725 - INFO - Structure saved to calc_3_1/POSCAR_with_Li
+2026-03-17 01:18:01,726 - INFO - Running dummy calculation in calc_3_2
+2026-03-17 01:18:01,726 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 01:18:01,726 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 01:18:01,727 - INFO - Structure saved to calc_3_2/POSCAR_with_Li
+2026-03-17 01:18:01,729 - INFO - Results saved to bo_test_results
+2026-03-17 01:18:01,729 - INFO - Iteration 4 completed. Training set size: 37
+2026-03-17 01:18:01,729 - INFO - Energy stats - min: 0.472, max: 3.762, mean: 1.845
+2026-03-17 01:18:01,729 - INFO - Iteration 5/10
+2026-03-17 01:18:01,730 - INFO - Current training set size: 37
+2026-03-17 01:18:01,898 - INFO - Optimized kernel: RBF(length_scale=0.5) + WhiteKernel(noise_level=0.391)
+2026-03-17 01:18:02,923 - INFO - Suggested 3 new configurations
+2026-03-17 01:18:02,924 - INFO - Running dummy calculation in calc_4_0
+2026-03-17 01:18:02,924 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 01:18:02,924 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 01:18:02,925 - INFO - Structure saved to calc_4_0/POSCAR_with_Li
+2026-03-17 01:18:02,926 - INFO - Running dummy calculation in calc_4_1
+2026-03-17 01:18:02,926 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 01:18:02,926 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 01:18:02,927 - INFO - Structure saved to calc_4_1/POSCAR_with_Li
+2026-03-17 01:18:02,927 - INFO - Running dummy calculation in calc_4_2
+2026-03-17 01:18:02,927 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 01:18:02,927 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 01:18:02,928 - INFO - Structure saved to calc_4_2/POSCAR_with_Li
+2026-03-17 01:18:02,930 - INFO - Results saved to bo_test_results
+2026-03-17 01:18:02,930 - INFO - Iteration 5 completed. Training set size: 40
+2026-03-17 01:18:02,930 - INFO - Energy stats - min: 0.472, max: 3.762, mean: 1.908
+2026-03-17 01:18:02,930 - INFO - Iteration 6/10
+2026-03-17 01:18:02,930 - INFO - Current training set size: 40
+2026-03-17 01:18:02,987 - INFO - Optimized kernel: RBF(length_scale=0.5) + WhiteKernel(noise_level=0.333)
+2026-03-17 01:18:03,959 - INFO - Suggested 3 new configurations
+2026-03-17 01:18:03,961 - INFO - Running dummy calculation in calc_5_0
+2026-03-17 01:18:03,962 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 01:18:03,962 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 01:18:03,962 - INFO - Structure saved to calc_5_0/POSCAR_with_Li
+2026-03-17 01:18:03,963 - INFO - Running dummy calculation in calc_5_1
+2026-03-17 01:18:03,963 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 01:18:03,963 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 01:18:03,964 - INFO - Structure saved to calc_5_1/POSCAR_with_Li
+2026-03-17 01:18:03,965 - INFO - Running dummy calculation in calc_5_2
+2026-03-17 01:18:03,965 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 01:18:03,965 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 01:18:03,966 - INFO - Structure saved to calc_5_2/POSCAR_with_Li
+2026-03-17 01:18:03,970 - INFO - Results saved to bo_test_results
+2026-03-17 01:18:03,970 - INFO - Iteration 6 completed. Training set size: 43
+2026-03-17 01:18:03,971 - INFO - Energy stats - min: 0.472, max: 3.762, mean: 1.961
+2026-03-17 01:18:03,971 - INFO - Iteration 7/10
+2026-03-17 01:18:03,971 - INFO - Current training set size: 43
+2026-03-17 01:18:04,023 - INFO - Optimized kernel: RBF(length_scale=0.5) + WhiteKernel(noise_level=0.304)
+2026-03-17 01:18:05,171 - INFO - Suggested 3 new configurations
+2026-03-17 01:18:05,173 - INFO - Running dummy calculation in calc_6_0
+2026-03-17 01:18:05,173 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 01:18:05,173 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 01:18:05,174 - INFO - Structure saved to calc_6_0/POSCAR_with_Li
+2026-03-17 01:18:05,176 - INFO - Running dummy calculation in calc_6_1
+2026-03-17 01:18:05,176 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 01:18:05,177 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 01:18:05,177 - INFO - Structure saved to calc_6_1/POSCAR_with_Li
+2026-03-17 01:18:05,179 - INFO - Running dummy calculation in calc_6_2
+2026-03-17 01:18:05,180 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 01:18:05,180 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 01:18:05,181 - INFO - Structure saved to calc_6_2/POSCAR_with_Li
+2026-03-17 01:18:05,183 - INFO - Results saved to bo_test_results
+2026-03-17 01:18:05,183 - INFO - Iteration 7 completed. Training set size: 46
+2026-03-17 01:18:05,184 - INFO - Energy stats - min: 0.472, max: 3.762, mean: 2.008
+2026-03-17 01:18:05,184 - INFO - Iteration 8/10
+2026-03-17 01:18:05,184 - INFO - Current training set size: 46
+2026-03-17 01:18:05,321 - INFO - Optimized kernel: RBF(length_scale=0.5) + WhiteKernel(noise_level=0.273)
+2026-03-17 01:18:07,334 - INFO - Suggested 3 new configurations
+2026-03-17 01:18:07,336 - INFO - Running dummy calculation in calc_7_0
+2026-03-17 01:18:07,336 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 01:18:07,336 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 01:18:07,342 - INFO - Structure saved to calc_7_0/POSCAR_with_Li
+2026-03-17 01:18:07,344 - INFO - Running dummy calculation in calc_7_1
+2026-03-17 01:18:07,349 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 01:18:07,350 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 01:18:07,351 - INFO - Structure saved to calc_7_1/POSCAR_with_Li
+2026-03-17 01:18:07,353 - INFO - Running dummy calculation in calc_7_2
+2026-03-17 01:18:07,357 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 01:18:07,358 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 01:18:07,375 - INFO - Structure saved to calc_7_2/POSCAR_with_Li
+2026-03-17 01:18:07,388 - INFO - Results saved to bo_test_results
+2026-03-17 01:18:07,389 - INFO - Iteration 8 completed. Training set size: 49
+2026-03-17 01:18:07,393 - INFO - Energy stats - min: 0.472, max: 3.762, mean: 2.049
+2026-03-17 01:18:07,393 - INFO - Iteration 9/10
+2026-03-17 01:18:07,399 - INFO - Current training set size: 49
+2026-03-17 01:18:07,844 - INFO - Optimized kernel: RBF(length_scale=0.5) + WhiteKernel(noise_level=0.246)
+2026-03-17 01:18:10,504 - INFO - Suggested 3 new configurations
+2026-03-17 01:18:10,514 - INFO - Running dummy calculation in calc_8_0
+2026-03-17 01:18:10,515 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 01:18:10,515 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 01:18:10,515 - INFO - Structure saved to calc_8_0/POSCAR_with_Li
+2026-03-17 01:18:10,519 - INFO - Running dummy calculation in calc_8_1
+2026-03-17 01:18:10,520 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 01:18:10,520 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 01:18:10,521 - INFO - Structure saved to calc_8_1/POSCAR_with_Li
+2026-03-17 01:18:10,523 - INFO - Running dummy calculation in calc_8_2
+2026-03-17 01:18:10,524 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 01:18:10,525 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 01:18:10,532 - INFO - Structure saved to calc_8_2/POSCAR_with_Li
+2026-03-17 01:18:10,539 - INFO - Results saved to bo_test_results
+2026-03-17 01:18:10,543 - INFO - Iteration 9 completed. Training set size: 52
+2026-03-17 01:18:10,546 - INFO - Energy stats - min: 0.472, max: 3.762, mean: 2.085
+2026-03-17 01:18:10,546 - INFO - Iteration 10/10
+2026-03-17 01:18:10,547 - INFO - Current training set size: 52
+2026-03-17 01:18:10,827 - INFO - Optimized kernel: RBF(length_scale=0.516) + WhiteKernel(noise_level=0.223)
+2026-03-17 01:18:12,322 - INFO - Suggested 3 new configurations
+2026-03-17 01:18:12,326 - INFO - Running dummy calculation in calc_9_0
+2026-03-17 01:18:12,326 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 01:18:12,326 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 01:18:12,327 - INFO - Structure saved to calc_9_0/POSCAR_with_Li
+2026-03-17 01:18:12,328 - INFO - Running dummy calculation in calc_9_1
+2026-03-17 01:18:12,329 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 01:18:12,330 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 01:18:12,330 - INFO - Structure saved to calc_9_1/POSCAR_with_Li
+2026-03-17 01:18:12,333 - INFO - Running dummy calculation in calc_9_2
+2026-03-17 01:18:12,333 - INFO - Dummy calculation successful, energy: -10.125460 eV
+2026-03-17 01:18:12,333 - INFO - New intercalation energy: 2.674540 eV
+2026-03-17 01:18:12,334 - INFO - Structure saved to calc_9_2/POSCAR_with_Li
+2026-03-17 01:18:12,338 - INFO - Results saved to bo_test_results
+2026-03-17 01:18:12,339 - INFO - Iteration 10 completed. Training set size: 55
+2026-03-17 01:18:12,339 - INFO - Energy stats - min: 0.472, max: 3.762, mean: 2.117
+2026-03-17 01:18:12,339 - INFO - Optimization completed successfully!
+2026-03-17 01:18:12,339 - INFO - Final training set size: 55
+2026-03-17 01:18:12,339 - INFO - Best energy found: 0.471533 eV
