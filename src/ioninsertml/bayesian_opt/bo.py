@@ -51,7 +51,7 @@ class BayesianOptimization:
         if self.kernel is None:
             self.kernel = RBF(length_scale=1.0) + WhiteKernel(noise_level=1e-6)
         if self.gpr_ is None:
-            self.gpr_ = GaussianProcessRegressor(kernel=self.kernel, normalize_y=True)
+            self.gpr_ = GaussianProcessRegressor(kernel=self.kernel, normalize_y=False)
 
 
         if random_state is None:

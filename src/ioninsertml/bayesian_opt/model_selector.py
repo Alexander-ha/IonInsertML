@@ -49,10 +49,12 @@ class ModelSelector:
         this func computes LOO-CV
         '''
         kernel_t = self.kernel.clone_with_theta(theta) #вот тут вытаскиваем гиперпараметры ядра
+
         #потом идея как в статье (которую скину в чат)
         K, K_grad = kernel_t(self.X_train, eval_gradient=True)
-        K += 1e-10*np.eye(len(K)) #для численной стабильности на случай если у нас есть линейно зависимые (коррелирующие сэмплы)
-        K_inv = np.linalg.inv(K)
+        noise = 1e-8 * np.trace(K) / len(K)
+        K_reg = K + noise * np.eye(len(K))#для численной стабильности на случай если у нас есть линейно зависимые (коррелирующие сэмплы)
+        K_inv = np.linalg.inv(K_reg)
         alpha = K_inv @ self.y_train_norm #альфа из статьи
         diag_K_inv = np.diag(K_inv)
         mu_loo = self.y_train_norm - alpha/diag_K_inv #mean
@@ -89,7 +91,6 @@ class ModelSelector:
             print("failed for scipy optimization, keeping kernela s it was...")
             opt_theta = x0
         self.kernel_opt = self.kernel.clone_with_theta(opt_theta)
-        self.bo.gpr_.optimizer = None
         return self.kernel_opt
 
     def find_via_gd(self, n_iter=100, tol=1e-5, verbose=False):

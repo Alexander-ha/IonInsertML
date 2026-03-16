@@ -9,7 +9,7 @@ interpolation behavior.
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.gaussian_process import GaussianProcessRegressor
-from sklearn.gaussian_process.kernels import RBF, WhiteKernel
+from sklearn.gaussian_process.kernels import RBF, WhiteKernel,ConstantKernel
 from sklearn.preprocessing import StandardScaler
 import os
 import argparse
@@ -31,21 +31,15 @@ def load_data(data_dir, iteration=5):
 def plot_1d_slice(X, y, gp, scaler_X, scaler_y,
                   fixed_coords=None, slice_dim=0,
                   n_points=200, confidence=2.0,
-                  save_path=None):
+                  save_path=None, show_plot=False): 
     """
     Plot a 1D slice of the GP prediction along a given dimension.
     
     Parameters
     ----------
-    X, y : original (unscaled) training data
-    gp : trained GaussianProcessRegressor (works on scaled inputs)
-    scaler_X, scaler_y : scalers used for X and y
-    fixed_coords : array-like of length X.shape[1] with fixed values for other dims.
-                   If None, use median of X along each dimension.
-    slice_dim : int, dimension along which to vary
-    n_points : number of points in the slice
-    confidence : multiple of standard deviation to plot as shaded region
-    save_path : if not None, save figure to this path
+    show_plot : bool, default=False
+        If True, call plt.show() to display the plot interactively.
+        If False, only save the figure if save_path is provided.
     """
     n_features = X.shape[1]
     if fixed_coords is None:
@@ -87,12 +81,15 @@ def plot_1d_slice(X, y, gp, scaler_X, scaler_y,
     if save_path:
         # Ensure directory exists
         os.makedirs(os.path.dirname(os.path.abspath(save_path)), exist_ok=True)
-        plt.savefig(save_path, dpi=150)
+        plt.savefig(save_path, dpi=150, bbox_inches='tight')
         print(f"Figure saved to {save_path}")
-    else:
+    
+    if show_plot:
         plt.show()
+    else:
+        plt.close() 
 
-def plot_covariance_matrix(gp, scaler_X, X, save_path=None):
+def plot_covariance_matrix(gp, scaler_X, X, save_path=None, show_plot=False):
     """
     Visualize the covariance matrix of the training points (scaled space).
     """
@@ -104,12 +101,17 @@ def plot_covariance_matrix(gp, scaler_X, X, save_path=None):
     plt.title('Covariance matrix of training points (scaled)')
     plt.xlabel('Point index')
     plt.ylabel('Point index')
+    
     if save_path:
         os.makedirs(os.path.dirname(os.path.abspath(save_path)), exist_ok=True)
-        plt.savefig(save_path, dpi=150)
+        plt.savefig(save_path, dpi=150, bbox_inches='tight')
         print(f"Covariance matrix saved to {save_path}")
-    else:
+    
+    if show_plot:
         plt.show()
+    else:
+        plt.close()
+
 
 def main():
     parser = argparse.ArgumentParser(description='Visualize GP predictions')
@@ -129,6 +131,8 @@ def main():
                         help='Explicit filename for slice plot (overrides automatic naming)')
     parser.add_argument('--save_cov', type=str, default=None,
                         help='Explicit filename for covariance matrix plot (overrides automatic naming)')
+    parser.add_argument('--const_coef', type=float, default=1.06**2,
+                        help='Explicit filename for covariance matrix plot (overrides automatic naming)')
     args = parser.parse_args()
     
     # Load data
@@ -143,10 +147,8 @@ def main():
     y_scaled = scaler_y.fit_transform(y.reshape(-1, 1)).ravel()
     
     # Create kernel with given hyperparameters
-    rbf = RBF(length_scale=args.length_scale, length_scale_bounds=(1e-2, 1e2))
-    white = WhiteKernel(noise_level=args.noise_level, noise_level_bounds=(1e-6, 1e2))
-    kernel = rbf + white
-    gp = GaussianProcessRegressor(kernel=kernel, optimizer=None, normalize_y=False)
+    rbf =  ConstantKernel(args.const_coef) * RBF(length_scale=args.length_scale) + WhiteKernel(noise_level=args.noise_level)
+    gp = GaussianProcessRegressor(kernel=rbf, optimizer=None, normalize_y=False)
     gp.fit(X_scaled, y_scaled)
     print("GP refitted with optimized kernel.")
     print(f"Final kernel: {gp.kernel_}")
@@ -163,9 +165,16 @@ def main():
     
     # Plot 1D slice
     plot_1d_slice(X, y, gp, scaler_X, scaler_y,
-                  slice_dim=args.slice_dim,
-                  save_path=slice_path)
-    
+                slice_dim=args.slice_dim,
+                save_path=slice_path,
+                show_plot=False)
+
+    # Plot covariance matrix
+    plot_covariance_matrix(gp, scaler_X, X, 
+                        save_path=cov_path,
+                        show_plot=False)
+
+    print(f"Plots saved to {args.output_dir if args.output_dir else 'specified files'}")
     # Plot covariance matrix
     if cov_path or (args.output_dir is None and cov_path is None):
         # If no output_dir and no explicit cov path, still show interactively
